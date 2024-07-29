@@ -45,6 +45,7 @@
     "yarn": "^1.22.19"
   },
   "scripts": {
+    "build1": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -73,3 +74,4 @@
     "babel-loader": "^9.1.3"
   }
 }
+
