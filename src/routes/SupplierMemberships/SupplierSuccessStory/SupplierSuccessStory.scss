@@ -1,0 +1,210 @@
+@import "../../../styles/mixins/global.scss";
+
+.supplier-success-story-section {
+    background: linear-gradient(146deg, rgba(1, 141, 193, 0.15) 0%, rgba(118, 212, 246, 0.15) 100%);
+    padding: 50px 0;
+
+    .supplier-success-story-alignment {
+        text-align: center;
+
+        h6 {
+            color: #343434;
+           font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+              }
+        }
+
+        .supplier-success-story-details-alignment {
+            padding: 30px 0 0 0;
+            max-width: 792px;
+            margin: 0 auto;
+
+            .supplier-success-story-personal-details-grid {
+                display: grid;
+                grid-template-columns: 1fr 306px;
+                gap: 24px;
+
+                @include breakpoint("max-sm") {
+                    grid-template-columns: repeat(1 , 1fr);
+                    gap: 0;
+                }
+
+                .supplier-success-story-personal-details-left-side {
+                    border-radius: 4px;
+                    background: #FFF;
+                    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
+                    width: 100%;
+                    height: 375px;
+                    padding: 24px;
+
+                    .rate-alignment-flex {
+                        display: flex;
+                        align-items: center;
+                        gap: 18px;
+
+                        .supplier-angle-flex {
+                            display: flex;
+                            align-items: center;
+                            gap: 3px;
+                        }
+
+                        .supplier-range-alignment {
+                            h6 {
+                                color: rgba(0, 174, 239, 0.60);
+                               font-family: 'Poppins', sans-serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                line-height: 38px;
+
+                                @include breakpoint("max-sm") {
+                                    font-size: 20px;
+                                    line-height: 30px;
+                                }
+                            }
+                        }
+                    }
+
+                    .supplier-notes-alignment {
+                        padding: 10px 0 0 0;
+
+                        p {
+                            color: #BABABA;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            text-align: left;
+                        }
+                    }
+
+                    .supplier-read-more-alignment {
+                        padding: 20px 0 0 0;
+                        text-align: left;
+
+                        a {
+                            color: #00AEEF;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .supplier-story-profile-details-alignment {
+                        padding: 56px 0 0 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .supplier-story-profile-img {
+                            width: 51px;
+                            height: 51px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 50%;
+                                display: block;
+                            }
+                        }
+
+                        h6 {
+                            color: #343434;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 18px;
+                        }
+
+                        p {
+                            color: #606060;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            padding: 4px 0 0 0;
+                            text-align: left;
+                        }
+                    }
+
+                    .supplier-story-city-area-alignment {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        padding: 12px 0 0 0;
+
+                        .city-details-alignment {
+                            display: flex;
+                            align-items: center;
+                            gap: 6px;
+
+                            p {
+                                color: #606060;
+                               font-family: 'Poppins', sans-serif;
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .supplier-success-story-personal-details-right-side {
+                    width: 100%;
+                    height: 375px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+            }
+
+            .prev-arrow-alignment {
+                left: -60px;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                cursor: pointer;
+            }
+
+            .next-arrow-alignment {
+                right: -60px;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                cursor: pointer;
+            }
+        }
+
+        .supplier-success-more-button-alignment {
+            padding: 40px 0 0 0;
+
+            button {
+                padding: 14px 36px;
+                border-radius: 8px;
+                background: #00AEEF;
+                color: #FFF;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                cursor: pointer;
+                border: none;
+
+                @include breakpoint("max-sm") {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+@import "../../styles/mixins/global.scss";
+
+.finance-section {
+    .finance-banner-details {
+        background-image: url("../../assets/Image/finance-bg-1.png");
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .finance-banner-details-alignment {
+            display: flex;
+            align-items: flex-end;
+            grid-gap: 6px;
+            gap: 6px;
+            justify-content: space-between;
+            padding: 80px 0;
+
+            @include breakpoint("max-sm") {
+                padding: 40px 0;
+                display: block;
+            }
+
+            .finance-banner-left-details {
+                max-width: 509px;
+
+                h4 {
+                    color: #252B42;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 30px;
+                    line-height: 42px;
+                    font-weight: 800;
+                    letter-spacing: 0.2px;
+
+                    @include breakpoint("max-sm") {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                p {
+                    padding: 35px 0 0 0;
+                    color: #737373;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    letter-spacing: 0.2px;
+
+                    @include breakpoint("max-sm") {
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+
+                .finance-button-alignment {
+                    padding: 35px 0 0 0;
+
+                    button {
+                        padding: 15px 36px;
+                        border-radius: 37px;
+                        background: #23A6F0;
+                        color: #FFF;
+                        text-align: center;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 22px;
+                        letter-spacing: 0.2px;
+                        cursor: pointer;
+                        border: none;
+                    }
+                }
+            }
+
+            .finance-banner-right-details {}
+        }
+    }
+}

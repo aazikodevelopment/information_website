@@ -1,0 +1,184 @@
+@import "../../../../styles/mixins/global.scss";
+
+.survey-servuces-details-all-content-alignment {
+  padding: 24px 0 100px 0;
+
+
+  @include breakpoint("max-sm") {
+    padding: 24px 0 40px 0;
+  }
+  .box {
+    padding: 50px 63px;
+    border-radius: 8px;
+    background-color: #fff;
+
+    @include breakpoint("max-sm") {
+      padding: 0;
+    }
+
+    .center-text {
+      padding: 0 0 50px 0;
+      p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        margin: 0 0 8px 0;
+        color: #343434;
+      }
+
+      span {
+        display: block;
+        max-width: 907px;
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0 auto;
+        line-height: 26px;
+        text-align: center;
+        color: #606060;
+      }
+    }
+
+    .last-text {
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #606060;
+        max-width: 907px;
+        margin: 0 auto;
+      }
+
+      .button-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 22px 0 0 0;
+
+        button {
+          border: none;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 130.5%;
+          padding: 14px 40px;
+          background: #00aeef;
+          border-radius: 7px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .searate-all-content {
+      padding: 0 0 40px 0;
+      h5 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        color: #343434;
+        margin: 0 auto 36px auto;
+        max-width: 641px;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+
+        @include breakpoint("max-md") {
+          grid-template-columns: repeat(1 , 1fr);
+        }
+
+        .card-grid-items {
+          .icon-grid {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            gap: 20px;
+
+            .icon-grid-items {
+              span {
+                display: block;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: #606060;
+
+                @include breakpoint("max-sm") {
+                  font-size: 14px;
+                  line-height: 22px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 527px;
+      gap: 0 24px;
+      padding: 0 0 50px 0;
+
+      @include breakpoint("max-md") {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 40px;
+      }
+
+      .grid-items {
+        .image-style {
+          img {
+            width: 100%;
+          }
+        }
+
+        h4 {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          color: #343434;
+          margin: 0 0 14px 0;
+        }
+
+        .button-text-alignment {
+          display: flex;
+          align-items: center;
+          gap: 11px;
+          padding: 30px 0 0 0;
+          a {
+            display: block;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130.5%;
+            color: #00aeef;
+          }
+
+          button {
+            background: #00aeef;
+            border-radius: 7px;
+            padding: 6px 18px;
+            border: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          color: #606060;
+          max-width: 521px;
+        }
+      }
+    }
+  }
+}

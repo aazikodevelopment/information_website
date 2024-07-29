@@ -1,0 +1,73 @@
+@import '../../../styles/mixins/global.scss';
+
+.createTicketSidebar-section {
+    background: #FFFFFF;
+    padding: 20px;
+    height: calc(100vh - 250px);
+    cursor: pointer;
+    .createTicketSidebar-alignment {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .list-name-alignment {
+            .list-name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .heading-alignment {
+                    h4 {
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #606060;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 14px;
+                            line-height: 22px;
+                          }
+                    }
+
+
+                }
+
+                .arrow-alignment {
+                    cursor: pointer;
+
+                    img {
+                        width: 11px;
+                        height: 6px;
+                        display: block;
+                    }
+                }
+            }
+
+            .child-sidebar-details {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                margin: 10px 0 0 0;
+
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #606060;
+
+                    &:hover {
+                        color: #00AEEF;
+                    }
+                    &.active {
+                        color: #00AEEF;
+                    }
+
+                }
+
+                
+            }
+        }
+    }
+}

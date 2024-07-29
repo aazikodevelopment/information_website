@@ -1,0 +1,103 @@
+@import "../../styles/mixins/index.scss";
+
+.learn-more-section {
+    margin: 24px 0;
+
+    .learn-more-alignment {
+        width: 100%;
+        background: #FFF;
+
+        .learn-more-heading-alignment {
+            padding: 40px;
+            background: url("../../assets/Image/learn-more-bg.png");
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            h6 {
+                color: #FFF;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+               
+            }
+        }
+
+        .learn-more-body-alignment {
+            padding: 40px 100px;
+            background: #FFF;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+            .learn-more-top-details-alignment {
+                &.last-paddong-alignment {
+                    padding: 100px 0 0 0;
+                }
+
+                h4 {
+                    color: #343434;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+
+                p {
+                    color: #606060;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 151%;
+                    padding: 10px 0 0 0;
+                }
+
+                ul {
+                    li {
+                        color: #606060;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 151%;
+                        padding: 10px 0 0 0;
+                    }
+                }
+
+            }
+
+            .learn-more-with-img-detils {
+                .with-img-grid {
+                    display: grid;
+                    grid-template-columns: 410px 1fr;
+                    gap: 42px;
+                    padding: 100px 0 0 0;
+                    align-items: center;
+
+                    &:nth-of-type(even) {
+                        grid-template-columns: 1fr 410px;
+                    }
+
+                    .learn-more-top-details-alignment {
+                        p {
+                            padding: 20px 0 0 0;
+                        }
+                    }
+
+                    .learn-more-img {
+                        width: 100%;
+                        height: 310px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                            border-radius: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

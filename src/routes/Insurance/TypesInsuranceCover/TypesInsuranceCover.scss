@@ -1,0 +1,93 @@
+@import '../../../styles/mixins/global.scss';
+
+.types-insurance-cover-main {
+    .types-insurance-cover-alignment {
+        .types-insurance-cover-heading {
+            h4 {
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 45px;
+                font-weight: 600;
+                line-height: 51px;
+                text-align: center;
+            }
+        }
+
+        .types-insurance-cover-body-alignment {
+            margin: 80px 0 0 0;
+
+            .types-insurance-cover-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+
+                .types-insurance-cover-grid-item {
+
+
+                    .types-top-box-alignment {
+                        width: 368px;
+                        height: 80px;
+                        background: #6AAAFF;
+                        border-radius: 16px;
+                        margin: 0 auto;
+                    }
+
+                    .types-insurance-cover-box {
+                        border: 1px solid #6AAAFF;
+                        width: 324px;
+                        height: 262px;
+                        margin: 0 auto;
+                        position: relative;
+                        z-index: 99;
+                        background: #fff;
+                        top: -52px;
+                        border-radius: 16px;
+                        padding: 42px 26px 26px 16px;
+
+                        h6 {
+                            color: #253858;
+                            text-align: center;
+                            font-size: 22px;
+                            font-weight: 700;
+                            line-height: 24px;
+                        }
+
+                        p {
+                            padding: 32px 0 0 0;
+                            color: #253858;
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                    }
+
+
+                    &:nth-child(2) {
+                        .types-top-box-alignment {
+                            background: #8A88F6;
+                        }
+
+                        .types-insurance-cover-box {
+                            border-color: #8A88F6;
+                        }
+                    }
+
+
+                    &:nth-child(3) {
+                        .types-top-box-alignment {
+                            background: #FF8F82;
+                        }
+
+                        .types-insurance-cover-box {
+                            border-color: #FF8F82;
+                        }
+                    }
+                }
+
+
+
+
+            }
+        }
+    }
+}

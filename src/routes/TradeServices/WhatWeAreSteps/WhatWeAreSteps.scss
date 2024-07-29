@@ -1,0 +1,100 @@
+@import "../../../styles/mixins/global.scss";
+
+.what-we-are-steps-section {
+
+    // margin: 48px 0 0 0;
+    .what-we-are-steps-banner {
+        background: linear-gradient(146deg, #018DC1 0%, #76D4F6 100%);
+        height: 345px;
+        padding: 50px 0;
+
+        .what-we-are-step-heading-alignment {
+            h6 {
+                color: #FFF;
+               font-family: 'Poppins', sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 36px;
+                text-align: center;
+            }
+
+            p {
+                color: #FFF;
+                text-align: center;
+               font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                padding: 10px 0 0 0;
+            }
+        }
+
+        .what-we-are-step-body-details-alignment {
+            padding: 24px 0 0 0;
+
+            .what-we-are-all-step-details-alignment {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                .what-we-step-alignment {
+                    position: relative;
+
+                    &:first-child {
+                        width: 203px;
+                        height: 154px;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background: url('../../../assets/Image/what-we-img-1.png');
+                            z-index: 99;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+
+                    // &.step-2-details {
+                    //     right: 54px;
+                    // }
+
+                    .what-we-step-number-alignment {
+                        position: absolute;
+                        top: 23px;
+                        left: 10px;
+                        z-index: 990;
+                        max-width: 124px;
+                        margin: 0 auto;
+                        text-align: center;
+
+                        // &.step-2-number-details {
+                        //     left: 45px;
+                        // }
+
+                        h5 {
+                            color: #00AEEF;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 24px;
+                            font-weight: 900;
+                            line-height: 28px;
+                        }
+
+                        p {
+                            padding: 14px 0 0 0;
+                            color: #606060;
+                            text-align: center;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 21px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

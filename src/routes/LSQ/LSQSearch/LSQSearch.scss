@@ -1,0 +1,83 @@
+@import "../../../styles/mixins/global.scss";
+
+.lsq-search-section {
+    .lsq-searct-box {
+        border-radius: 10px;
+        background: #6C6CFF;
+        width: 100%;
+        height: 78px;
+        margin: 40px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 10px 0 20px;
+
+        .lsq-search-left-side {
+            h6 {
+                color: #FFF;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+        }
+
+        .lsq-search-right-side {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .lsq-search-box-alignment {
+                width: 392px;
+                height: 36px;
+                border-radius: 10px;
+                background: #FFF;
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    background: transparent;
+                    padding: 0 20px;
+                    color: #A7A7A7;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 14px;
+                }
+            }
+
+            .lsq-search-other-box-alignment {
+                width: 112px;
+                height: 36px;
+                border-radius: 10px;
+                background: #FFF;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 0 20px;
+                cursor: pointer;
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    background: transparent;
+                    color: #0000FF;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 14px;
+                }
+
+                .search-icon-alignment {
+                    width: 24px;
+                    height: 24px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

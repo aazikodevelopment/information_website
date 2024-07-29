@@ -1,0 +1,530 @@
+@import "../../styles/mixins/global.scss";
+
+.demurrage-storage-calculator-section {
+    padding: 46px 0 0 0;
+
+    @include breakpoint("max-sm") {
+        padding: 30px 0 0 0;
+    }
+
+    .demurrage-storage-calculator-alignment {
+        .demurrage-storage-calculator-heading {
+            h4 {
+                color: #000;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .demurrage-storage-calculator-body {
+            padding: 40px 0 0 0;
+
+            .demurrage-storage-calculator-box {
+                border-radius: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.20);
+                background: #FFF;
+                box-shadow: 0px 0px 12px 0px rgba(202, 202, 202, 0.30);
+                padding: 26px 46px;
+                width: 100%;
+
+
+                @include breakpoint("max-sm") {
+                    padding: 16px;
+                }
+
+                .demurrage-storage-calculator-top-details {
+                    padding: 0 10px;
+                    display: grid;
+                    grid-template-columns: 335px 1fr;
+                    gap: 104px;
+
+
+                    @include breakpoint("max-sm") {
+                        grid-template-columns: repeat(1 , 1fr);
+                        gap: 10px;
+                    }
+
+
+                    .demurrage-storage-calculator-left-side-alignment {
+                        display: grid;
+                        grid-template-columns: 164px 1fr;
+                        gap: 28px;
+                        align-items: center;
+                        margin: 0 0 18px 0;
+
+
+                        @include breakpoint("max-sm") {
+                            grid-template-columns: repeat(1 , 1fr);
+                            gap: 10px;
+                        }
+
+                        .demurrage-storage-calculator-left-details {
+                            label {
+                                color: #000;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+                        }
+
+                        .demurrage-storage-date-input {
+                            input {
+                                width: 100%;
+                                height: 38px;
+                                color: #000;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                border-radius: 5px;
+                                border: 1px solid rgba(96, 96, 96, 0.80);
+                                opacity: 0.8;
+                                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                                appearance: none;
+                                text-align: center;
+
+                                &:focus {
+                                    outline: none;
+                                }
+
+                            }
+
+                            input[type="date"]::-webkit-inner-spin-button,
+                            input[type="date"]::-webkit-calendar-picker-indicator {
+                                display: none;
+                                -webkit-appearance: none;
+                            }
+                        }
+                    }
+
+                    .demurrage-storage-calculator-top-right-details {
+                        .demurrage-storage-calculator-top-right-heading {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+
+                            @include breakpoint("max-sm") {
+                                display: grid;
+                                grid-template-columns: repeat(1 , 1fr);
+                                gap: 10px;
+                            }
+
+                            label {
+                                color: #000;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                            }
+
+                            .top-right-option-alignment {
+                                ul {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 2px;
+                                    list-style: none;
+                                    padding: 0;
+                                    margin: 0;
+                                    
+
+                                    li {
+                                        padding: 8px 30px;
+                                        color: #000;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        cursor: pointer;
+
+
+                                        @include breakpoint("max-sm") {
+                                            padding: 12px;
+                                            font-size: 12px;
+                                        }
+
+                                        &:nth-child(1) {
+                                            border-radius: 5px;
+                                            background: #00AEEF;
+                                            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                                            font-weight: 600;
+                                            color: #FFF;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .demurrage-storage-calculator-top-box {
+                            border-radius: 5px;
+                            background: #EDFAFF;
+                            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                            max-width: 505px;
+                            margin: 26px 0 0 0;
+                            padding: 26px 18px 15px 18px;
+
+                            p {
+                                color: #000;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                padding: 0 0 8px 0;
+                                margin: 0;
+
+                                &:last-child {
+                                    padding: 0;
+                                }
+                            }
+
+                            .total-alignment {
+                                padding: 14px 0 0 0;
+
+                                span {
+                                    color: #000;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .demurrage-storage-calculator-bottom-details {
+                    padding: 48px 0 0 0;
+
+                    .demurrage-storage-calculator-bottom-grid-alignment {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 118px;
+                        @include breakpoint("max-sm") {
+                            grid-template-columns: repeat(1 , 1fr);
+                            gap: 30px;
+                        }
+                        .demurrage-storage-calculator-bottom-grid-item {
+                            .demurrage-storage-calculator-all-details {
+                                h6 {
+                                    color: #00AEEF;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    text-align: center;
+                                    padding: 0 0 52px 0;
+                                }
+
+                                .demurrage-storage-calculator-all-ther-details {
+                                    display: grid;
+                                    grid-template-columns: 126px 1fr;
+                                    gap: 36px;
+                                    align-items: center;
+                                    margin: 0 0 24px 0;
+
+                                    label {
+                                        color: #000;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        line-height: normal;
+                                        opacity: 0.8;
+                                    }
+
+                                    .demurrage-storage-input-alignment {
+                                        width: 100%;
+                                        height: 40px;
+                                        border-radius: 5px;
+                                        background: #F2FCFF;
+                                        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        position: relative;
+
+
+
+                                        input {
+                                            width: 100%;
+                                            height: 100%;
+                                            border: none;
+                                            background: transparent;
+                                            padding: 0 22px;
+                                            color: #000;
+                                            font-family: 'Poppins', sans-serif;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: normal;
+                                            opacity: 0.8;
+
+                                            &:focus {
+                                                outline: none;
+                                            }
+                                        }
+
+                                        .dropdown-box-alignment {
+                                            width: 100%;
+                                            position: absolute;
+                                            left: 0;
+                                            top: 40px;
+
+                                            border-radius: 5px;
+                                            background: #FFF;
+                                            z-index: 999;
+
+
+                                            &.hidden-dropdown-box {
+                                                max-height: 0px;
+                                                overflow: hidden;
+                                                padding: 0;
+                                                transition: 0.4s ease-in-out;
+                                            }
+
+                                            &.show-dropdown-box {
+                                                height: auto;
+                                                max-height: 250px;
+                                                overflow-y: auto;
+                                                padding: 8px 0;
+                                                transition: 0.4s ease-in-out;
+
+                                            }
+
+                                            p {
+                                                padding: 4px 21px;
+                                                color: #000;
+                                                font-family: 'Poppins', sans-serif;
+                                                font-size: 18px;
+                                                font-style: normal;
+                                                font-weight: 500;
+                                                line-height: normal;
+                                                transition: 0.3s ease-in-out;
+                                                cursor: pointer;
+
+                                                &:hover {
+                                                    background: #00AEEF;
+                                                    color: #FFF;
+                                                    transition: 0.3s ease-in-out;
+                                                }
+                                            }
+                                        }
+
+                                        .demurrage-storage-side-dropdown-icon {
+                                            width: 34px;
+                                            height: 100%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            border-radius: 0px 5px 5px 0px;
+                                            background: #F7F7F7;
+                                            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .demurrage-storage-calculator-bottom-other-details {
+                        .demurrage-storage-calculator-bottom-other-grid {
+                            display: grid;
+                            grid-template-columns: 131px 131px 131px;
+                            gap: 22px;
+                            @include breakpoint("max-sm") {
+                                grid-template-columns: repeat(1 , 1fr);
+                                gap: 16px;
+                            }
+                            .demurrage-storage-calculator-bottom-other-grid-item {
+                                label {
+                                    color: #000;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 12px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                    opacity: 0.8;
+                                    display: block;
+                                    padding: 0 0 4px 0;
+                                }
+
+                                .demurrage-storage-input-alignment {
+                                    width: 100%;
+                                    height: 40px;
+                                    border-radius: 5px;
+                                    background: #F2FCFF;
+                                    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    position: relative;
+
+
+
+                                    input {
+                                        width: 100%;
+                                        height: 100%;
+                                        border: none;
+                                        background: transparent;
+                                        padding: 0 22px;
+                                        color: #000;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        opacity: 0.8;
+
+                                        &:focus {
+                                            outline: none;
+                                        }
+                                    }
+
+                                    .dropdown-box-alignment {
+                                        width: 100%;
+                                        position: absolute;
+                                        left: 0;
+                                        top: 40px;
+
+                                        border-radius: 5px;
+                                        background: #FFF;
+                                        z-index: 999;
+
+
+                                        &.hidden-dropdown-box {
+                                            max-height: 0px;
+                                            overflow: hidden;
+                                            padding: 0;
+                                            transition: 0.4s ease-in-out;
+                                        }
+
+                                        &.show-dropdown-box {
+                                            height: auto;
+                                            max-height: 250px;
+                                            overflow-y: auto;
+                                            padding: 8px 0;
+                                            transition: 0.4s ease-in-out;
+
+                                        }
+
+                                        p {
+                                            padding: 4px 21px;
+                                            color: #000;
+                                            font-family: 'Poppins', sans-serif;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: normal;
+                                            transition: 0.3s ease-in-out;
+                                            cursor: pointer;
+
+                                            &:hover {
+                                                background: #00AEEF;
+                                                color: #FFF;
+                                                transition: 0.3s ease-in-out;
+                                            }
+                                        }
+                                    }
+
+                                    .demurrage-storage-side-dropdown-icon {
+                                        width: 34px;
+                                        height: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        border-radius: 0px 5px 5px 0px;
+                                        background: #F7F7F7;
+                                        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .demurrage-storage-rate-input-alignment {
+                                    width: 100%;
+                                    height: 40px;
+
+                                    input {
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 5px;
+                                        border: 0.5px solid rgba(0, 0, 0, 0.80);
+                                        opacity: 0.8;
+                                        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                                        padding: 0 8px;
+                                        color: #000;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                    }
+                                }
+                            }
+                        }
+
+                        .demurrage-storage-delete-row {
+                            padding: 12px 0 0 0;
+
+                            p {
+                                color: #000;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+
+                .demurrage-storage-button-alignment {
+                    text-align: center;
+                    padding: 90px 0 0 0;
+
+
+                    @include breakpoint("max-sm") {
+                        padding: 30px 0 0 0;
+                    }
+
+                    button {
+                        padding: 8px 24px;
+                        border-radius: 5px;
+                        background: #00AEEF;
+                        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                        cursor: pointer;
+                        color: #FFF;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        border: none;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

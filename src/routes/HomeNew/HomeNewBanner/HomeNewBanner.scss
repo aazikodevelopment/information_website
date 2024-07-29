@@ -1,0 +1,178 @@
+@import "../../../styles/mixins/global.scss";
+
+.home-new-banner-section {
+    display: flex;
+    // align-items: center;
+    padding: 143px 0 0 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../../../assets/Image/new-earth-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @include breakpoint("sm-max") {
+        height: auto;
+        display: block;
+    height: 100vh;
+
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background: rgba(0, 0, 0, 0.60);
+    }
+
+    @include breakpoint("max-sm") {
+        padding: 0 0 120px 0;
+        height: auto;
+        display: block;
+    }
+
+    .home-new-banner-all-details-alignment {
+        width: 100%;
+
+        .home-new-banner-grid {
+
+            @include breakpoint("max-sm") {
+                padding: 100px 0 0 0;
+                
+            }
+
+            .image-center {
+                display: flex;
+                padding: 0 0 20px 0;
+                justify-content: center;
+
+                img {
+                    max-width: 350px;
+                }
+            }
+
+            .home-new-banner-side-details-alignment {
+                position: relative;
+
+                h1 {
+                    font-size: 60px;
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: normal;
+                    color: #fff;
+                    padding: 12px 0 0 0;
+                    font-family: 'Poppins', sans-serif;
+
+                    span {
+                        color: #00AEEF;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 60px;
+                        font-weight: 700;
+                        color: #00AEEF;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 30px;
+                        }
+                    }
+
+                    @include breakpoint("max-sm") {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                .home-all-button-center-alignment {
+                    padding: 30px 0 0 0;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    gap: 42px;
+
+
+                    @include breakpoint("max-sm") {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        gap: 20px;
+                        max-width: 220px;
+                        margin: 0 auto;
+                    }
+
+                    button {
+                        border-radius: 10px;
+                        border: 1px solid #00AEEF;
+                        background: linear-gradient(270deg, #00AEEF 0%, rgba(217, 217, 217, 0.00) 92.86%);
+                        background-color: transparent;
+                        color: #FFFFFF;
+                        padding: 12px 15px 13px 54px;
+                        font-size: 18px;
+                        font-family: 'Open Sans', sans-serif;
+                        cursor: pointer;
+                        font-weight: 700;
+                        line-height: 24px;
+                        position: relative;
+                        border-left: none;
+
+                        &:hover {
+                            img {
+                                animation: rotating 4s linear infinite;
+                            }
+                        }
+
+
+                        @include breakpoint("max-sm") {
+                            width: 100%;
+                            padding: 14px;
+                            font-size: 14px;
+                        }
+
+                        .button-icon-alignment {
+                            position: absolute;
+                            top: -23px;
+                            left: 0;
+                            transform: translateX(-40px);
+                        }
+
+                        &.how-demo-button {
+                            border-right: none;
+                            background: linear-gradient(90deg, #00AEEF 0%, rgba(217, 217, 217, 0.00) 92.86%);
+                            padding: 12px 54px 13px 15px;
+
+                            .button-icon-alignment {
+                                right: 0;
+                                transform: translateX(90px);
+                            }
+                        }
+
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+}
+
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+.mobile-view-top-padding {
+    padding: 8px 0 0 0;
+}
+
+.header-alignment{
+    color: white;
+}

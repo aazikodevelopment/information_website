@@ -1,0 +1,134 @@
+@import "../../../styles/mixins/global.scss";
+
+.tracking-details-all-content-alignment {
+  padding: 24px 0 100px 0;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 610px 1fr;
+    gap: 24px;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .grid-items {
+        height: 100%;
+        
+        .map {
+            height: 100%;
+
+            iframe {
+                border: none;
+                border-radius: 4px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+      .white-box {
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 12px;
+
+        .center-text {
+          padding: 30px 0 120px 0;
+
+          .icon-center-alignment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            text-transform: capitalize;
+            color: #606060;
+            max-width: 430px;
+            margin: 10px auto 0 auto;
+            text-align: center;
+
+            @include breakpoint("max-sm") {
+              font-size: 14px;
+              line-height: 22px;
+            }
+          }
+        }
+
+        .text {
+          padding: 20px 0;
+          border-bottom: 1px solid #bababa;
+
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            text-transform: capitalize;
+            color: #606060;
+            max-width: 437px;
+
+            @include breakpoint("max-sm") {
+              font-size: 14px;
+              line-height: 22px;
+            }
+          }
+        }
+
+        .enter-container {
+          padding: 12px;
+          border-radius: 8px;
+          background-color: #33bef217;
+          display: grid;
+          grid-template-columns: 1fr 105px;
+          gap: 9px;
+
+          input {
+            width: 100%;
+            background: #ffffff;
+            border-radius: 8px;
+            height: 50px;
+            padding: 0 15px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #bababa;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+            @include breakpoint("max-sm") {
+              font-size: 14px;
+              line-height: 22px;
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+          button {
+            border: none;
+            cursor: pointer;
+            height: 50px;
+            width: 100%;
+            font-weight: 500;
+            font-size: 16px;
+            background: #00aeef;
+            border-radius: 8px;
+            padding: 12px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #ffffff;
+          }
+          ::placeholder {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: capitalize;
+            color: #bababa;
+          }
+        }
+      }
+    }
+  }
+}

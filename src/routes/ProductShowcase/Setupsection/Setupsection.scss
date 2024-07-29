@@ -1,0 +1,75 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.setup-section-all-content-alignment-for-page {
+  background: linear-gradient(100.84deg, #018dc1 9.55%, #76d4f7 89.68%);
+  padding: 50px 0;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    @include breakpoint("max-sm") {
+      gap: 20px;
+      grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .grid-items {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+
+      span {
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140.5%;
+        color: #606060;
+      }
+      p {
+        position: relative;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140.5%;
+        color: #606060;
+        margin: 0 0 48px 0;
+
+        &::before {
+          position: absolute;
+          width: 80px;
+          height: 3px;
+          background-color: #00aeef;
+          content: "";
+          left: 0;
+          bottom: -14px;
+        }
+      }
+    }
+  }
+
+  .section-title {
+    padding: 0 0 30px 0;
+    h1 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140.5%;
+      margin: 0 0 10px 0;
+      text-align: center;
+      color: #ffffff;
+      @include breakpoint("max-sm") {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140.5%;
+      text-align: center;
+      margin: 0 auto;
+      color: #ffffff;
+      max-width: 795px;
+    }
+  }
+}

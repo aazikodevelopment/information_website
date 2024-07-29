@@ -1,0 +1,15 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_fire 1" clip-path="url(#clip0_1_25514)">
+<path id="Vector" d="M42 0H8C3.58172 0 0 3.58172 0 8V42C0 46.4183 3.58172 50 8 50H42C46.4183 50 50 46.4183 50 42V8C50 3.58172 46.4183 0 42 0Z" fill="url(#paint0_linear_1_25514)"/>
+<path id="Vector_2" d="M35.2587 20.381C31.2425 13.2574 19.463 11.6982 19.463 11.6982C19.463 11.6982 24.8985 17.6337 17.9522 22.3273C13.5597 25.2896 11.8232 29.1391 13.7049 33.3434C15.1458 36.5638 18.1942 37.8756 21.4791 38.3649C19.9092 35.4025 21.1243 31.7842 21.2587 31.3971C24.3286 36.0423 30.1296 31.3971 27.2157 26.3488C31.0329 27.1767 31.6028 33.8004 28.6726 37.9348C33.0006 36.5746 35.8823 33.1552 36.6726 30.1068C37.506 26.9187 36.8716 23.2305 35.2587 20.381Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1_25514" x1="50" y1="-8.59375" x2="-28.5007" y2="82.4613" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EA8B8B"/>
+<stop offset="1" stop-color="#EE4848"/>
+</linearGradient>
+<clipPath id="clip0_1_25514">
+<rect width="50" height="50" fill="white"/>
+</clipPath>
+</defs>
+</svg>

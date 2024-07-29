@@ -1,0 +1,59 @@
+@import '../../../styles/mixins/global.scss';
+
+.ts-success-story-section {
+    .ts-success-story-bg {
+        background: url("../../../assets/imges/blue-bg.png");
+        padding: 54px 0 50px 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .ts-suceess-heading-alignment {
+            text-align: center;
+
+            h5 {
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: #343434;
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                  }
+            }
+        }
+
+        .ts-sucess-details-alignment {
+            padding: 30px 0 0 0;
+
+            .ts-sucess-details-grid-alignment {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+
+                @include breakpoint("max-sm") {
+                    grid-template-columns: repeat(1 , 1fr);
+                }
+
+                .ts-sucess-box-alignment {
+                    background: #FFFFFF;
+                    border-radius: 8px;
+
+                    .ts-success-img-alignment {
+                        img {
+                            width: 100%;
+                            height: 168px;
+
+                            @include breakpoint("max-sm") {
+                                height: 240px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

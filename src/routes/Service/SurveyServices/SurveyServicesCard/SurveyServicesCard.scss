@@ -1,0 +1,47 @@
+@import "../../../../styles/mixins/global.scss";
+
+.survey-service-card-all-content-alignment {
+  padding: 50px 0;
+
+  h6 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto 30px auto;
+    color: #343434;
+    max-width: 641px;
+  }
+  .grid:last-child {
+    padding: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0 0 50px 0;
+
+    .grid-items {
+      .image {
+        img {
+          width: 100%;
+          border-radius: 12px;
+          height: 365px;
+          object-fit: cover;
+        }
+      }
+
+      ul {
+        padding-left: 1.25rem;
+
+        li {
+          font-weight: 400;
+          font-size: 16px;
+          padding: 0 0 5px 0;
+          line-height: 23px;
+          color: #606060;
+        }
+      }
+    }
+  }
+}

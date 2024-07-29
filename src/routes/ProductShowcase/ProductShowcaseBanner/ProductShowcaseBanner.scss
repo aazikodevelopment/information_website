@@ -1,0 +1,59 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.product-showcase-banner-all-contnet-alignment {
+  padding: 50px 0 100px 0;
+
+  @include breakpoint("max-sm") {
+    padding: 40px 0 60px 0;
+  }
+
+  background-color: #fff;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 593px;
+    gap: 74px;
+    align-items: center;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+
+    .grid-items {
+      .box {
+        width: 100%;
+        height: 315px;
+        background: #bababa;
+        box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      h1 {
+        max-width: 425px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 140.5%;
+        color: #00aeef;
+        margin: 0 0 10px 0;
+        @include breakpoint("max-sm") {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #606060;
+        max-width: 569px;
+     
+        @include breakpoint("max-sm") {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

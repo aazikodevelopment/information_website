@@ -1,0 +1,8 @@
+@import '../../styles/mixins/global.scss';
+
+.aaziko-logo {
+    img {
+        @include pointer;
+        max-width: 120px;
+    }
+}

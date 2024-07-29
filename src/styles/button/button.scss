@@ -1,0 +1,27 @@
+@mixin button-mixin {
+    padding: 14px 26px;
+    @include pointer;
+    @include flex-center;
+    border: 1px solid transparent;
+    @include normal14;
+    font-family: var(--primary-font);
+    border-radius: 999px;
+}
+
+.fill-button {
+    button {
+        @include button-mixin();
+        background-color: var(--theme-button-primary-background-color);
+        color: var(--theme-button-primary-text-color);
+
+    }
+}
+
+.outline-button {
+    button {
+        @include button-mixin();
+        background-color: transparent;
+        color: var(--theme-button-primary-outline-text-color);
+        border: 1px solid var(--theme-button-primary-outline-color);
+    }
+}

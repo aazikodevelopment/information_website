@@ -1,0 +1,128 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.new-key-benefits-all-content-alignment-for-page {
+  background-color: #fff;
+
+  .sec-grid {
+    display: grid;
+    grid-template-columns: 1fr 592px;
+    gap: 50px;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+
+    .sec-grid-items {
+      .image-style {
+        img {
+          width: 100%;
+        }
+      }
+
+      .all-icon-grid {
+        .icon-grid {
+          display: grid;
+          grid-template-columns: 34px 1fr;
+          gap: 12px;
+            align-items: center;
+            padding: 0 0 20px 0;
+          .icon-grid-items {
+            span {
+              display: block;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 140.5%;
+              color: #606060;
+            }
+          }
+        }
+      }
+
+      h6 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140.5%;
+        margin: 0 0 10px 0;
+        color: #343434;
+        @include breakpoint("max-sm") {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 574px 1fr;
+    gap: 50px;
+    padding: 0 0 100px 0;
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+    .grid-items {
+      .image-style {
+        img {
+          width: 100%;
+        }
+      }
+
+      .all-icon-text-contnet-alignment {
+        .icon-grid:last-child {
+          padding: 0;
+        }
+        .icon-grid {
+          display: grid;
+          grid-template-columns: 41px 1fr;
+          gap: 12px;
+          padding: 0 0 20px 0;
+          align-items: center;
+
+          .icon-grid-items {
+            span {
+              display: block;
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 140.5%;
+              padding: 0 0 10px 0;
+              color: #606060;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140.5%;
+              color: #bababa;
+            }
+          }
+        }
+      }
+
+      .text {
+        padding: 0 0 20px 0;
+        p {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 140.5%;
+          color: #343434;
+          margin: 0 0 10px 0;
+          @include breakpoint("max-sm") {
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140.5%;
+          color: #606060;
+          max-width: 512px;
+        }
+      }
+    }
+  }
+}

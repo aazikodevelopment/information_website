@@ -1,0 +1,42 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.resources-banner-all-content-alignment {
+  background-image: url("../../../assets/imges/resources.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 0;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 605px;
+    gap: 136px;
+    align-items: center;
+
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+    .grid-items {
+      h1 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 42px;
+        color: #ffffff;
+        max-width: 459px;
+
+        @include breakpoint("max-sm") {
+          font-size: 24px;
+          line-height: 34px;
+        }
+      }
+      .image {
+        img {
+            width: 100%;
+        }
+      }
+    }
+  }
+}

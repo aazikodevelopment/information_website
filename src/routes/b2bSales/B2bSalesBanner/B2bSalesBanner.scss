@@ -1,0 +1,52 @@
+@import "../../../styles/mixins/global.scss";
+
+.new-sales-banner-design {
+  background: rgba(0, 174, 239, 0.12);
+  padding: 150px 0 50px 0;
+
+
+  @include breakpoint("max-sm") {
+    padding: 50px 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 602px;
+    gap: 102px;
+    align-items: center;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+
+    .grid-items {
+      img {
+        width: 100%;
+      }
+      p {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 44px;
+        margin: 0 0 24px 0;
+        text-transform: capitalize;
+        color: #343434;
+      }
+
+      span {
+        display: block;
+        max-width: 455px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-transform: capitalize;
+        color: #606060;
+
+        @include breakpoint("max-sm") {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

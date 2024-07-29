@@ -1,0 +1,72 @@
+@import "../../styles/mixins/global.scss";
+
+.truck-types-section {
+    .truck-types-alignment {
+        padding: 60px 0;
+
+        .truck-types-header {
+            h6 {
+                color: #000;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+            }
+        }
+
+        .truck-type-body-alignment {
+            padding: 42px 0 0 0;
+
+            .truck-type-body-grid-alignment {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 42px 21px;
+
+                .truck-type-body-grid-item {
+                    .truck-type-body-box {
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 1px solid rgba(0, 0, 0, 0.20);
+                        background: #FFF;
+                        box-shadow: 0px 0px 8px 0px rgba(202, 202, 202, 0.50);
+                        height: 326px;
+                        padding: 18px 20px 22px 20px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        h6 {
+                            color: #000;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            text-align: center;
+                        }
+
+                        .turck-type-img {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .truck-type-learn-more {
+                            a {
+                                color: #00AEEF;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

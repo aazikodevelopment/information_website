@@ -1,0 +1,252 @@
+@import "../../../../styles/mixins/global.scss";
+
+.bulkcargo-details-all-cotnent-alignment {
+  padding: 24px 0 100px 0;
+
+
+  @include breakpoint("max-sm") {
+    padding: 24px 0 40px 0;
+  }
+  .box {
+    padding: 60px 80px;
+    border-radius: 8px;
+    background-color: #fff;
+
+    @include breakpoint("max-sm") {
+      padding: 40px 0px;
+    }
+
+    .card-grid {
+      display: grid;
+      gap: 34px;
+      grid-template-columns: repeat(2, 1fr);
+
+      @include breakpoint("max-md") {
+        grid-template-columns: repeat(1 , 1fr);
+      }
+
+      .card-grid-items {
+        background: #ffffff;
+        box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        .icon {
+          height: calc(32px + 24px);
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          color: #343434;
+          margin: 0 0 6px 0;
+        }
+
+        span:last-child {
+          padding: 0;
+        }
+
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 16px;
+          max-width: 450px;
+          padding: 0 0 20px 0;
+          line-height: 23px;
+          color: #606060;
+        }
+      }
+    }
+
+    .three-grid {
+      display: grid;
+      grid-template-columns: 1fr 497px;
+      align-items: center;
+      padding: 70px 0 100px 0;
+      gap: 34px;
+
+      @include breakpoint("max-md") {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 40px;
+        padding: 40px 0;
+      }
+
+      .three-grid-items {
+        span {
+          display: block;
+          font-weight: 400;
+          padding: 0 0 20px 0;
+          font-size: 16px;
+          line-height: 23px;
+          color: #606060;
+
+          @include breakpoint("max-sm"){
+            font-size: 14px;
+          }
+        }
+
+        span:last-child {
+          padding: 0;
+        }
+
+        .hand-image {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .sec-grid {
+      display: grid;
+      grid-template-columns: 1fr 516px;
+      gap: 35px;
+
+      @include breakpoint("max-md") {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 40px;
+      }
+      .sec-grid-items {
+        .image-style {
+          img {
+            width: 100%;
+            height: 420px;
+            border-radius: 28px;
+            object-fit: cover;
+
+            @include breakpoint("max-sm"){
+              height: 280px;
+            }
+          }
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 19px;
+          line-height: 24px;
+          color: #343434;
+          margin: 0 0 10px 0;
+        }
+        span:last-child {
+          padding: 0;
+        }
+        span {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          padding: 0 0 20px 0;
+          color: #606060;
+          display: block;
+        }
+      }
+    }
+
+    .center-text {
+      padding: 0 0 80px 0;
+
+      @include breakpoint("max-sm") {
+        padding: 0 0 40px 0;
+      }
+      p {
+        max-width: 756px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #606060;
+        margin: 0 auto;
+        text-align: center;
+
+        @include breakpoint("max-sm"){
+          font-size: 14px;
+        }
+      }
+
+      .button-center-alignment {
+        padding: 20px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          border: none;
+          cursor: pointer;
+          background: #00aeef;
+          border-radius: 7px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 130.5%;
+          color: #fff;
+          padding: 10px 28px;
+        }
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 288px;
+      gap: 122px;
+      padding: 0 0 60px 0;
+      
+      @include breakpoint("max-md") {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 40px;
+      }
+      .grid-items {
+        p {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          margin: 0 0 14px 0;
+          color: #343434;
+        }
+
+        .button-text-alignment {
+          display: flex;
+          align-items: center;
+          gap: 11px;
+
+          a {
+            display: block;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130.5%;
+            color: #00aeef;
+          }
+
+          button {
+            background: #00aeef;
+            border-radius: 7px;
+            padding: 6px 18px;
+            border: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          color: #606060;
+          padding: 0 0 20px 0;
+          max-width: 602px;
+
+          @include breakpoint("max-sm"){
+            font-size: 14px;
+          }
+        }
+
+        .image-style {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

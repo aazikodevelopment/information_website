@@ -1,0 +1,254 @@
+.container {
+  padding: 16px 0px;
+
+  .TowGridAlign {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center !important;
+    gap: 16px;
+
+    div {
+      width: 500px;
+      margin: 0 auto !important;
+
+      h1 {
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 85.33px;
+        color: #042953;
+      }
+
+      div {
+        img {
+          width: 540px;
+          height: 532px;
+          top: 97px;
+          left: 750px;
+          gap: 0px;
+          opacity: 0px;
+
+        }
+      }
+    }
+
+    .ImageGrid {
+      img {
+        width: 561px;
+        height: 583px;
+        top: 147px;
+        left: 739px;
+        gap: 0px;
+        opacity: 0px;
+      }
+    }
+  }
+
+  .TowGridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center !important;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 32px;
+
+    .GridBoxDesign {
+      width: 450px;
+      height: 650px;
+      border: 2px solid #00A551;
+      border-radius: 160px 160px 193.5px 193.5px;
+      margin: 0 auto !important;
+
+      .SecondBorder {
+        border: 2px solid #00ADEE;
+        padding: 16px;
+        border-radius: 155px 155px 155px 155px;
+        margin: 0 auto !important;
+
+        div {
+          background: #FFFFFF;
+          width: 400px;
+          margin: 0 auto !important;
+          height: 300px;
+          border-radius: 171.5px 171.5px 193.5px 193.5px;
+          box-shadow: 0px 0px 6px 5px #00000026;
+          padding: 16px 0px;
+
+          img {
+            width: 272.54px !important;
+            height: 270.43px !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto !important;
+          }
+        }
+      }
+
+      h2 {
+        margin-top: 32px;
+        font-family: Montserrat;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34.13px;
+        text-align: center;
+        color: #042953;
+      }
+
+      div {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21.94px;
+        text-align: center;
+        color: #000000;
+        padding: 0px 36px;
+      }
+    }
+  }
+}
+
+
+
+
+// Define breakpoint variables
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+@media (max-width: $breakpoint-xs) {
+  .container {
+    padding: 16px !important;
+
+    .TowGridAlign {
+      display: block !important;
+
+      div {
+        width: 100% !important;
+
+        h1 {
+          font-size: 56px !important;
+          line-height: 60.33px !important;
+        }
+      }
+
+      .ImageGrid {
+        margin-top: 16px !important;
+
+        img {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .TowGridBox {
+      display: block !important;
+
+      .GridBoxDesign {
+        width: 100% !important;
+        margin-top: 16px !important;
+
+        .SecondBorder {
+          border-radius: 136px;  
+          div {
+            width: 100% !important;
+          }
+        }
+
+        h2 {
+          padding: 0px 16px !important;
+        }
+
+        div {
+          padding: 0px 16px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+  .container {
+    padding: 16px !important;
+
+    .TowGridAlign {
+      display: grid !important;
+
+      div {
+        width: 100% !important;
+
+        h1 {
+          font-size: 36px !important;
+          line-height: 40.33px !important;
+        }
+      }
+
+      .ImageGrid {
+        margin-top: 16px !important;
+
+        img {
+          width: 100% !important;
+        }
+      }
+    }
+
+    .TowGridBox {
+      gap: 10px;
+
+      .GridBoxDesign {
+        width: 360px;
+
+        .SecondBorder {
+          border-radius: 136px;
+          div {
+            background: #FFFFFF;
+            width: 310px;
+
+            img {
+              width: 250.54px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+  .container {
+    .TowGridAlign {
+      div {
+        width: 100% !important;
+
+        h1 {
+          font-size: 56px;
+          line-height: 70.33px;
+        }
+      }
+    }
+    .TowGridBox {
+      gap: 16px;  
+      .GridBoxDesign {
+        width: 100%;
+        .SecondBorder {
+          border-radius: 136px;  
+          div {
+            width: 100%;
+          }
+        }
+      }
+    }
+  
+  }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  .container {
+    .TowGridAlign {
+      div {
+        width: 400px !important;
+      }
+    }
+  }
+}

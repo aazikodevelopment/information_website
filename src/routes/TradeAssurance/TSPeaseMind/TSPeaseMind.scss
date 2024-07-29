@@ -1,0 +1,130 @@
+@import '../../../styles/mixins/global.scss';
+
+.tSPeaseMind-section {
+    background: #fff;
+
+    .tSPeaseMind-alignment {
+        border-bottom: 1px solid #BABABA;
+
+        .tSPeaseMind-all-content {
+            padding: 50px 0 30px 0;
+            text-align: center;
+
+
+            h5 {
+                font-family: 'Lato', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: #343434;
+                padding: 0 0 10px 0;
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                  }
+            }
+
+            p {
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                max-width: 918px;
+                margin: auto;
+                color: #606060;
+            }
+
+
+            .tSPeaseMind-option-details {
+                padding: 40px 0 0 0;
+
+                .tSPeaseMind-option-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 25px;
+
+                    @include breakpoint("max-sm") {
+                        grid-template-columns: repeat(1 , 1fr);
+                        gap: 20px;
+                    }
+
+                    .tSPeaseMind-option-gridItem {
+                        .tSPeaseMind-option-box {
+                            background: rgba(255, 255, 255, 0.5);
+                            border: 0.5px solid #BABABA;
+                            box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.08);
+                            border-radius: 8px;
+                            padding: 16px 30px;
+                            display: flex;
+                            align-items: center;
+                            gap: 30px;
+
+                            .tSPeaseMind-option-icon {
+                                width: 77px;
+                                height: 77px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            p {
+                                font-family: 'Lato', sans-serif;
+                                font-weight: 700;
+                                font-size: 27px;
+                                line-height: 32px;
+                                color: #343434;
+                                text-align: left;
+                                max-width: 100%;
+                                margin: 0%;
+
+                                @include breakpoint("max-sm") {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tSPeaseMind-tips-alignment {
+        padding: 30px 0 50px 0;
+
+        .tSPeaseMind-tips-contents {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+
+            .tSPeaseMind-tips-icon {
+                width: 47px;
+                height: 45px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+
+            .tSPeaseMind-tips-notes {
+                p {
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #606060;
+
+                    span {
+
+                        color: #F5821F;
+                    }
+                }
+            }
+        }
+    }
+}

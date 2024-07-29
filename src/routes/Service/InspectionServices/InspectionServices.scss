@@ -1,0 +1,125 @@
+@import "../../../styles/mixins/global.scss";
+
+.inspection-services-all-content-alignment-for-page {
+    padding: 24px 0 100px 0;
+
+    @include breakpoint("max-sm") {
+        padding: 24px 0 40px 0;
+    }
+
+    .white-box {
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 40px 30px;
+
+
+        @include breakpoint("max-sm") {
+            padding: 40px 30px;
+        }
+
+        .inspection-services-heding-alignment {
+            text-align: center;
+            padding: 0 0 30px 0;
+
+            h4 {
+                color: #343434;
+                font-size: 24px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                line-height: normal;
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                  }
+            }
+        }
+
+        .inspection-services-side-details-alignment {
+            display: grid;
+            grid-template-columns: 269px 1fr;
+            gap: 30px;
+
+            @include breakpoint("max-md") {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .inspection-services-sideItem {
+                &:nth-child(2) {
+                    border-left: 1px solid #BABABA;
+                    height: 100%;
+
+                    @include breakpoint("max-md") {
+                        border-top: 1px solid #BABABA;
+                        border-left: none ;
+                    }
+
+                }
+
+                .inspection-services-list-alignemnt {
+                    ul {
+                        list-style-position: inside;
+
+                        li {
+                            color: #606060;
+                            font-size: 16px;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 400;
+                            line-height: 185.5%;
+                        }
+                    }
+                }
+
+                .inspection-services-all-details-alignment {
+                    padding: 0 0 30px 30px;
+                    @include breakpoint("max-sm") {
+                     padding: 20px 0 20px 0;
+                    }
+                    .inspection-services-all-heading-alignment {
+                        padding: 0 0 11px 0;
+
+                        h5 {
+                            color: #00AEEF;
+                            font-size: 20px;
+                           font-family: 'Poppins', sans-serif;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+
+                    .inspection-services-all-child-details-alignment {
+                        p {
+                            color: #606060;
+                            font-size: 16px;
+                           font-family: 'Poppins', sans-serif;
+                            font-weight: 400;
+                            line-height: 135%;
+                            padding: 0 0 18px 0;
+
+                            &:last-child {
+                                padding: 0;
+                            }
+
+                            &.top-padding {
+                                padding: 18px 0 0 0;
+                            }
+                        }
+
+                        ul {
+                            list-style-position: inside;
+                            list-style-type: none;
+
+                            li {
+                                color: #606060;
+                                font-size: 16px;
+                               font-family: 'Poppins', sans-serif;
+                                font-weight: 400;
+                                line-height: 135%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

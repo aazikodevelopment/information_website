@@ -1,0 +1,29 @@
+@import '../../styles/mixins/global.scss';
+
+.how-we-work-hero-banner {
+    background-image: url("../../assets/images/how-work.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 80px 0;
+    position: relative;
+    @include flex-center;
+    justify-content: center;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        content: "";
+    }
+
+    h1 {
+        @include heading-1;
+        color: var(--theme-white-color);
+        position: relative;
+        @include text-center;
+    }
+}

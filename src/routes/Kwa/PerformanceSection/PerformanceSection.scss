@@ -1,0 +1,103 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.perfomance-section-all-contnet-alignment {
+  background-color: #fff;
+  padding: 0 0 100px 0;
+  .text {
+    padding: 0 0 32px 0;
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      color: #343434;
+      @include breakpoint("max-sm") {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .main-text-all-content-alignment {
+    .icon-grid-all-contnet-alignment {
+      .icon-grid {
+        display: grid;
+        grid-template-columns: 38px 1fr;
+        gap: 14px;
+        padding: 0 0 20px 0;
+
+        .icon-grid-items {
+          p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140.5%;
+            color: #606060;
+            margin: 0 0 10px 0;
+          }
+
+          span {
+            display: block;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140.5%;
+            color: #bababa;
+          }
+        }
+      }
+    }
+
+    .sub-text {
+      padding: 0 0 20px 0;
+      h5 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140.5%;
+        text-align: center;
+        color: #343434;
+        margin: 0 0 10px 0;
+        @include breakpoint("max-sm") {
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140.5%;
+        color: #606060;
+      }
+    }
+  }
+
+  .sec-grid {
+    display: grid;
+    grid-template-columns:  632px 1fr;
+    gap: 50px;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+    }
+  }
+
+  .first-grid {
+    display: grid;
+    grid-template-columns: 1fr 632px;
+    gap: 50px;
+    padding: 0 0 100px 0;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+    }
+   
+
+    .first-grid-items {
+      .image-style {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,348 @@
+@import "../../styles/mixins/index.scss";
+
+.work-with-aaziko-section {
+    background-color: #f8f8f8;
+
+    .work-with-aaziko-banner-alignment {
+        background-image: url("../../assets/Image/bg-img-2.png");
+        width: 100%;
+        height: 530px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint("max-sm") {
+            height: 320px;
+        }
+
+        .work-with-aaziko-banner-details {
+            h6 {
+                color: rgba(255, 255, 255, 0.8);
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2px;
+
+                @include breakpoint("max-sm") {
+                    font-size: 18px;
+                }
+
+                img {
+                    width: 153px;
+
+                    @include breakpoint("max-sm") {
+                        width: 120px;
+                    }
+                }
+            }
+
+            p {
+                color: #FFF;
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: capitalize;
+                max-width: 658px;
+                margin: 0 auto;
+                padding: 22px 0 0 0;
+
+                @include breakpoint("max-sm") {
+                    font-size: 12px;
+                    padding: 8px 0 0 0;
+                }
+
+            }
+        }
+    }
+
+    .work-with-aaziko-all-details-alignment {
+        padding: 86px 0 42px 0;
+
+        @include breakpoint("max-sm") {
+            padding: 40px 0;
+        }
+
+        .work-with-aaziko-top-details {
+            .work-with-aaziko-top-details-grid {
+                display: grid;
+                grid-template-columns: 406px 1fr;
+                gap: 54px;
+                align-items: center;
+                text-align: center;
+
+                @include breakpoint("max-md") {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                }
+
+                @include breakpoint("max-sm") {
+                    grid-template-columns: 1fr;
+                    gap: 10px;
+                }
+
+                .work-with-aaziko-top-details-grid-item {
+                    .work-with-aaziko-all-child-details {
+                        h6 {
+                            color: var(--theme-heading-text-color);
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 38px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            text-transform: capitalize;
+                            opacity: 0.8;
+                            max-width: 500px;
+
+                            @include breakpoint("max-md") {
+                                margin: 0 auto;
+                            }
+
+                            @include breakpoint("max-sm") {
+                                max-width: 100%;
+                                font-size: 18px;
+                            }
+                        }
+
+                        p {
+                            padding: 26px 0 0 0;
+                            color: var(--theme-heading-text-color);
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            text-transform: capitalize;
+                            max-width: 658px;
+
+                            @include breakpoint("max-md") {
+                                margin: 0 auto;
+                            }
+
+                            @include breakpoint("max-sm") {
+                                padding: 8px 0 0 0;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .transform-job-details-alignment {
+            padding: 122px 0 0 0;
+
+            @include breakpoint("max-sm") {
+                padding: 40px 0 0 0;
+            }
+
+            .transform-job-details-heading-alignment {
+                text-align: center;
+
+                h5 {
+                    color: rgba(0, 0, 0, 0.90);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+
+                    @include breakpoint("max-sm") {
+                        font-size: 20px;
+                    }
+                }
+
+                h6 {
+                    padding: 26px 0 0 0;
+                    color: rgba(0, 0, 0, 0.90);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+
+                    @include breakpoint("max-sm") {
+                        padding: 6px 0 0 0;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .transform-job-form-alignment {
+                border-radius: 10px;
+                border: 2px solid #00AEEF;
+                background: #FFF;
+                // height: 468px;
+                max-width: 970px;
+                margin: 58px auto 0 auto;
+
+                @include breakpoint("max-sm") {
+                    max-width: 100%;
+                    margin: 30px 0 0 0;
+                }
+
+                .form-top-banner {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        object-fit: contain;
+                    }
+                }
+
+                .form-input-alignment {
+                    padding: 28px 58px 0 58px;
+
+                    @include breakpoint("max-sm") {
+                        padding: 16px;
+                    }
+
+                    .form-input-first-grid-alignment {
+                        display: grid;
+                        grid-template-columns: 330px 1fr;
+                        gap: 21px;
+                        margin: 0 0 25px 0;
+
+                        @include breakpoint("max-sm") {
+                            grid-template-columns: 1fr;
+                            margin: 0 0 8px 0;
+                            gap: 8px;
+                        }
+                    }
+
+                    .form-input-second-grid-alignment {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 21px;
+
+                        @include breakpoint("max-sm") {
+                            grid-template-columns: 1fr;
+                            gap: 8px;
+                        }
+                    }
+
+
+                    .form-input {
+                        border-radius: 10px;
+                        border: 1px solid #00AEEF;
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        gap: 14px;
+                        padding: 0 20px;
+
+                        @include breakpoint("max-sm") {
+                            height: 40px;
+                            padding: 0 10px;
+                            gap: 6px;
+                        }
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            color: var(--theme-heading-text-color);
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            background: transparent;
+                            border: none;
+
+                            @include breakpoint("max-sm") {
+                                font-size: 14px;
+                            }
+
+                            &::placeholder {
+                                color: rgba(0, 0, 0, 0.6);
+                            }
+                        }
+
+                        .form-icon-alignment {
+                            width: 24px;
+                            height: 24px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .form-button-alignment {
+                        padding: 62px 0 40px 0;
+                        text-align: center;
+
+                        @include breakpoint("max-sm") {
+                            padding: 20px 0;
+                        }
+
+                        button {
+                            padding: 14px 38px;
+                            border-radius: 10px;
+                            background: #00AEEF;
+                            color: #FFF;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            cursor: pointer;
+                            border: none;
+
+                            @include breakpoint("max-sm") {
+                                padding: 8px 18px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+                    .thank-you-message-box-alignment {
+                        border-radius: 10px;
+                        background: rgba(0, 174, 239, 0.50);
+                        max-width: 380px;
+                        margin: 0 auto 20px auto;
+                        padding: 20px 11px 17px 24px;
+                        cursor: pointer;
+
+                        @include breakpoint("max-sm") {
+                            max-width: 100%;
+                            padding: 8px;
+                        }
+
+                        p {
+                            color: #FFF;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            text-align: center;
+
+                            @include breakpoint("max-sm") {
+                                font-size: 14px;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

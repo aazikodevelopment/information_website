@@ -1,0 +1,374 @@
+@import '../../../styles/mixins/global.scss';
+
+.insurance-goods-information-main {
+    .insurance-goods-information-alignment {
+        .insurance-goods-heading {
+            h4 {
+                color: #253858;
+                font-family: 'Archivo', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+
+        .insurance-goods-form-alignment {
+            margin: 28px 0 0 0;
+
+            .two-insurance-goods-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+
+                .insurance-goods-input {
+                    width: 100%;
+                    height: 56px;
+                    border: 1px solid #253858;
+                    border-radius: 10px;
+                    position: relative;
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        background: transparent;
+                        border: none;
+                        padding: 0 20px;
+                        color: #303030;
+                        font-family: 'Archivo', sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    .insurance-goods-input-heading {
+                        position: absolute;
+                        top: -14px;
+                        left: 18px;
+                        background: #fff;
+                        padding: 0 10px;
+
+                        span {
+                            color: #606060;
+                            font-family: 'Archivo', sans-serif;
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+
+            }
+
+            .option-insurance-main-details-alignment {
+                margin: 40px 0 0 0;
+
+                label {
+                    color: #303030;
+                    font-family: 'Archivo', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                }
+
+
+                .option-input-box-grid-alignment {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    margin: 20px 0 0 0;
+
+                    .option-input-box-alignment {
+                        border-radius: 10px;
+                        border: 1px solid #253858;
+                        width: 100%;
+                        height: 75px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 20px;
+                        transition: 0.4s ease-in-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            border: 1px solid #0065FF;
+                            transition: 0.4s ease-in-out;
+
+                            .option-left-side-alignment {
+                                h6 {
+                                    color: #0065FF
+                                }
+                            }
+                        }
+
+                        .option-left-side-alignment {
+                            h6 {
+                                color: #253858;
+                                font-family: 'Archivo', sans-serif;
+                                font-size: 20px;
+                                font-weight: 400;
+                                line-height: 21px;
+                                padding: 0 0 10px 0;
+                            }
+
+                            p {
+                                color: #606060;
+                                font-family: 'Archivo', sans-serif;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 18px;
+                            }
+                        }
+
+                        .option-right-side-alignment {
+                            width: 25px;
+                            height: 25px;
+                            cursor: pointer;
+
+                            input[type="radio"] {
+                                width: 100%;
+                                height: 100%;
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+
+                .shipped-three-grid-alignment {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+                    margin: 20px 0 0 0;
+
+                    .shipped-three-grid-box {
+                        border-radius: 10px;
+                        border: 1px solid #253858;
+                        height: 56px;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        transition: 0.4s ease-in-out;
+
+                        p {
+                            color: #303030;
+                            font-family: 'Archivo', sans-serif;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 22px;
+                        }
+
+                        &:hover {
+                            transition: 0.4s ease-in-out;
+                            border: 1px solid #0065FF;
+
+                            p {
+                                color: #0065FF;
+                            }
+                        }
+
+                    }
+                }
+
+                .making-journey-grid-alignment {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    gap: 24px;
+                    margin: 20px 0 0 0;
+
+                    .making-journey-grid-box {
+                        border-radius: 10px;
+                        border: 1px solid #253858;
+                        width: 100%;
+                        height: 56px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 20px 0 10px;
+                        cursor: pointer;
+
+                        p {
+                            color: #303030;
+                            font-family: 'Archivo', sans-serif;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 20px;
+                        }
+
+                        .making-journey-checkbox-alignment {
+                            width: 20px;
+                            height: 20px;
+                            cursor: pointer;
+
+                            input[type="radio"] {
+                                width: 100%;
+                                height: 100%;
+                                padding: 0;
+                                margin: 0;
+                                cursor: pointer;
+                                text-indent: -999px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .insurance-invoice-value-alignment {
+            margin: 40px 0 0 0;
+
+            .invoice-value-heading {
+                h6 {
+                    color: #253858;
+                    font-family: 'Archivo', sans-serif;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 28px;
+                }
+            }
+
+            .insurance-invoice-value-grid {
+                display: grid;
+                grid-template-columns: 172px 1fr 1fr 174px;
+                gap: 20px;
+                margin: 28px 0 0 0;
+
+                .insurance-invoice-value-grid-box {
+                    border-radius: 10px;
+                    border: 1px solid #253858;
+                    width: 100%;
+                    height: 56px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    position: relative;
+                    padding: 0 20px;
+
+                    p {
+                        color: #253858;
+                        font-family: 'Archivo', sans-serif;
+                        font-size: 22px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    img {
+                        display: block;
+                        cursor: pointer;
+                    }
+
+                    .insurance-input-invoice-label {
+                        position: absolute;
+                        top: -14px;
+                        left: 10px;
+                        padding: 0 6px;
+                        background: #fff;
+
+                        span {
+                            color: #606060;
+                            font-family: 'Archivo', sans-serif;
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 21px;
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        color: #808080;
+                        font-family: 'Archivo', sans-serif;
+                        font-size: 18px;
+                        font-weight: 300;
+                        line-height: 22px;
+                        border: none;
+                        background-color: transparent;
+                        padding: 0 0 0 10px;
+                    }
+
+                    .rate-input-alignment {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            color: #303030;
+                            font-family: 'Archivo', sans-serif;
+                            font-size: 20px;
+                            font-weight: 300;
+                            line-height: 24px;
+                            padding: 0;
+                        }
+
+                        span {
+                            color: #808080;
+                            font-family: 'Archivo', sans-serif;
+                            font-size: 20px;
+                            font-weight: 300;
+                            line-height: 24px;
+                        }
+                    }
+
+                }
+            }
+
+            .address-grid-alignment {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                margin: 20px 0 0 0;
+
+                .address-grid-box-alignment {
+                    border-radius: 10px;
+                    border: 1px solid #253858;
+                    padding: 0 30px;
+                    width: 100%;
+                    height: 56px;
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        color: #808080;
+                        font-family: 'Archivo', sans-serif;
+                        font-size: 18px;
+                        font-weight: 300;
+                        line-height: 24px;
+                        border: none;
+                        background: transparent;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .insurance-form-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 0 0 0;
+        button {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 126px;
+            border-radius: 10px;
+            background: #0065FF;
+            color: #FFF;
+            font-family: 'Archivo', sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28px;
+            height: 56px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@import '../../styles/mixins/global.scss';
+
+.inspection-partner-service-section {
+    background: #F4F6FD;
+
+    .inspection-parter-services-banner-alignment {
+        padding: 38px 0;
+
+        .inspection-parter-services-grid {
+            display: grid;
+            grid-template-columns: 656px 1fr;
+            gap: 50px;
+
+
+            @include breakpoint("max-sm") {
+                grid-template-columns: repeat(1 , 1fr);
+                gap: 24px;
+            }
+
+            .inspection-parter-services-grid-item {
+                .left-details {
+                    border-radius: 90px 2px;
+                    background: #B3E7FA;
+                    height: 390px;
+                    padding: 51px 22px 66px 119px;
+
+
+                    @include breakpoint("max-sm") {
+                        padding: 20px;
+                        height: auto;
+                        border-radius: 8px;
+                    }
+
+                    h5 {
+                        color: #0D1D2D;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 39px;
+                    
+                    @include breakpoint("max-sm") {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    }
+
+                    p {
+                        color: #0D1D2D;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        letter-spacing: 0.8px;
+                        padding: 53px 0 0 0;
+
+                        @include breakpoint("max-sm") {
+                            padding: 20px 0 0 0;
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+
+                .left-side-other-box-alignment {
+                    padding: 30px 0 0 0;
+
+                    &:last-child {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        padding: 0;
+                        position: relative;
+                        right: -120px;
+                        top: -10px;
+
+
+                        .other-box {
+                            margin: 0;
+                        }
+                    }
+
+                    .other-box {
+                        border-radius: 0px 25px 25px 25px;
+                        background: #B3E7FA;
+                        width: 325px;
+                        height: 128px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 0 0 119px;
+
+                        @include breakpoint("max-sm") {
+                            width: 100%;
+                            height: auto;
+                            margin: 0 0 20px 0;
+
+                            display: block;
+                            padding: 20px;
+                        }
+
+                        p {
+                            color: #0D1D2D;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 36px;
+                            font-weight: 600;
+                            line-height: 43px;
+                            letter-spacing: 5.4px;
+                        
+                            @include breakpoint("max-sm") {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+@import '../../../styles/mixins/global.scss';
+
+.payment-guarantee-section {
+    padding: 58px 0;
+
+    @include breakpoint("max-sm") {
+        padding: 40px 0;
+    }
+
+    .payment-heading-alignment {
+        h4 {
+            color: var(--theme-heading-text-color);
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 48px;
+            opacity: 0.8;
+            text-align: center;
+
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .payment-guarantee-details-alignment {
+        padding: 85px 0 0 0;
+
+
+        @include breakpoint("max-sm") {
+            padding: 40px 0 0 0;
+        }
+
+        .payment-guarantee-details-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 171px;
+
+            .mobile-view-hide {
+                @include breakpoint("max-sm") {
+                    display: none;
+                }
+            }
+
+            @include breakpoint("max-sm") {
+                display: grid;
+                grid-template-columns: repeat(1 , 1fr);
+                gap: 40px;
+            }
+
+            .payment-guarantee-details-child-details {
+                .payment-guarantee-details-box {
+                    width: 367px;
+                    height: 290px;
+                    border-radius: 10px;
+                    background: #F9F9F9;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .payment-guarantee-box-detais {
+                    padding: 28px 0 0 0;
+                    text-align: center;
+
+
+                    @include breakpoint("max-sm") {
+                        padding: 40px 0 0 0;
+                    }
+
+                    h6 {
+                        color: var(--theme-heading-text-color);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 30px;
+                        font-weight: 600;
+                        line-height: 38px;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+
+                    p {
+                        padding: 26px 0 0 0;
+                        color: var(--theme-heading-text-color);
+                        text-align: center;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 24px;
+                        font-weight: 500;
+                        line-height: 32px;
+                        max-width: 367px;
+                        margin: 0 auto;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 14px;
+                            padding: 14px 0 0 0;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

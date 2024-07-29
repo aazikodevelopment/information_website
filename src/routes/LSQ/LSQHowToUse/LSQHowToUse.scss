@@ -1,0 +1,62 @@
+@import "../../../styles/mixins/global.scss";
+
+.lsq-how-to-use-section {
+    padding: 120px 0 0 0;
+
+    .lsq-how-to-use-alignment {
+        a {
+            color: #001AFF !important;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        h4 {
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            padding: 18px 0 0 0;
+            text-align: left;
+        }
+
+        p {
+            color: #000;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            padding: 18px 0 0 0;
+            max-width: 890px;
+        }
+
+        .lsq-how-to-use-option-alignment {
+            padding: 46px 0 0 0;
+
+            .lsq-how-to-user-option-grid {
+                display: grid;
+                grid-template-columns: 43px 1fr;
+                gap: 30px;
+                align-items: center;
+                padding: 0 0 40px 0;
+
+                .lsq-how-to-use-right-side-alignment {
+                    h6 {
+                        color: #000;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 24px;
+                    }
+
+                    p {
+                        padding: 8px 0 0 0;
+                        color: #000;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 18px;
+                    }
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,242 @@
+.container {
+    padding: 26px 16px !important;
+
+    .RemoteGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center !important;
+        gap: 16px;
+
+        .MessageGrid {
+            width: 539px;
+            height: 156px;
+            top: 278px;
+            margin: 0 auto !important;
+
+            h2 {
+                font-family: Montserrat;
+                font-size: 64px;
+                font-weight: 600;
+                text-align: left;
+                color: #042953;
+            }
+
+            .InfoMessageText {
+                font-family: Montserrat;
+                font-size: 18px;
+                font-weight: 500;
+                text-align: left;
+                color: #000000;
+            }
+        }
+
+        .ImageGrid {
+            img {
+                width: 620.16px;
+                height: 623.91px;
+                top: 160px;
+                left: 670.45px;
+                gap: 0px;
+                opacity: 0px;
+            }
+        }
+    }
+
+    .RemoteThreeGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center !important;
+        gap: 16px;
+
+        .GridBox {
+            width: 367px;
+            padding: 32px 32px 66px 32px;
+            text-align: center !important;
+            border-radius: 60px !important;
+            border: 1px solid #e0e0e0 !important;
+            background: #ECFAFF66 !important;
+            margin: 16px auto !important;
+            height: 571px;
+            padding: 16px 26px 26px 26px !important;
+            box-shadow: 0px 0px 7px 5px #30303026 !important;
+
+            .AllImageManage {
+                width: 280px;
+                height: 280px;
+                top: 873px;
+                left: 967px;
+                gap: 0px;
+            }
+
+            h3 {
+                font-family: Montserrat;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 34.13px;
+                color: #042953;
+                margin-top: 16px;
+            }
+
+            div {
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21.94px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+
+    .RemoteOneGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center !important;
+        gap: 16px;
+
+        .GridBoxFull {
+            box-shadow: 0px 0px 7px 5px #30303026;
+            width: 100%;
+            border: 1px solid #e0e0e0 !important;
+            background: #ECFAFF66 !important;
+            padding: 32px 0px;
+            text-align: center !important;
+            gap: 0px;
+            border-radius: 60px;
+            padding: 16px 26px 26px 26px !important;
+            opacity: 0px;
+            background-color: #ECFAFF;
+            margin: 16px auto !important;
+
+            .AllImageManage {
+                width: 280px;
+                height: 280px;
+                top: 873px;
+                left: 967px;
+                gap: 0px;
+            }
+
+            h3 {
+                font-family: Montserrat;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 34.13px;
+                color: #042953;
+                margin-top: 16px;
+            }
+
+            div {
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21.94px;
+                text-align: center;
+                color: #000000;
+            }
+        }
+    }
+}
+
+
+// Define breakpoint variables
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+@media (max-width: $breakpoint-xs) {
+    .container {
+        padding: 16px;
+    }
+    .RemoteGrid {
+        display: block !important;
+        .MessageGrid {
+            width: 100% !important;
+            height: 100% !important;
+        }
+        .ImageGrid {
+            img {
+                width: 500.16px !important;
+                height: 500px !important;
+                margin-top: 16px !important;
+            }
+        }
+    }
+    .RemoteThreeGrid {
+        display: block !important;
+        grid-template-columns: none !important;
+        .GridBox {
+            width: 100% !important;
+        }
+    }
+    .RemoteOneGrid {
+        display: block !important;
+        grid-template-columns: none !important;
+
+        .GridBoxFull {
+            width: 100% !important;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+   
+   .container {
+    padding: 26px !important;
+
+    .RemoteGrid {
+        display: block !important;
+        .MessageGrid {
+            height:100%;   
+        }
+    }
+
+    .RemoteThreeGrid {
+        grid-template-columns: repeat(2, 1fr);
+        .GridBox {
+            width: 100%;
+        }
+    }
+}
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+ .container {
+    padding: 16px !important;
+
+    .RemoteGrid {
+        display: block !important;
+        .MessageGrid {
+            height:100%;   
+        }
+    }
+
+    .RemoteThreeGrid {
+        grid-template-columns: repeat(2, 1fr);
+        .GridBox {
+            width: 100%;
+        }
+    }
+} 
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .container {
+        padding: 16px !important;
+    
+        .RemoteGrid {
+            align-items: center;
+            .MessageGrid {
+                height:100%;   
+                width: 300px;
+            }
+        }
+    
+        .RemoteThreeGrid {
+            grid-template-columns: repeat(2, 1fr);
+            .GridBox {
+                width: 100%;
+            }
+        }
+    }  
+}

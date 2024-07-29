@@ -1,0 +1,60 @@
+.logistic-dropdown-alignment {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 18px;
+  }
+
+  // padding: 8px;
+
+  p {
+    color: #606060;
+    font-family: "Lato";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: capitalize;
+    padding: 4px 8px;
+    margin: 0 0 8px 0;
+    cursor: pointer;
+    &:hover {
+      background: rgba(0, 174, 239, 0.08);
+    }
+  }
+
+  &.close-dropdown-alignment {
+    max-height: 0px;
+    transition: 0.4s ease-in-out;
+  }
+
+  &.open-dropdown-alignment {
+    max-height: 200px;
+    transition: 0.4s ease-in-out;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: grey;
+      border-radius: 18px;
+    }
+  }
+}

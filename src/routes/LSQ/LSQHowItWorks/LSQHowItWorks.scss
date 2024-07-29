@@ -1,0 +1,111 @@
+@import "../../../styles/mixins/global.scss";
+
+.lsq-how-it-works-alignment {
+    padding: 72px 0 0 0;
+
+    .lsq-how-it-works-section {
+        .lsq-how-it-works-grid {
+            display: grid;
+            grid-template-columns: 534px 1fr;
+            gap: 90px;
+            align-items: center;
+
+            .lsq-how-it-work-right-side {
+                .lsq-how-it-work-top-details {
+                    padding: 0 0 0 20px;
+
+                    a {
+                        color: #000080 !important;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                    }
+
+                    h4 {
+                        color: rgba(0, 0, 0, 0.8);
+                        font-size: 36px;
+                        font-weight: 700;
+                        line-height: 40px;
+                        text-align: left !important;
+                        padding-top: 5px !important;
+                        // max-width: 400px;
+                    }
+
+                    .lsq-how-it-work-notes {
+                        padding: 20px 0 0 0;
+
+                        p {
+                            color: #000;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .lsq-how-it-work-child-details-alignment {
+                    padding: 54px 0 0 0;
+    
+                    .lsq-how-it-work-child-main-details-alignment {
+    
+                        padding: 26px 0 12px 0;
+                        border-bottom: 1px solid #000;
+    
+                        &:first-child {
+                            padding: 0 0 12px 0;
+                        }
+    
+                        .lsq-how-it-work-personal-details {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+    
+                            h6 {
+                                color: #000;
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 22px;
+                            }
+    
+                            .lsq-plus-icon {
+                                cursor: pointer;
+                                transform: rotate(0deg);
+                                transition: 0.4s ease-in-out;
+    
+                                &.open-arrow-alignment {
+                                    transform: rotate(-45deg);
+                                    transition: 0.4s ease-in-out;
+                                }
+                            }
+    
+                        }
+    
+                        .lsq-show-other-all-details-alignment {
+    
+                            p {
+                                color: #000;
+                                font-size: 14px;
+                                font-weight: 500;
+                                line-height: 21px;
+                                padding: 8px 0 0 0;
+                                max-width: 100%;
+                            }
+    
+                            &.open-show-details {
+                                max-height: 100px;
+                                overflow-y: auto;
+                                transition: 0.4s ease-in-out;
+                            }
+    
+                            &.close-show-details {
+                                max-height: 0px;
+                                overflow-y: hidden;
+                                transition: 0.4s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

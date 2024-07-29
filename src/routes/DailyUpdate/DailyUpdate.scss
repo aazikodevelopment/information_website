@@ -1,0 +1,137 @@
+@import "../../styles/mixins/global.scss";
+
+.daily-update-section {
+    background-color: #f8f8f8;
+
+    .daily-update-banner-alignment {
+        background: url('../../assets/Image/hero-cover.png');
+        width: 100%;
+        // height: 710px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 56px 0 0 0;
+
+        h4 {
+            color: rgba(0, 0, 0, 0.8);
+            font-family: 'Poppins', sans-serif;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+
+            @include breakpoint("max-sm") {
+                font-size: 24px;
+            }
+        }
+
+        .daily-banner-update-img {
+            margin: 0 auto;
+            padding: 55px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .daily-update-details-alignment {
+        padding: 84px 0;
+
+        @include breakpoint("max-sm") {
+            padding: 50px 0;
+        }
+
+        .daily-update-details-flex {
+            display: flex;
+            align-items: center;
+            margin: 0 0 84px 0;
+
+            @include breakpoint("max-sm") {
+                flex-direction: column;
+                margin: 0 0 50px 0;
+            }
+
+            .daily-img-alignment {
+                position: relative;
+                z-index: 99;
+
+                @include breakpoint("max-sm") {
+                    max-width: 220px;
+                    margin: 0 auto;
+                }
+            }
+
+            &:last-child {
+                margin: 0;
+            }
+
+            .daily-update-box-alignment {
+                max-width: 938px;
+                width: 938px;
+                height: 292px;
+                background: linear-gradient(101deg, rgba(157, 228, 255, 0.5) -3.05%, rgba(0, 174, 239, 0.00) 83.13%);
+                border-radius: 0 148px 148px 0;
+                margin: 0 0 0 -132px;
+                padding: 0 80px 0 165px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include breakpoint("max-sm") {
+                    max-width: 100%;
+                    width: 100%;
+                    height: 100%;
+                    padding: 16px;
+                    margin: 0;
+                }
+
+                &.second-box {
+                    background: linear-gradient(101deg, rgba(255, 200, 135, 0.5) 2.84%, rgba(255, 72, 0, 0.00) 83.13%);
+                }
+
+                &.third-box {
+                    background: linear-gradient(101deg, rgba(255, 156, 159, 0.5) -4.85%, rgba(236, 34, 41, 0.00) 83.13%);
+                }
+
+                &.fourth-box {
+                    background: linear-gradient(101deg, rgba(156, 195, 255, 0.5) -2.94%, rgba(30, 120, 252, 0.00) 83.13%);
+                }
+
+                &.five-box {
+                    background: linear-gradient(101deg, rgba(153, 255, 203, 0.5) 6.39%, rgba(0, 165, 81, 0.00) 83.13%);
+                }
+
+                h6 {
+                    color: rgba(0, 0, 0, 0.8);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 32px;
+
+                    @include breakpoint("max-sm") {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                }
+
+                p {
+                    color: rgba(0, 0, 0, 0.8);
+                    color: var(--theme-heading-text-color);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding: 18px 0 0 0;
+                    max-width: 314px;
+
+                    @include breakpoint("max-sm") {
+                        font-size: 12px;
+                        line-height: 18px;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

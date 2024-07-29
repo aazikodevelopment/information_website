@@ -1,0 +1,148 @@
+@import "../../../styles/mixins/index.scss";
+
+.load-container-and-truck-section {
+    padding: 24px 0 74px 0;
+
+    .load-container-and-truck-top-details {
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.40);
+        background: #FFF;
+        box-shadow: 0px 0px 8px 0px rgba(202, 202, 202, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+        flex-wrap: wrap;
+
+        .add-container-button-alignment {
+            button {
+                padding: 14px 28px;
+                color: #FFF;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                border-radius: 8px;
+                background: #00AEEF;
+                border: none;
+            }
+        }
+
+        .automatic-container-section-alignment {
+            h6 {
+                color: #343434;
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+
+            .automatic-container-bottom-details {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding: 12px 0 0 0;
+                flex-wrap: wrap;
+
+                .option-details-alignment {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    input[type="radio"] {
+                        width: 14px;
+                        height: 14px;
+                        margin: 0;
+                        padding: 0;
+                        cursor: pointer;
+                    }
+
+                    label {
+                        color: #606060;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+
+    .load-container-add-transport-box {
+        margin: 24px 0 0 0;
+        border-radius: 8px;
+        background: #EEEFF3;
+        padding: 50px;
+
+        .load-container-icon-alignment {
+            width: 100px;
+            height: 100px;
+            border: 0.5px solid #00AEEF;
+            border-radius: 50px;
+            min-width: 100px;
+            max-width: 100px;
+            margin: 0 auto;
+            box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.04);
+            background: rgba(0, 174, 239, 0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h6 {
+            color: #343434;
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+            padding: 32px 0 0 0;
+            text-align: center;
+        }
+    }
+
+    .load-container-bottom-details-alignment {
+        padding: 50px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+
+        button {
+            &.backButton {
+                border-radius: 4px;
+                border: 1px solid #BABABA;
+                background: rgba(186, 186, 186, 0.20);
+                padding: 10px 42px;
+                color: #606060;
+                font-family: 'Poppins', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                cursor: pointer;
+            }
+
+            &.nextButton {
+                border-radius: 4px;
+                background: #00AEEF;
+                color: #FFF;
+                font-family: 'Poppins', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                cursor: pointer;
+                padding: 10px 42px;
+                border: none;
+            }
+        }
+    }
+}

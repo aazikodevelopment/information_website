@@ -1,0 +1,238 @@
+@import "../../styles/mixins/index.scss";
+
+.reefer-cargo-section {
+    padding: 60px 0;
+
+    @include breakpoint("max-sm") {
+        padding: 30px 0;
+    }
+
+    .reefer-cargo-alignment {
+        .reefer-cargo-heading {
+            h4 {
+                color: #000;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: capitalize;
+                text-align: center;
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .reefer-cargo-search-alignment {
+            padding: 40px 0 0 0;
+
+
+            @include breakpoint("max-sm") {
+                padding: 30px 0 0 0 ;
+            }
+
+            .reefer-cargo-search-box-alignment {
+                max-width: 600px;
+                margin: 0 auto;
+                height: 50px;
+                width: 100%;
+                border-radius: 10px;
+                background: #FFF;
+                box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px;
+                gap: 10px;
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    color: rgba(0, 0, 0, 0.80);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: capitalize;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                svg {
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .reefer-cargo-tab-alignmet {
+            padding: 26px 0 0 0;
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                align-items: center;
+                gap: 8px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                @include breakpoint("max-sm") {
+                    display: grid;
+                    grid-template-columns: repeat(1 , 1fr);
+                    gap: 10px;
+                }
+                @media (min-width:"541px") and (max-width:"767px") {
+                    grid-template-columns: repeat(2 , 1fr);
+                    gap: 20px;
+                }
+                li {
+                    height: 70px;
+                    padding: 14px 18px;
+                    border-radius: 10px;
+                    border: 0.5px solid rgba(0, 0, 0, 0.80);
+                    opacity: 0.8;
+                    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+                    cursor: pointer;
+                    color: rgba(0, 0, 0, 0.80);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    transition: 0.3s ease-in-out;
+                    box-sizing: border-box;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include breakpoint("max-sm") {
+                        padding: 12px;
+                        font-size: 14px;
+                        text-align: center;
+                        width: 100%;
+                    }
+
+                    &:nth-child(1) {
+                        color: #FFF;
+                        font-size: 20px;
+                        font-weight: 600;
+                        padding: 12px 27px;
+                        border-radius: 10px;
+                        background: #00AEEF;
+                        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+                        border: none;
+
+                        @include breakpoint("max-sm") {
+                            padding: 12px;
+                        padding: 12px;
+                         
+                            font-size: 14px;
+                        }
+                    }
+
+                    &:hover {
+                        color: #FFF;
+                        font-size: 20px;
+                        font-weight: 600;
+                        padding: 12px 27px;
+                        border-radius: 10px;
+                        background: #00AEEF;
+                        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+                        border: none;
+                        transition: 0.3s ease-in-out;
+
+                    }
+                }
+            }
+
+        }
+
+        .reefer-cargo-body-alinment {
+            padding: 54px 0 0 0;
+
+            @include breakpoint("max-sm") {
+                padding: 30px 0 0 0;
+            }
+            .reefer-cargo-all-details-alignment {
+                .reefer-cargo-grid-alignment {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 38px 20px;
+
+                    @include breakpoint("max-sm") {
+                        grid-template-columns: repeat(1 , 1fr);
+                        gap: 20px;
+                    }
+                    @media (min-width:"541px") and (max-width:"767px") {
+                        grid-template-columns: repeat(2 , 1fr);
+                        gap: 20px;
+                    }
+                    .reefer-cargo-grid-item-alignment {
+                        .reefer-cargo-grid-item-box {
+                            border-radius: 10px;
+                            border: 1px solid rgba(0, 0, 0, 0.20);
+                            background: #FFF;
+                            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+                            width: 100%;
+                            padding: 5px 7px 12px 7px;
+
+                            .reefer-cargo-img-alignment {
+                                width: 100%;
+                                height: 100%;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                }
+                            }
+
+                            .reefer-cargo-fruit-name-alignment {
+                                padding: 8px 0 0 0;
+
+                                h6 {
+                                    color: #000;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                    text-transform: capitalize;
+                                }
+
+                                .reefer-cargo-fruit-bottom-alignment {
+                                    padding: 32px 0 0 0;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+
+                                    p {
+                                        color: #000;
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        text-transform: capitalize;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

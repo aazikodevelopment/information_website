@@ -1,0 +1,96 @@
+@import "../../../styles/mixins/global.scss";
+
+.aaziko-advantage-section {
+    background-color: #fff;
+
+    .aaziko-advantage-alignment {
+        position: relative;
+
+        .aaziko-advantage-img {
+            position: absolute;
+            top: 20px;
+            right: 0;
+
+            @include breakpoint("max-sm") {
+                display: none;
+            }
+        }
+
+        .aaziko-advantage-details-content {
+            padding: 96px 0;
+
+
+            @include breakpoint("max-sm") {
+                padding: 40px 0;
+            }
+
+            h6 {
+                color: var(--theme-heading-text-color);
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                line-height: 42px;
+                font-weight: 600;
+                letter-spacing: 0.2px;
+                text-align: center;
+            
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            .aaziko-advantage-all-content-alignment {
+                display: grid;
+                grid-template-columns: 488px 1fr;
+                gap: 84px;
+                padding: 96px 0 0 0;
+
+                @include breakpoint("max-sm") {
+                    grid-template-columns: repeat(1 , 1fr);
+                    gap: 40px;
+                    padding: 40px 0 0 0;
+                }
+
+                .aaziko-advantage-all-contentImg {}
+
+
+                .aaziko-advantage-details-alignment {
+                    .aaziko-advantage-details-child-content-alignment {
+                        padding: 0 0 30px 0;
+
+                        h6 {
+                            color: var(--theme-heading-text-color);
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 24px;
+                            line-height: 38px;
+                            font-weight: 500;
+                            letter-spacing: 0.2px;
+                            padding: 0 0 6px 0;
+                            text-align: left;
+                        
+                            @include breakpoint("max-sm") {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                        }
+
+                        p {
+                            color: var(--theme-heading-text-color);
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            letter-spacing: 0.2px;
+
+
+                            @include breakpoint("max-sm") {
+                                font-size: 14px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

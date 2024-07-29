@@ -1,0 +1,475 @@
+.container {
+    padding: 26px 0px !important;
+
+    .TowGridAlign {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center !important;
+        gap: 16px;
+
+        .InfoBox {
+            margin: 0 auto !important;
+
+            h2 {
+                font-family: Montserrat;
+                font-size: 38px;
+                font-weight: 600;
+                line-height: 40px;
+                color: #042953;
+                margin-bottom: 16px !important;
+            }
+
+            div {
+                color: #000000;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21.94px;
+                text-align: left;
+            }
+        }
+
+        .ImageDiv {
+            margin-top: 26px !important;
+            background: #FFEFE1;
+            width: 529px !important;
+            height: 282px;
+            border-radius: 25px 0px 25px 0px;
+            border: 2.5px solid #F5821FCC;
+            position: relative;
+
+            img {
+                width: 449.11px;
+                height: 272.65px;
+                top: 161px;
+                left: 781px;
+                gap: 0px;
+                opacity: 0px;
+            }
+
+            .CircleNo1 {
+                width: 119px;
+                height: 119px;
+                opacity: 0px;
+                background: #D0FFE7;
+                border-radius: 50%;
+                position: absolute;
+                top: -50px;
+                left: 460px;
+                z-index: -99;
+            }
+
+            .CircleNo2 {
+                width: 119px;
+                height: 119px;
+                opacity: 0px;
+                background: #D1F2FF;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -50px;
+                left: -50px;
+                z-index: -99;
+            }
+        }
+    }
+
+    .NextTowGridAlign {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        align-items: center !important;
+        margin-top: 99px;
+
+        .ImageDiv {
+            width: 100%;
+            height: 316px;
+            top: 634px;
+            left: 150px;
+            gap: 0px;
+            border-radius: 125px 10px 125px 10px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+            background: #FFFFFF;
+            border: 1px solid #00AEEF;
+            box-shadow: 0px 4px 4px 0px #00000040;
+            z-index: 999;
+            padding: 16px;
+
+            img {
+                width: 320.85px;
+                height: 290.68px;
+                margin: 0 auto !important;
+                display: flex;
+            }
+        }
+
+        .InfoDetailsBox {
+            // background: linear-gradient(101.19deg, #FFEAEC 50.04%, rgba(253, 193, 197, 0) 83.13%);
+            background: linear-gradient(101.19deg,
+                    rgba(255, 234, 236, 0) 0%,
+                    rgba(255, 234, 236, 0.5) 25%,
+                    rgba(255, 234, 236, 0.8) 50%,
+                    rgba(255, 234, 236, 1) 83.13%);
+            width: 100%;
+            margin-top: -16px;
+            height: 292px;
+            opacity: 0.5px;
+            border-radius: 0% 150px 150px 0%;
+            rotate: 180 deg;
+            padding-left: 100px;
+
+            h3 {
+                font-family: Montserrat;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 39.01px;
+                text-align: left;
+                color: #000000;
+                margin-top: 70px;
+            }
+
+            div {
+                width: 657px;
+                color: #000000;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 21.94px;
+                text-align: left;
+                padding-right: 160px;
+            }
+        }
+    }
+
+    .NextTowGridAlignReverce {
+        display: grid;
+        grid-template-columns: 1fr 400px;
+        align-items: center !important;
+        margin-top: 99px;
+
+        .InfoDetailsBox {
+            background: linear-gradient(101.19deg, #FFEAEC 50.04%, rgba(253, 193, 197, 0) 83.13%);
+            width: 100%;
+            height: 292px;
+            opacity: 0.5px;
+            border-radius: 150px 0px 0px 150px;
+            rotate: 180 deg;
+            padding-left: 100px;
+            padding-top: 32px;
+
+            h3 {
+                font-family: Montserrat;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 39.01px;
+                text-align: left;
+                color: #000000;
+                margin-top: 70px;
+            }
+
+            div {
+                width: 100%;
+                color: #000000;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 21.94px;
+                text-align: left;
+                padding-right: 160px;
+            }
+        }
+
+        .ImageDiv {
+            width: 407px;
+            height: 316px;
+            top: 634px;
+            left: 150px;
+            gap: 0px;
+            border-radius: 125px 10px 125px 10px;
+            border: 1px 0px 0px 0px;
+            opacity: 0px;
+            background: #FFFFFF;
+            border: 1px solid #00AEEF;
+            box-shadow: 0px 4px 4px 0px #00000040;
+            z-index: 999;
+            padding: 16px;
+
+            img {
+                width: 320.85px;
+                height: 290.68px;
+                margin: 0 auto !important;
+                display: flex;
+            }
+        }
+
+    }
+}
+
+
+
+
+// Define breakpoint variables
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+@media (max-width: $breakpoint-xs) {
+    .container {
+        padding: 16px !important;
+
+        .TowGridAlign {
+            display: block !important;
+            gap: 1px;
+
+            .InfoBox {
+                h2 {
+                    font-size: 32px !important;
+                    line-height: 30px !important;
+                }
+            }
+
+            .ImageDiv {
+                width: 70% !important;
+
+                img {
+                    width: 100% !important;
+                }
+
+                .CircleNo1 {
+                    width: 50px !important;
+                    height: 50px !important;
+                    top: -20px !important;
+                    left: 230px !important;
+                }
+
+                .CircleNo2 {
+                    width: 50px !important;
+                    height: 50px !important;
+                    bottom: -25px !important;
+                    left: -30px !important;
+                }
+            }
+        }
+
+        .NextTowGridAlign {
+            display: block !important;
+            margin-top: 56px !important;
+
+            .InfoDetailsBox {
+                margin-top: 16px !important;
+                height: 100% !important;
+                border-radius: 20px !important;
+                padding: 16px !important;
+
+                div {
+                    width: 100% !important;
+                    padding-right: 0px !important;
+                }
+            }
+        }
+
+        .NextTowGridAlignReverce {
+            display: block !important;
+            margin-top: 56px !important;
+
+            .InfoDetailsBox {
+                height: 100% !important;
+                border-radius: 20px !important;
+                padding: 16px !important;
+                margin-bottom: 16px !important;
+
+                div {
+                    width: 100% !important;
+                    padding-right: 0px !important;
+                }
+            }
+
+            .ImageDiv {
+                width: 100% !important;
+            }
+        }
+    }
+
+}
+
+@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+    .container {
+        padding: 16px !important;
+
+        .NextTowGridAlign {
+            display: block !important;
+            margin-top: 56px !important;
+
+            .InfoDetailsBox {
+                margin-top: 16px !important;
+                height: 100% !important;
+                border-radius: 20px !important;
+                padding: 16px !important;
+
+                div {
+                    width: 100% !important;
+                    padding-right: 0px !important;
+                }
+            }
+        }
+
+        .NextTowGridAlignReverce {
+            display: block !important;
+            margin-top: 56px !important;
+
+            .InfoDetailsBox {
+                height: 100% !important;
+                border-radius: 20px !important;
+                padding: 16px !important;
+                margin-bottom: 16px !important;
+
+                div {
+                    width: 100% !important;
+                    padding-right: 0px !important;
+                }
+            }
+
+            .ImageDiv {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    .container {
+        padding: 16px !important;
+
+        .TowGridAlign {
+            gap: 1px;
+
+            .InfoBox {
+                h2 {
+                    font-size: 36px !important;
+                    line-height: 40px !important;
+                }
+            }
+
+            .ImageDiv {
+                width: 90% !important;
+
+                .CircleNo1 {
+                    width: 70px !important;
+                    height: 70px !important;
+                    top: -33px !important;
+                    left: 270px !important;
+                }
+
+                .CircleNo2 {
+                    width: 70px !important;
+                    height: 70px !important;
+                    bottom: -30px !important;
+                    left: -30px !important;
+                }
+            }
+        }
+
+        .NextTowGridAlign {
+            grid-template-columns: 250px 1fr !important;
+
+            .InfoDetailsBox {
+                height: 100% !important;
+                padding-left: 22px !important;
+
+                div {
+                    width: 100% !important;
+                    padding-right: 16px !important;
+                }
+            }
+        }
+
+        .NextTowGridAlignReverce {
+            display: grid;
+            grid-template-columns: 1fr 250px !important;
+            align-items: center !important;
+            margin-top: 99px;
+
+            .InfoDetailsBox {
+                height: 100% !important;
+                padding-left: 36px !important;
+
+                div {
+                    width: 100% !important;
+                    padding-right: 22px !important;
+                }
+            }
+
+            .ImageDiv {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .container {
+        padding: 16px !important;
+
+        .TowGridAlign {
+            gap: 1px;
+
+            .InfoBox {
+                h2 {
+                    font-size: 36px !important;
+                    line-height: 40px !important;
+                }
+            }
+
+            .ImageDiv {
+                width: 100% !important;
+
+                .CircleNo1 {
+                    width: 100px !important;
+                    height: 100px !important;
+                    top: -33px !important;
+                    left: 400px !important;
+                }
+
+                .CircleNo2 {
+                    width: 100px !important;
+                    height: 100px !important;
+                    bottom: -40px !important;
+                    left: -45px !important;
+                }
+            }
+        }
+
+        .NextTowGridAlign {
+            grid-template-columns: 250px 1fr !important;
+
+            .InfoDetailsBox {
+                padding-left: 46px !important;
+
+                div {
+                    width: 100% !important;
+                    padding-right: 36px !important;
+                }
+            }
+        }
+
+        .NextTowGridAlignReverce {
+            display: grid;
+            grid-template-columns: 1fr 250px !important;
+            align-items: center !important;
+            margin-top: 99px;
+
+            .InfoDetailsBox {
+                padding-left: 46px !important;
+
+                div {
+                    width: 100% !important;
+                    padding-right: 36px !important;
+                }
+            }
+
+            .ImageDiv {
+                width: 100% !important;
+            }
+        }
+    }
+}

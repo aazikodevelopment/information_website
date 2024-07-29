@@ -1,0 +1,66 @@
+@import '../../styles/mixins/global.scss';
+
+.talk-section {
+    background-image: url("../../assets/imges/talk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 50px 0;
+
+
+    @include breakpoint("max-sm") {
+      padding: 40px 20px;
+    }
+
+    .button-center {
+      display: flex;
+      justify-content: center;
+
+      button {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130.5%;
+        color: #00aeef;
+        padding: 14px 48px;
+        background: #ffffff;
+        border-radius: 7px;
+        border: none;
+        cursor: pointer;
+
+        @include breakpoint("max-sm") {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+      margin: 0 0 15px 0;
+      font-size: 30px;
+      line-height: 38px;
+      color: #ffffff;
+      text-align: center;
+
+      @include breakpoint("max-sm") {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      text-align: center;
+      color: #ffffff;
+      max-width: 521px;
+      margin: 0 auto 30px auto;
+
+
+      @include breakpoint("max-sm") {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }

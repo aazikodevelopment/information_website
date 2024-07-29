@@ -1,0 +1,127 @@
+@import "../../styles/mixins/global.scss";
+
+.imo-classes-all-content-alignment {
+  padding: 50px 0;
+
+  @include breakpoint("max-sm") {
+    padding: 30px 0;
+  }
+  .box {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(202, 202, 202, 0.3);
+
+    .grid {
+      display: grid;
+      grid-template-columns: 362px 1fr;
+      gap: 0;
+
+      @include breakpoint("max-sm") {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+      }
+
+      .repeat-content {
+        padding: 0 0 40px 0;
+        span {
+          color: var(--theme-heading-text-color);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          display: block;
+
+          @include breakpoint("max-sm") {
+            font-size: 14px;
+          }
+        }
+        p {
+          color: var(--theme-heading-text-color);
+          font-size: 18px;
+          font-style: normal;
+          margin: 22px 0;
+          font-weight: 500;
+          line-height: normal;
+
+          @include breakpoint("max-sm") {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .grid-items:last-child {
+        padding: 75px 50px;
+        @include breakpoint("max-sm") {
+          padding: 30px 20px;
+        }
+        .repeat-content:last-child {
+          padding: 0;
+        }
+      }
+      .grid-items:nth-child(1) {
+        border-right: 1px solid #e0e0e0;
+        padding: 50px 0;
+
+        @include breakpoint("max-sm") {
+          padding: 30px 0;
+        }
+      }
+
+      .text-grid:nth-child(1) {
+        background: rgba(176, 234, 255, 0.5);
+
+        p {
+          color: #00aeef;
+        }
+      }
+
+      .text-grid {
+        padding: 12px 25px;
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        cursor: pointer;
+        width: fit-content;
+        gap: 0;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background: rgba(176, 234, 255, 0.5);
+          transition: 0.3s ease-in-out;
+          p {
+            color: #00aeef;
+          }
+        }
+
+        p {
+          color: rgba(0, 0, 0, 0.8);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .title {
+    padding: 0 0 60px 0;
+    h1 {
+      color: var(--theme-heading-text-color);
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+      margin: 0 0 34px 0;
+    }
+
+    p {
+      margin: 0 0 20px 0;
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+}

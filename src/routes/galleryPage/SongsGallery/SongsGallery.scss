@@ -1,0 +1,94 @@
+@import "../../../styles/mixins/global.scss";
+
+.song-gallery-content-alignment {
+  .song-galley-main-content {
+    .song-gallery-banner-alignment {
+      width: 100%;
+      height: 646px;
+      border-radius: 10px;
+      border: 2px solid #00aeef;
+      background: #fff;
+      padding: 14px 20px; 
+      position: relative;
+
+
+      @include breakpoint("max-sm") {
+        height: 320px;
+        padding: 14px;
+      }
+      iframe {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+
+      .upcoming-box {
+        position: absolute;
+        right: 20px;
+        bottom: 14px;
+        border-radius: 0px 0px 10px 0px;
+        background: #4e4e4e;
+        padding: 12px 30px;
+        p {
+          color: #fff;
+          font-family: 'Poppins', sans-serif;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 86%;
+
+          @include breakpoint("max-sm") {
+            font-size: 20px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+    .song-gallery-banner-details-alignment {
+      padding: 42px 0 0 0;
+
+      h4 {
+        color: rgba(0, 0, 0, 0.8);
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 97%;
+        @include breakpoint("max-sm") {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+
+      .notify-details-alignment {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 24px 0 0 0;
+        button {
+          padding: 13px 35px;
+          color: #00aeef;
+          font-family: 'Poppins', sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 86%;
+          border-radius: 10px;
+          border: 2px solid #00aeef;
+          cursor: pointer;
+
+          @include breakpoint("max-sm") {
+            font-size: 14px;
+            line-height: 23px;
+          }
+        }
+
+        .notify-icon {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

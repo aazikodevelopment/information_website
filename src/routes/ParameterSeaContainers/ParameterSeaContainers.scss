@@ -1,0 +1,124 @@
+@import "../../styles/mixins/global.scss";
+
+.parameter-sea-container-section {
+    .parameter-sea-container-alignment {
+        padding: 60px 0;
+
+        @include breakpoint("max-sm") {
+            padding: 30px 0 0 0;
+        }
+
+        .parameter-sea-container-heading {
+            h4 {
+                color: var(--theme-heading-text-color);
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                opacity: 0.8;
+                text-align: center;
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .parameter-sea-container-body-alignment {
+            padding: 48px 0;
+            @include breakpoint("max-sm") {
+                padding: 30px 0;
+            }
+            .parameter-sea-container-body-box {
+                border-radius: 10px;
+                border: 1px solid #d0d0d0;
+                background: #FFF;
+                box-shadow: 0px 0px 12px 0px rgba(202, 202, 202, 0.30);
+                width: 100%;
+                height: 100%;
+                padding: 32px 42px;
+
+
+                @include breakpoint("max-sm") {
+                    padding: 16px;
+                }
+
+
+                .parameter-sea-container-heading {
+                    h5 {
+                        color: var(--theme-heading-text-color);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+
+                .parameter-sea-all-child-details-alignment {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 80px;
+
+                    @include breakpoint("max-sm") {
+                        display: grid;
+                        grid-template-columns: repeat(1 , 1fr);
+                        gap: 20px;
+                    }
+
+                    .parameter-sea-all-img-alignment {
+                        margin: 50px 0 0 0;
+                    }
+
+                    .parameter-sea-right-side-alignment {
+
+                        .parameter-sea-container-grid {
+                            display: grid;
+                            grid-template-columns: 175px 1fr;
+                            gap: 38px;
+                            padding: 0 0 48px 0;
+
+
+                            @include breakpoint("max-sm") {
+                                grid-template-columns: repeat(1 , 1fr);
+                                gap: 20px;
+                                padding: 0 0 20px 0;
+                            }
+
+                             .parameter-sea-heading-alignment {
+                                h6 {
+                                    color: var(--theme-heading-text-color);
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+
+                                    @include breakpoint("max-sm") {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+
+                            .parameter-sea-notes-details {
+                                color: var(--theme-heading-text-color);
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+
+                                @include breakpoint("max-sm") {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

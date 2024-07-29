@@ -1,0 +1,91 @@
+@import "../../../styles/mixins/global.scss";
+
+.custom-details-section {
+    padding: 178px 0 92px 0;
+
+    @include breakpoint("max-sm") {
+        padding: 40px 0;
+    }
+
+    .custom-details-alignment {
+        .custom-details-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 88px;
+            margin: 0 0 112px 0;
+            flex-wrap: wrap;
+            @include breakpoint("max-sm") {
+                margin: 0 0 40px 0;
+                display: grid;
+                grid-template-columns: repeat(1 ,1fr);
+                gap: 40px;
+            }
+            @include breakpoint("max-lg") {
+                margin: 0 0 40px 0;
+                display: grid;
+                grid-template-columns: repeat(2 ,1fr);
+                gap: 40px;
+            }
+            @include breakpoint("max-md") {
+                margin: 0 0 40px 0;
+                display: grid;
+                grid-template-columns: repeat(1 ,1fr);
+                gap: 40px;
+            }
+            &:last-child {
+                margin: 0;
+            }
+
+            .customs-details-box-alignment {
+                width: 367px;
+                min-width: 367px;
+                max-width: 367px;
+                height: 290px;
+                border-radius: 10px;
+                background: #FFF;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include breakpoint("max-sm") {
+                    min-width: 100%;
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+
+            .customs-details-box-details-alignment {
+                h6 {
+                    color: var(--theme-heading-text-color);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 30px;
+                    font-weight: 600;
+                    line-height: 38px;
+                    text-transform: capitalize;
+                    @include breakpoint("max-sm") {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+
+                p {
+                    color: rgba(0, 0, 0, 0.80);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-transform: capitalize;
+                    padding: 36px 0 0 0;
+                    max-width: 653px;
+
+                    @include breakpoint("max-sm"){
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

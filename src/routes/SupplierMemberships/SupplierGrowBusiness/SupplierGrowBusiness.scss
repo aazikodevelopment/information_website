@@ -1,0 +1,150 @@
+@import "../../../styles/mixins/global.scss";
+
+.supplier-grow-business-section {
+    .supplier-grow-business-alignment {
+        padding: 50px 0;
+        text-align: center;
+
+        h6 {
+            color: #343434;
+           font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+
+
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        .supplier-grow-business-all-details {
+            padding: 30px 0 0 0;
+
+            .supplier-grow-business-grid-details {
+                display: grid;
+                grid-template-columns: 128px 1fr;
+                gap: 60px;
+
+                @include breakpoint("max-sm") {
+                    grid-template-columns: repeat(1 , 1fr);
+                    gap: 40px;
+                }
+
+                .supplier-grow-businessItem {
+                    .supplier-grow-business-child-grid-alignment {
+                        display: grid;
+                        grid-template-columns: 37px 74px;
+                        gap: 14px;
+
+
+                        &.complete-step {
+                            .supplier-grow-line-flex-alignment {
+
+                                .step-round-alignment {
+                                    background: transparent;
+                                    border: none;
+                                }
+                            }
+
+                            p {
+                                color: #00AEEF;
+                                font-weight: 700;
+                            }
+                        }
+
+                        .supplier-grow-line-flex-alignment {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            .step-round-alignment {
+                                width: 100%;
+                                height: 37px;
+                                border-radius: 50%;
+                                border: 1px solid #BABABA;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                span {
+                                    color: #BABABA;
+                                   font-family: 'Poppins', sans-serif;
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    line-height: 24px;
+                                }
+                            }
+
+                            .step-line-alignment {
+                                height: 41px;
+                                width: 1px;
+                                background: #BABABA;
+                            }
+                        }
+
+                        p {
+                            color: #BABABA;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            text-align: left;
+                        }
+                    }
+
+                    .supplier-second-grid-alignment {
+                        display: grid;
+                        grid-template-columns: 398px 1fr;
+                        gap: 74px;
+                        align-items: center;
+
+                        .supplier-second-left-part-alignment {
+
+
+                            h6 {
+                                color: #606060;
+                               font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 24px;
+                                text-align: left;
+                                padding: 0 0 16px 0;
+                                max-width: 224px;
+                            }
+
+                            p {
+                                color: #BABABA;
+                               font-family: 'Poppins', sans-serif;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 24px;
+                                text-align: left;
+                            }
+
+                            .supplier-learn-more-button-alignment {
+                                padding: 70px 0 0 0;
+                                text-align: left;
+
+                                button {
+                                    padding: 14px 42px;
+                                    border-radius: 8px;
+                                    background: #00AEEF;
+                                    color: #FFF;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    line-height: 24px;
+                                    border: none;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

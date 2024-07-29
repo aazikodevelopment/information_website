@@ -1,0 +1,201 @@
+@import "../../styles/mixins/global.scss";
+
+.logistic-map-section {
+    background-color: #f8f8f8;
+
+    .logistic-map-alignment {
+        padding: 20px 0 140px 0;
+
+        .logistic-map-grid {
+            display: grid;
+            grid-template-columns: 1fr 643px;
+            gap: 14px;
+
+            .logistic-map-grid-item {
+                .logistic-map-left-side {
+                    border-radius: 10px;
+                    background: rgba(229, 247, 253, 0.50);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                    height: 706px;
+                    overflow-y: auto;
+                    padding: 10px 6px;
+
+                    .logistic-top-search-bar-alignment {
+                        width: 100%;
+                        height: 50px;
+                        border-radius: 10px;
+                        background: #FFF;
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                        padding: 0 4px;
+
+                        .logistic-search-form-to-alignment {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            .logistic-location-alignment {
+                                border-radius: 10px;
+                                border: 0.5px solid rgba(0, 174, 239, 0.50);
+                                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                                width: 100%;
+                                height: 38px;
+                                display: flex;
+                                align-items: center;
+                                gap: 11px;
+                                padding: 0 11px;
+
+                                input {
+                                    width: 100%;
+                                    height: 100%;
+                                    background: transparent;
+                                    border: none;
+                                    color: rgba(0, 0, 0, 0.80);
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                    text-transform: capitalize;
+
+                                    &:focus {
+                                        outline: none;
+                                    }
+                                }
+                            }
+
+                            .left-right-box-alignment {
+                                width: 35px;
+                                height: 35px;
+                                min-width: 35px;
+                                max-width: 35px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        .logistic-search-alignment {
+                            width: 36px;
+                            height: 36px;
+                            min-width: 36px;
+                            max-width: 36px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .logistic-body-details-alignment {
+                        padding: 25px 8px;
+
+                        .logistic-all-details-box {
+                            border-radius: 10px;
+                            background: #FFF;
+                            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                            width: 100%;
+                            height: 93px;
+                            padding: 16px 12px;
+                            margin: 0 0 20px 0;
+
+                            .logistic-all-details-grid {
+                                display: grid;
+                                grid-template-columns: 98px 1fr;
+                                gap: 60px;
+
+                                .logistic-all-road-name-alignment {
+                                    h6 {
+                                        color: var(--theme-heading-text-color);
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 12px;
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        line-height: normal;
+                                        padding: 0 0 14px 0;
+                                    }
+                                }
+
+                                .logistic-map-all-details-alignment {
+                                    .logistic-map-name-alignment {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 9px;
+
+                                        h6 {
+                                            color: var(--theme-heading-text-color);
+                                            font-family: 'Poppins', sans-serif;
+                                            font-size: 12px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            line-height: normal;
+                                            padding: 0;
+                                        }
+
+                                        .logistic-right-arrow {
+                                            width: 24px;
+                                            height: 24px;
+
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                display: block;
+                                            }
+                                        }
+                                    }
+
+                                    .logistic-map-bottom-details {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        padding: 15px 0 0 0;
+
+                                        .logistic-date-alignemnt {
+                                            p {
+                                                color: var(--theme-heading-text-color);
+                                                font-family: 'Poppins', sans-serif;
+                                                font-size: 10px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: normal;
+                                                border-radius: 15px;
+                                                background: #D9D9D9;
+                                                padding: 4px 9px;
+                                            }
+                                        }
+
+                                        .logistic-next-arrow {
+                                            margin: 0 10px 0 0;
+
+                                            img {
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .logistic-map-box-alignment {
+                    iframe {
+                        width: 100%;
+                        height: 684px;
+                        border: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

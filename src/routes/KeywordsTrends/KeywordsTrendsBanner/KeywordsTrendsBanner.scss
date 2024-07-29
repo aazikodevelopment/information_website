@@ -1,0 +1,48 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.keywords-trends-banner-all-contnet-alignment {
+  background-color: #fff;
+  padding: 50px 0 120px 0;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 560px;
+    gap: 43px;
+    align-items: center;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+    .grid-items {
+      h2 {
+        font-weight: 600;
+        font-size: 30px;
+        margin: 0 0 10px 0;
+        line-height: 140.5%;
+        color: #00aeef;
+        max-width: 425px;
+
+        @include breakpoint("max-sm") {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+
+      .image-style {
+        img {
+            width: 100%;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #606060;
+        max-width: 569px;
+      }
+    }
+  }
+}

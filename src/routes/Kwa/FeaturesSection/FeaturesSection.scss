@@ -1,0 +1,145 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.feature-section-all-contnet-alignment {
+  background: linear-gradient(
+    100.84deg,
+    rgba(1, 141, 193, 0.15) 9.55%,
+    rgba(118, 212, 247, 0.15) 89.68%
+  );
+  padding: 50px 0;
+
+  h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: #343434;
+    @include breakpoint("max-sm") {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 306px;
+    gap: 24px;
+
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      padding: 26px;
+
+      .first-content {
+        display: flex;
+        align-items: center;
+        padding: 0 0 15px 0;
+        gap: 19px;
+
+        span {
+          display: block;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 41px;
+          color: rgba(0, 174, 239, 0.6);
+
+          
+          @include breakpoint("max-sm") {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        }
+      }
+
+      .last-content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .town-content {
+          display: flex;
+          gap: 6px;
+          align-items: center;
+
+          span {
+            display: block;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #606060;
+          }
+        }
+      }
+
+      .profile {
+        display: flex;
+        gap: 10px;
+        padding: 0 0 12px 0;
+        align-items: center;
+        img {
+          min-width: 51px;
+          width: 51px;
+          height: 51px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        div {
+          p {
+            font-weight: 500;
+            font-size: 14px;
+            margin: 0 0 4px 0;
+            line-height: 17px;
+            color: #343434;
+          }
+
+          span {
+            display: block;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #606060;
+          }
+        }
+      }
+
+      .center-text {
+        padding: 0 0 56px 0;
+        span {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #00aeef;
+          display: block;
+        }
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          margin: 0 0 20px 0;
+          color: #bababa;
+        }
+      }
+    }
+
+    .grid-items {
+      height: 100%;
+
+      .man-image {
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

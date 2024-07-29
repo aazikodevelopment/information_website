@@ -1,0 +1,410 @@
+@import "../../styles/mixins/index.scss";
+
+.sampling-section {
+    background: #FFF;
+    padding: 16px 0;
+
+    .TowGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center !important;
+        gap: 16px;
+
+        .MessageGrid {
+            width: 539px;
+            height: 156px;
+            top: 278px;
+            margin: 0 auto !important;
+
+            h2 {
+                // font-family: Inter;
+                font-size: 70px;
+                font-weight: 600;
+                // line-height: 84.72px;
+                text-align: left;
+                color: #042953;
+            }
+
+            .InfoMessageText {
+                font-family: Montserrat;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21.94px;
+                text-align: left;
+                color: #000000;
+            }
+        }
+
+        .ImageGrid {
+            img {
+                width: 620.16px;
+                height: 623.91px;
+                top: 160px;
+                left: 670.45px;
+                gap: 0px;
+                opacity: 0px;
+            }
+        }
+    }
+
+    .sampling-alignment {
+        padding: 70px 0 0 0;
+
+        @include breakpoint("max-sm") {
+            padding: 40px 0 0 0;
+        }
+
+        .ImageGrid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            img {
+                width: 141.86px;
+                height: 189.38px;
+                top: 760px;
+                left: 586px;
+                gap: 0px;
+                opacity: 0px;
+
+            }
+
+            h5 {
+                position: absolute;
+                top: 50%;
+                left: 54%;
+                transform: translateY(-50%);
+                font-family: Montserrat;
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 34.13px;
+                text-align: left;
+            }
+        }
+
+        .Product-Title {
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 39.01px;
+            text-align: center !important;
+            color: #000000;
+            padding-bottom: 16px;
+        }
+
+        .sampling-TowGrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            div {
+                .sampling-img {
+                    img {
+                        width: 281px;
+                        height: 200px;
+                        top: 743px;
+                        left: 257px;
+                        gap: 0px;
+                        opacity: 0px;
+                        padding: 10px;
+                        border-radius: 10px;
+                    }
+                }
+
+                .sampling-message {
+                    width: 500px;
+                    margin: 0 auto !important;
+
+                    h2 {
+                        font-family: Montserrat;
+                        font-size: 28px;
+                        font-weight: 600;
+                        line-height: 34.13px;
+                        text-align: left;
+                        color: #000000;
+                        text-align: center;
+                        margin: 16px 0;
+                    }
+
+                    p {
+                        font-family: Montserrat;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 21.94px;
+                        text-align: center;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+@media (max-width: $breakpoint-xs) {
+    .sampling-section {
+        .TowGrid {
+            display: block !important;
+            grid-template-columns: repeat(auto auto) !important;
+
+            .MessageGrid {
+                width: 539px;
+                height: 100% !important;
+            }
+
+            .ImageGrid {
+                img {
+                    width: 500.16px !important;
+                    height: 500px !important;
+                    margin-top: 16px !important;
+                }
+            }
+        }
+
+        .sampling-alignment {
+            .ImageGrid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                img {
+                    width: 130px;
+                    height: 140px;
+
+                }
+
+                h5 {
+                    position: absolute;
+                    top: 50%;
+                    left: 62%;
+                    transform: translateY(-50%);
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 34.13px;
+                    text-align: left;
+                }
+            }
+
+            .Product-Title {
+                font-size: 26px !important;
+            }
+
+            .sampling-TowGrid {
+                display: block !important;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px !important;
+
+                div {
+                    .sampling-message {
+                        width: 100% !important;
+
+                        h2 {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+    .sampling-section {
+        .TowGrid {
+            display: block !important;
+            grid-template-columns: repeat(auto auto) !important;
+
+            .MessageGrid {
+                width: 500px !important;
+                height: 100% !important;
+            }
+
+            .ImageGrid {
+                img {
+                    width: 100% !important;
+                    height: 400px !important;
+                    margin-top: 16px !important;
+                }
+            }
+        }
+
+        .sampling-alignment {
+            padding: 122px 0 0 0;
+
+            .ImageGrid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                // img {
+                //     width: 130px;
+                //     height: 140px;
+
+                // }
+
+                h5 {
+                    position: absolute;
+                    top: 50%;
+                    left: 58%;
+                    transform: translateY(-50%);
+                    font-family: Montserrat;
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 34.13px;
+                    text-align: left;
+                }
+            }
+
+            .Product-Title {
+                font-size: 26px !important;
+            }
+
+            .sampling-TowGrid {
+                display: grid !important;
+                gap: 36px !important;
+
+                div {
+                    .sampling-message {
+                        width: 100% !important;
+
+                        h2 {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    .sampling-section {
+        .TowGrid {
+            display: block !important;
+            grid-template-columns: repeat(auto auto) !important;
+
+            .MessageGrid {
+                width: 500px !important;
+                height: 100% !important;
+            }
+
+            .ImageGrid {
+                img {
+                    width: 100% !important;
+                    height: 400px !important;
+                    margin-top: 16px !important;
+                }
+            }
+        }
+
+        .sampling-alignment {
+            padding: 122px 0 0 0;
+
+            .ImageGrid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                // img {
+                //     width: 130px;
+                //     height: 140px;
+
+                // }
+
+                h5 {
+                    position: absolute;
+                    top: 50%;
+                    left: 58%;
+                    transform: translateY(-50%);
+                    font-family: Montserrat;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 34.13px;
+                    text-align: left;
+                }
+            }
+
+            .Product-Title {
+                font-size: 26px !important;
+            }
+
+            .sampling-TowGrid {
+                display: grid !important;
+                gap: 36px !important;
+
+                div {
+                    .sampling-message {
+                        width: 100% !important;
+
+                        h2 {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .sampling-section {
+        .TowGrid {
+            display: grid !important;
+            grid-template-columns: repeat(2 1fr) !important;
+
+            .MessageGrid {
+                width: 450px !important;
+                height: 100% !important;
+            }
+
+            .ImageGrid {
+                img {
+                    width: 100% !important;
+                    height: 400px !important;
+                    margin-top: 16px !important;
+                }
+            }
+        }
+
+        .sampling-alignment {
+            padding: 122px 0 0 0;
+
+            .Product-Title {
+                font-size: 26px !important;
+            }
+
+            .sampling-TowGrid {
+                display: grid !important;
+                gap: 36px !important;
+
+                div {
+                    .sampling-message {
+                        width: 100% !important;
+
+                        h2 {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+
+       
+    }
+}

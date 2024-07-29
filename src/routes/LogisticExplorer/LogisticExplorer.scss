@@ -1,0 +1,507 @@
+@import "../../styles/mixins/global.scss";
+
+.logistic-explorer-section {
+  padding: 50px 0;
+
+  .logistic-explorer-alignment {
+    .logistic-explorer-box {
+      border-radius: 8px;
+      max-width: 100%;
+      background: rgba(0, 174, 239, 0.08);
+      padding: 15px 20px 20px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include breakpoint("max-md") {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      @include breakpoint("max-sm") {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .logistic-transportation-by-section {
+        label {
+          color: #606060;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          text-transform: uppercase;
+        }
+
+        .logistic-transportation-box-alignment {
+          margin: 8px 0 0 0;
+          border-radius: 8px 0 0 8px;
+          background: #fff;
+          height: 70px;
+          padding: 4px 0 6px 0;
+          display: flex;
+          align-items: center;
+
+          @include breakpoint("max-sm") {
+            border-radius: 8px;
+            margin: 0;
+          }
+
+          .logistic-transportation-child-details {
+            padding: 0 15px;
+            border-right: 1px solid #bababa;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            @include breakpoint("max-sm") {
+              &:last-child {
+                border-right: none;
+              }
+            }
+
+            .logistic-explorer-option-box {
+              width: 50px;
+              height: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              gap: 8px;
+              // padding: 12px 0;
+              cursor: pointer;
+
+              &.active-explorer-box {
+                background: #00aeef;
+                border-radius: 8px;
+
+                &.landBox-active-explorer-box {
+                  background: #00a651;
+
+                  .land-alignment {
+                    background: #fff;
+                  }
+                }
+
+                &.air-active-explorer-box {
+                  background: #ed1c24;
+                }
+
+                .logistic-explorer-option-icon {
+                  svg {
+                    path {
+                      stroke: white;
+                    }
+                  }
+                }
+
+                p {
+                  color: #fff;
+                }
+              }
+
+              .logistic-explorer-option-icon {
+                height: 6px;
+                display: flex;
+
+                svg {
+                  height: 100%;
+                }
+
+                &.land-alignment {
+                  width: 24px;
+                  height: 2px;
+                  background: #00a651;
+                }
+              }
+
+              p {
+                color: #606060;
+                font-family: 'Poppins', sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                text-transform: uppercase;
+                padding: 0;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .logistic-origin-and-destination-section {
+        width: 468px;
+
+        .logistic-label-alignment {
+          @include breakpoint("max-sm") {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+        }
+
+        label {
+          color: #606060;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          text-transform: uppercase;
+
+          &:first-child {
+            margin: 0 92px 0 0;
+
+            @include breakpoint("max-sm") {
+              margin: 0;
+              // margin: 0 52px 0 0;
+            }
+
+            @media (min-width:"998px") and (max-width:"1199px") {
+              &:first-child {
+                margin: 0 32px 0 0 !important;
+              }
+
+            }
+
+          }
+        }
+
+        .logistic-origin-and-destination-box {
+          margin: 8px 0 0 0;
+          border-radius: 0;
+          background: #fff;
+          height: 70px;
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+          gap: 84px;
+          position: relative;
+
+          @include breakpoint("max-sm") {
+            border-radius: 8px;
+            padding: 10px;
+            height: 50px;
+          }
+
+
+          &:before {
+            position: absolute;
+            content: "";
+            background: url("../../assets/icons/destiniy.svg");
+            width: 40px;
+            height: 40px;
+            top: 14px;
+            transform: translateX(-50%);
+            left: 47%;
+            z-index: 99;
+
+            @include breakpoint("max-sm") {
+              // display: none;
+              top: 8px;
+            }
+          }
+
+          &:after {
+            position: absolute;
+            content: "";
+            background: #bababa;
+            width: 1px;
+            height: 60px;
+            top: 4px;
+            transform: translateX(-50%);
+            left: 47%;
+
+            @include breakpoint("max-sm") {
+              // display: none;
+              height: 48px;
+            }
+          }
+
+          .logistic-origin-and-destination-names {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            position: relative;
+
+            label {
+              color: #00AEEF;
+
+              font-family: 'Poppins', sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 24px;
+              text-transform: uppercase;
+              margin: 0;
+
+              @include breakpoint("max-sm") {
+                font-size: 12px;
+                line-height: 16px;
+              }
+
+            }
+
+            .logistic-dropdown-alignment {
+              @include breakpoint("max-sm") {
+                min-width: 140px;
+              }
+            }
+
+            input {
+              width: 100%;
+              height: 100%;
+              border: none;
+              background: transparent;
+              font-family: 'Poppins', sans-serif;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 24px;
+              text-transform: capitalize;
+
+              @include breakpoint("max-sm") {
+                font-size: 12px;
+                line-height: 16px;
+              }
+
+              &::placeholder {
+                color: #606060;
+              }
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+
+      .logistic-origin-ready-load-section {
+        label {
+          color: #606060;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          text-transform: uppercase;
+        }
+
+        .logistic-origin-ready-load-box-alignment {
+          margin: 8px 0 0 0;
+          border-radius: 0;
+          background: #fff;
+          height: 70px;
+          padding: 4px 40px 6px 0;
+          display: flex;
+          align-items: center;
+
+          @include breakpoint("max-md") {
+            padding: 4px 40px 6px 40px;
+          }
+
+          .logistic-date-alignment {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            span {
+              color: #343434;
+              font-family: 'Poppins', sans-serif;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 18px;
+              text-transform: capitalize;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+
+      .logistic-origin-type-shipment {
+        label {
+          color: #606060;
+          font-family: 'Poppins', sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 14px;
+          text-transform: uppercase;
+        }
+
+        .logistic-origin-type-box-alignment {
+          margin: 8px 0 0 0;
+          border-radius: 0 8px 8px 0;
+          background: #fff;
+          height: 70px;
+          padding: 4px 10px 6px 0;
+          display: flex;
+          align-items: center;
+
+          @include breakpoint("max-md") {
+            padding: 4px 10px 6px 10px;
+          }
+
+          .logistic-origin-type-option {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            .first-details-flex {
+              display: flex;
+              align-items: center;
+              gap: 6px;
+
+              span {
+                color: #343434;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                text-transform: capitalize;
+              }
+            }
+
+            .second-details-flex {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              svg {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      &.landBox-active-explorer-box {
+        .logistic-transportation-by-section {
+          .logistic-transportation-box-alignment {
+            .logistic-transportation-child-details {
+              .logistic-explorer-option-box {
+                background: #00a651;
+                border-radius: 8px;
+
+                .logistic-explorer-option-icon {
+                  svg {
+                    path {
+                      stroke: #fff;
+                    }
+                  }
+
+                  &.land-alignment {
+                    background: #fff;
+                  }
+                }
+
+                p {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+
+        .logistic-origin-and-destination-section {
+          .logistic-origin-and-destination-box {
+            .logistic-origin-and-destination-names {
+              label {
+                color: #00a651;
+              }
+            }
+          }
+        }
+
+        .logistic-origin-type-shipment {
+          .logistic-origin-type-box-alignment {
+            .logistic-origin-type-option {
+              .second-details-flex {
+                .seaech-alignment {
+                  svg {
+                    rect {
+                      fill: #00a651;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &.airBox-active-explorer-box {
+        .logistic-transportation-by-section {
+          .logistic-transportation-box-alignment {
+            .logistic-transportation-child-details {
+              .logistic-explorer-option-box {
+                background: #ed1c24;
+                border-radius: 8px;
+
+                .logistic-explorer-option-icon {
+                  svg {
+                    path {
+                      stroke: #fff;
+                    }
+                  }
+
+                  &.land-alignment {
+                    background: #fff;
+                  }
+                }
+
+                p {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+
+        .logistic-origin-and-destination-section {
+          .logistic-origin-and-destination-box {
+            .logistic-origin-and-destination-names {
+              label {
+                color: #ed1c24;
+              }
+            }
+          }
+        }
+
+        .logistic-origin-type-shipment {
+          .logistic-origin-type-box-alignment {
+            .logistic-origin-type-option {
+              .second-details-flex {
+                .seaech-alignment {
+                  svg {
+                    rect {
+                      fill: #ed1c24;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .logistic-explorer-all-details-alignment {
+      padding: 24px 0 0 0;
+
+      .logistic-explorer-all-details-grid {
+        display: grid;
+        grid-template-columns: 384px 1fr;
+        gap: 24px;
+
+        .logistic-explorer-all-details-grid-item {}
+
+        @media screen and (max-width: 800px) {
+          grid-template-columns: 1fr;
+
+          .logistic-explorer-all-details-grid-item {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

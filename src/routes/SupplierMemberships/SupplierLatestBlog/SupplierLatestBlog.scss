@@ -1,0 +1,75 @@
+@import "../../../styles/mixins/global.scss";
+
+.supplier-latest-blog-section {
+    padding: 50px 0;
+
+    .supplier-latest-blog-alignment {
+        h6 {
+            color: #343434;
+           font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            text-align: center;
+
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        .supplier-all-blog-details-alignment {
+            padding: 30px 0 0 0;
+
+            .supplier-all-blog-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+
+                @include breakpoint("max-sm") {
+                    grid-template-columns: repeat( 1 , 1fr);
+                }
+                .supplier-all-blog-gridItem {
+                    .supplier-blog-box-alignment {
+                        border-radius: 8px;
+                        background: #FFF;
+                        box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.09);
+                        width: 100%;
+
+
+                        .supplier-blog-img-alignment {
+                            width: 100%;
+                            height: 256px;
+                            border-radius: 8px 8px 0 0;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .supplier-blog-details-description {
+                            padding: 20px;
+
+                            p {
+                                color: #343434;
+                                text-align: center;
+                               font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                line-height: 24px;
+
+                                @include breakpoint("max-sm") {
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

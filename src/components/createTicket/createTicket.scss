@@ -1,0 +1,22 @@
+@import '../../styles/mixins/global.scss';
+
+.createTicket-section {
+    background: #E5E5E5;
+    height: 100vh;
+    padding: 24px 120px;
+
+    @include breakpoint("max-sm") {
+        padding: 24px 0;
+    }
+
+    .createTicket-grid {
+        margin: 24px 0 0 0;
+        display: grid;
+        grid-template-columns: 306px 1fr;
+        gap: 24px;
+
+        @include breakpoint("max-sm") {
+            grid-template-columns: repeat(1 , 1fr);
+        }
+    }
+}

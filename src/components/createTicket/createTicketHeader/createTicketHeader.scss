@@ -1,0 +1,83 @@
+@import '../../../styles/mixins/global.scss';
+
+.createTicketHeader-section {
+    .createTicketHeader-alignment {
+        background: #FFFFFF;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint("max-sm") {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        .heading-alignment {
+            h1 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 26px;
+                color: #343434;
+            }
+        }
+
+        .input-alignment {
+            width: 505px;
+            height: 30px;
+            display: flex;
+
+            @include breakpoint("max-sm") {
+                width: 100%;
+            }
+
+            input {
+                width: 80%;
+                background: rgba(186, 186, 186, 0.1);
+                border: 1px solid #BABABA;
+                border-right: none;
+                padding: 7px 10px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: var(--theme-heading-text-color);
+
+                &::placeholder {
+                    color: #BABABA;
+                }
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+
+            button {
+                width: 20%;
+                background: #00AEEF;
+                border: none;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 7px;
+                cursor: pointer;
+
+                @include breakpoint("max-sm") {
+                    width: 25%;
+                }
+
+                img {
+                    width: 17px;
+                    height: 17px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

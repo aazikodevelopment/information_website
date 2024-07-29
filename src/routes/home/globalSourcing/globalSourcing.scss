@@ -1,0 +1,118 @@
+@import '../../../styles/mixins/global.scss';
+
+.global-sourcing-all-contnet-alignment {
+    padding: 70px 0;
+
+    .page-title {
+        padding: 0 0 80px 0;
+
+
+        h4 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 40px;
+            color: #1E1E1E;
+            position: relative;
+            text-align: center;
+
+            @include breakpoint("max-sm") {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                height: 3px;
+                background: #00AEEF;
+                width: 81px;
+                right: 50%;
+                bottom: -11px;
+                transform: translateX(50%);
+            }
+        }
+
+        p {
+            padding: 39px 0 0 0;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+            color: #8A8C9A;
+            text-align: center;
+
+            @include breakpoint("max-sm") {
+                font-size: 14px;
+                line-height: 22px;
+              }
+        }
+    }
+
+    .grid {
+        @include grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+
+        @include breakpoint("max-md") {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint("max-sm") {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+
+        .grid-items {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.16);
+            border-radius: 10px;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 6px;
+                background: #00A651;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .icon-style {
+                padding: 0 0 18px 0;
+                width: 70px;
+                height: 70px;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+
+            h5 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 30px;
+                color: #1E1E1E;
+            }
+
+            p {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: #8A8C9A;
+                padding: 24px 0 0 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import "../../../styles/mixins/global.scss";
+
+.global-sourcing-all-contnet-alignment {
+  padding: 60px 0;
+
+  .cus-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+
+    .cus-grid-items {
+      .icon-center {
+        display: flex;
+        padding: 0 0 30px 0;
+        justify-content: center;
+      }
+
+      span {
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
+
+  .title {
+    padding: 0 0 100px 0;
+
+    @include breakpoint("max-sm") {
+      padding: 0 0 40px 0;
+    }
+    p {
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: #fff;
+      text-align: center;
+      @include breakpoint("max-sm") {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      span {
+        color: #00aeef;
+      }
+    }
+  }
+}

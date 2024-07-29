@@ -1,0 +1,129 @@
+@import "../../../styles/mixins/global.scss";
+
+.seller-all-content-alignment {
+  background: rgba(0, 174, 239, 0.12);
+  padding: 50px 0;
+
+  .title {
+    padding: 0 0 45px 0;
+    h6 {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+      text-transform: capitalize;
+      color: #343434;
+      text-align: center;
+
+      @include breakpoint("max-sm") {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+  .more-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 0 0;
+
+    button {
+      background-color: transparent;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      border: 1px solid #00aeef;
+      border-radius: 8px;
+      color: #00aeef;
+      padding: 10px 33px;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 20px;
+    }
+
+    .grid-items:nth-child(1) {
+      background-color: #fff;
+      padding: 24px;
+
+      .left-icon {
+        padding: 0 0 14px 0;
+      }
+      .text {
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          text-transform: capitalize;
+          color: #606060;
+          @include breakpoint("max-sm") {
+            font-size: 14px;
+            line-height: 22px;
+          }
+        }
+      }
+
+      .right-icon {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .profile-grid {
+        display: grid;
+        grid-template-columns: 53px 1fr;
+        gap: 12px;
+        padding: 0 0 24px 0;
+        align-items: center;
+
+        .profile-grid-items {
+          img {
+            width: 53px;
+            height: 53px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          p {
+            font-weight: 500;
+            font-size: 16px;
+            margin: 0 0 1px 0;
+            line-height: 134.5%;
+            text-transform: capitalize;
+            color: #343434;
+
+            @include breakpoint("max-sm") {
+              font-size: 14px;
+              line-height: 22px;
+            }
+          }
+
+          span {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: capitalize;
+            color: #606060;
+          }
+        }
+      }
+    }
+
+    .grid-items {
+      height: 100%;
+
+      .seller-profile {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+@import "../../../styles/mixins/global.scss";
+
+.vision-all-contnet-alignment {
+  padding: 100px 0 0 0;
+  position: relative;
+
+  @include breakpoint("max-sm") {
+    padding: 0;
+  }
+
+  &::before {
+    content: '';
+    background: url('../../../assets/Image/earth-bg-img.png');
+    width: 100%;
+    height: 1187px;
+    position: absolute;
+    top: 600px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include breakpoint("max-sm") {
+      height: 100%;
+      top: 200px;
+    }
+
+  }
+
+  .vision-heading {
+    text-align: center;
+
+    .vision-img {
+      height: 125px;
+
+      @include breakpoint("max-sm") {
+        height: 55px;
+      }
+    }
+
+    p {
+      font-size: 30px;
+      color: #fff;
+
+      span {
+        color: #00aeef;
+      }
+
+      @include breakpoint("max-sm") {
+        font-size: 14px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .vision-details-alignment {
+    padding: 100px 0 280px 0;
+
+    @include breakpoint("max-sm") {
+      padding: 60px 0 0 0;
+    }
+
+    .vision-first-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 134px;
+
+      @include breakpoint("max-sm") {
+        display: none;
+      }
+
+      .vision-details-box-alignment {
+        .vision-details-img {
+          width: 150px;
+          height: 150px;
+
+          @include breakpoint("max-sm") {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+        }
+
+        p {
+          font-size: 20px;
+          color: #fff;
+          font-weight: 400;
+          padding: 28px 0 0 0;
+          text-align: center;
+        }
+      }
+    }
+
+    .vision-second-box-alignment {
+      position: relative;
+      width: 100%;
+      height: 850px;
+
+      @include breakpoint("max-sm") {
+        height: auto;
+        display: none;
+      }
+
+      .vision-second-details-box-alignment {
+        width: 150px;
+        height: 150px;
+
+        img {
+          @include breakpoint("sm-max") {
+            width: 100px;
+            height: 100px;
+          }
+        }
+
+        @include breakpoint("max-sm") {
+          height: auto;
+        }
+
+        &.first-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          @include breakpoint("max-sm") {
+            position: initial;
+          }
+        }
+
+        &.second-img {
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          @include breakpoint("max-sm") {
+            position: initial;
+          }
+        }
+
+        &.third-img {
+          position: absolute;
+          top: 300px;
+          left: 60px;
+
+          @include breakpoint("max-sm") {
+            position: initial;
+          }
+        }
+
+        &.forth-img {
+          position: absolute;
+          top: 300px;
+          right: 60px;
+
+          @include breakpoint("max-sm") {
+            position: initial;
+          }
+        }
+
+        &.five-img {
+          position: absolute;
+          bottom: 60px;
+          left: 170px;
+
+          @include breakpoint("max-sm") {
+            position: initial;
+          }
+        }
+
+        &.six-img {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+
+          @include breakpoint("max-sm") {
+            position: initial;
+          }
+        }
+
+        &.seven-img {
+          position: absolute;
+          bottom: 60px;
+          right: 170px;
+
+          @include breakpoint("max-sm") {
+            position: initial;
+          }
+        }
+
+        .vision-second-details-img {
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+        }
+
+        p {
+          font-size: 20px;
+          color: #fff;
+          padding: 28px 0 0 0;
+          text-align: center;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+.mobile-view-show-new-home-page-data {
+  display: none;
+  padding: 0 0 60px 0;
+
+  @include breakpoint("max-sm") {
+    display: block;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+
+    .icon-center-alignment {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    span {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: #fff;
+      line-height: 20px;
+      text-align: center;
+      padding: 20px 0 0 0;
+    }
+  }
+}

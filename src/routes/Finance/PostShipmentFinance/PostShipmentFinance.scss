@@ -1,0 +1,87 @@
+@import '../../../styles/mixins/global.scss';
+
+.post-shipment-finance-section {
+    padding: 102px 0;
+    background-color: #fff;
+
+    @include breakpoint("max-sm") {
+        padding: 40px 0;
+    }
+
+    .post-shipment-details-alignment {
+        .post-shipment-details-heading {
+            max-width: 660px;
+            margin: 0 auto;
+
+            h5 {
+                color: var(--theme-heading-text-color);
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .apply-button-alignment {
+            padding: 38px 0 0 0;
+            text-align: center;
+
+            button {
+                padding: 10px 22px;
+                border-radius: 20px;
+                background: #23A6F0;
+                color: #FFF;
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0.2px;
+                cursor: pointer;
+                border: none;
+            }
+        }
+
+        .in-the-news-section {
+            padding: 127px 0 0 0;
+
+            @include breakpoint("max-sm") {
+                padding: 40px 0 0 0;
+            }
+
+            h4 {
+                text-align: center;
+                color: var(--theme-heading-text-color);
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                line-height: 42px;
+                font-weight: 600;
+                letter-spacing: 0.2px;
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            .in-the-news-details-alignment {
+                padding: 100px 0 0 0;
+
+                .in-the-new-details-relative {
+       
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

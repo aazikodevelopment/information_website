@@ -1,0 +1,300 @@
+@import "../../styles/mixins/global.scss";
+
+.importer-exporter-section {
+    background-color: #f8f8f8;
+
+    .importer-exporter-banner-section {
+        padding: 60px 0 0 0;
+
+        .importer-exporter-grid {
+            display: grid;
+            grid-template-columns: 1fr 482px;
+            gap: 127px;
+
+
+            @include breakpoint("max-sm") {
+                grid-template-columns: repeat(1 , 1fr);
+                gap: 40px;
+            }
+
+            .importer-exporter-grid-item {
+                .importer-banner-details-alignment {
+                    h4 {
+                        color: rgba(0, 0, 0, 0.80);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 30px;
+                        font-weight: 600;
+                        line-height: normal;
+                        text-transform: capitalize;
+                        @include breakpoint("max-sm") {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+
+                    p {
+                        padding: 24px 0 0 0;
+                        color: rgba(0, 0, 0, 0.80);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 140.5%;
+
+
+                        @include breakpoint("max-sm") {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                        /* 28.1px */
+                    }
+                }
+            }
+        }
+    }
+
+
+    .importer-exporter-all-details-alignment {
+        padding: 156px 0 0 0;
+
+        @include breakpoint("max-sm") {
+            padding: 60px 0 0 0;
+        }
+
+        .import-explorer-all-body-details-alingnment {
+            padding: 22px 0 0 0;
+
+            .import-explorer-all-body-grid-alignment {
+                display: grid;
+                grid-template-columns: 535px 1fr;
+                gap: 42px;
+                align-items: center;
+                @include breakpoint("max-sm") {
+                    grid-template-columns: repeat(1 , 1fr);
+                    gap: 40px;
+                }
+                .import-explorer-all-body-grid-item {
+                    .import-explorer-right-side-alignment {
+                        h4 {
+                            color: var(--theme-heading-text-color);
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 140.5%;
+                            opacity: 0.8;
+
+
+                            @include breakpoint("max-sm") {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                        }
+
+
+                        .import-explorer-list-alignment {
+                            padding: 30px 0 0 0;
+
+                            ul {
+                                max-width: 550px;
+
+
+                                @include breakpoint("max-sm") {
+                                    padding-left: 1.25rem;
+                                }
+
+                                li {
+                                    color: var(--theme-heading-text-color);
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 140.5%;
+                                    padding: 0 0 24px 0;
+
+
+                                    @include breakpoint("max-sm") {
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .smart-delivery-section {
+        padding: 122px 0 0 0;
+
+
+        @include breakpoint("max-sm") {
+            padding: 60px 0 0 0;
+        }
+
+        .smart-delivery-grid {
+            display: grid;
+            grid-template-columns: 1fr 486px;
+            gap: 74px;
+            align-items: center;
+
+
+            @include breakpoint("max-sm") {
+                grid-template-columns: repeat(1 , 1fr);
+                gap: 40px;
+            }
+
+            .smart-delivery-grid-item {
+                .smart-delivery-side-section {
+                    max-width: 468px;
+
+                    h4 {
+                        color: var(--theme-heading-text-color);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 140.5%;
+                        opacity: 0.8;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+
+                    p {
+                        padding: 25px 0 0 0;
+                        color: rgba(0, 0, 0, 0.80);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 140.5%;
+                    
+                        @include breakpoint("max-sm") {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .power-full-web-tools-section {
+        padding: 122px 0 0 0;
+        @include breakpoint("max-sm") {
+            padding: 60px 0 0 0;
+        }
+        .power-full-web-tools-grid {
+            display: grid;
+            grid-template-columns: 403px 1fr;
+            gap: 150px;
+            align-items: center;
+
+            @include breakpoint("max-sm") {
+                grid-template-columns: repeat(1 , 1fr);
+                gap: 40px;
+            }
+
+            .power-full-web-tools-grid-item {
+
+                .power-full-web-tools-right-side-alignment {
+                    max-width: 484px;
+                    margin: 0 auto;
+
+                    h4 {
+                        color: var(--theme-heading-text-color);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 140.5%;
+                        opacity: 0.8;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+
+                    p {
+                        padding: 24px 0 0 0;
+                        color: rgba(0, 0, 0, 0.80);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 140.5%;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    .sign-up-aaziko-section {
+        padding: 128px 0;
+        max-width: 368px;
+        margin: 0 auto;
+
+        @include breakpoint("max-sm") {
+            padding: 60px 0;
+        }
+        h6 {
+            color: var(--theme-heading-text-color);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            color: var(--theme-heading-text-color);
+            opacity: 0.8;
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            a {
+                color: #00AEEF;
+            }
+        }
+
+
+        .sign-up-button {
+            padding: 45px 0 0 0;
+            text-align: center;
+
+            button {
+                padding: 14px 50px;
+                border-radius: 5px;
+                background: #00AEEF;
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                color: #FFF;
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                cursor: pointer;
+                border: none;
+
+                @include breakpoint("max-sm") {
+                    font-size: 14px;
+                    padding: 11px 22px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

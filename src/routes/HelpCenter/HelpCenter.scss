@@ -1,0 +1,187 @@
+@import "../../styles/mixins/global.scss";
+
+.help-center-section {
+    background-color: #f8f8f8;
+
+    .help-center-alignment {
+        padding: 50px 0;
+
+        .help-details-alignment {
+
+            .help-center-heading-alignment {
+                text-align: center;
+
+                h4 {
+                    color: var(--theme-heading-text-color);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-transform: capitalize;
+                    opacity: 0.8;
+                }
+            }
+
+            .help-center-search-alignment {
+                max-width: 946px;
+                margin: 24px auto 0 auto;
+                height: 48px;
+                border-radius: 10px;
+                background: #FFF;
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                padding: 0 12px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    border: none;
+                    color: rgba(0, 0, 0, 0.80);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    text-transform: capitalize;
+
+                    &::placeholder {
+                        opacity: 0.6;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .help-center-button {
+                    button {
+                        padding: 5px 13px;
+                        color: #FFF;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        text-transform: capitalize;
+                        cursor: pointer;
+                        border-radius: 8px;
+                        background: #00AEEF;
+                        border: none;
+                    }
+                }
+            }
+
+            .help-center-all-details-alignment {
+                padding: 42px 0 0 0;
+
+                .help-center-all-details-box {
+                    background: #FFF;
+                    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+                    width: 100%;
+
+                    .help-center-all-details-grid {
+                        display: grid;
+                        grid-template-columns: 394px 1fr;
+                        padding: 42px 0;
+
+
+                        @include breakpoint("max-sm") {
+                            grid-template-columns: repeat(1 , 1fr);
+                            gap: 40px;
+                        }
+
+                        .help-center-all-details-sidebar {
+
+                            ul {
+                                list-style: none;
+
+                                li {
+                                    color: rgba(0, 0, 0, 0.80);
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    padding: 12px 33px 15px 27px;
+                                    margin: 0 0 22px 0;
+                                    cursor: pointer;
+                                    width: max-content;
+                                    @include breakpoint("max-sm") {
+                                        padding: 14px;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                    }
+                                    &.active-sidebar-link {
+                                        background: rgba(176, 234, 255, 0.50);
+                                        color: #00AEEF;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+
+                        .help-center-left-side-alignment {
+                            padding: 0 28px 0 0;
+
+                            @include breakpoint("max-sm") {
+                                padding: 0 14px;
+                            }
+
+                            .help-center-list-alignment {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                gap: 128px;
+                                height: 76px;
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.40);
+
+                                &:last-child {
+                                    border-bottom: none;
+                                }
+
+                                p {
+                                    color: rgba(0, 0, 0, 0.80);
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+
+
+                                    @include breakpoint("max-sm") {
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                    }
+                                }
+
+                                .help-center-down-alignment {
+                                    height: 27px;
+                                    display: flex;
+                                    align-items: center;
+                                    margin: 0 8px 0 0;
+                                    cursor: pointer;
+
+                                    @include breakpoint("max-sm") {
+                                        height: auto;
+                                    }
+                                    img {
+                                        cursor: pointer;
+
+                                        @include breakpoint("max-sm") {
+                                            min-width: 16px;
+                                            width: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

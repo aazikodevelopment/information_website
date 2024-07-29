@@ -1,0 +1,201 @@
+@import "../../styles/mixins/global.scss";
+
+.compare-competitor-section {
+    background: url("../../assets/Image/Customs-Tariffs-bg.png");
+    width: 100%;
+    height: 648px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 72px 0;
+
+    .compare-competitor-heading {
+        h4 {
+            color: #FFF;
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 52px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        p {
+            padding: 20px 0 0 0;
+            color: #FFF;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 28px;
+            text-transform: capitalize;
+            max-width: 825px;
+            margin: 0 auto;
+        }
+
+    }
+
+    .compare-competitor-body-alignment {
+        margin: 50px 0 0 0;
+
+        .compare-competitor-box-alignment {
+            border-radius: 15px;
+            background: rgba(228, 228, 228, 0.85);
+            box-shadow: 0px 0px 25px 5px rgba(80, 80, 80, 0.25);
+            width: 100%;
+            height: 200px;
+            padding: 50px 20px 24px 20px;
+            max-width: 1480px;
+            margin: 0 auto;
+
+            .compare-competitor-flex-alignment {
+                display: flex;
+                align-items: flex-end;
+                gap: 24px;
+
+                .compare-competitor-input {
+                    label {
+                        color: #505050;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 27.72px;
+                    }
+
+                    .input-details-alignment {
+                        padding: 22px 10px 0 10px;
+                        width: 342px;
+                        border-bottom: 1px solid #505050;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+
+                        &.search-input {
+                            width: 464px;
+                        }
+
+                        input {
+                            width: 100%;
+                            border: none;
+                            background: transparent;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 27.72px;
+                            color: #000;
+
+                            &::placeholder {
+                                color: #505050;
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        img {
+                            cursor: pointer;
+                        }
+
+                        .search-box-drodown-alignment {
+                            width: 262px;
+                            height: auto;
+                            max-height: 235px;
+                            overflow-y: auto;
+                            border-radius: 10px;
+                            background: #FFF;
+                            padding: 10px;
+                            top: 44px;
+                            position: absolute;
+                            right: 40px;
+                            z-index: 9999;
+
+                            h6 {
+                                padding: 0 0 0 20px;
+                                color: #505050;
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 27.72px;
+                            }
+
+                            .dropdown-search-box {
+                                width: 100%;
+                                height: 40px;
+                                border-radius: 7px;
+                                background: #FFF;
+                                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+
+                                input {
+                                    width: 100%;
+                                    height: 100%;
+                                    background: transparent;
+                                    border: none;
+                                    padding: 0 20px;
+                                }
+                            }
+
+                            .search-option-select-alignment {
+                                padding: 10px 0 0 0;
+
+                                ul {
+                                    li {
+                                        color: #505050;
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        line-height: 27.72px;
+                                        cursor: pointer;
+                                        padding: 6px 20px;
+                                        margin: 0 0 4px 0;
+
+                                        &:last-child {
+                                            margin: 0;
+                                        }
+
+                                        &.active-link {
+                                            border-radius: 7px;
+                                            background: #4389FF;
+                                            color: #FFF;
+                                        }
+
+                                        &:hover {
+                                            border-radius: 7px;
+                                            background: #4389FF;
+                                            color: #FFF;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .search-button-alignment {
+                    button {
+                        padding: 16px 71px;
+                        color: #FFF;
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 27.72px;
+                        cursor: pointer;
+                        border-radius: 10px;
+                        background: #4389FF;
+                        border: none;
+                    }
+                }
+            }
+
+            .advance-search-alignment {
+                padding: 20px 240px 0 0;
+                text-align: right;
+
+                a {
+                    cursor: pointer;
+                    color: #2971EB;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 27.72px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

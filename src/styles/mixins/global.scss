@@ -1,0 +1,59 @@
+// @use './mixins/breakpoint.scss';
+// @use './mixins/typography.scss';
+// @use './mixins/columns.scss';
+// @use './function/columns.scss';
+// @use './layout/container.scss';
+// @use './mixins/index.scss';
+
+
+@import '../function/columns.scss';
+@import '../layout/container.scss';
+@import '../mixins/columns.scss';
+@import '../mixins/breakpoint.scss';
+@import '../mixins/index.scss';
+@import '../mixins/typography.scss';
+@import '../theme/theme.scss';
+@import '../common/common.scss';
+@import '../button/button.scss';
+@import '../CustomDropdown/CustomDropdown.scss';   
+
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container-md {
+    max-width: 737px;
+    margin: 0 auto;
+}
+
+.container2 {
+    max-width: 994px;
+    margin: 0 auto;
+}
+
+.container3 {
+    max-width: 1060px;
+    margin: 0 auto;
+    
+}
+
+.container4 {
+    max-width: 825px;
+    margin: 0 auto;
+
+    @include breakpoint("max-sm") {
+        padding: 0 20px;
+    }
+}
+
+.container5 {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.container6 {
+    max-width: 792px;
+    margin: 0 auto;
+}

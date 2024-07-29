@@ -1,0 +1,93 @@
+@import "../../../styles/mixins/global.scss";
+
+.supplier-data-perfomance-section {
+    background: linear-gradient(146deg, #018DC1 0%, #76D4F6 100%);
+    padding: 40px 0;
+    width: 100%;
+
+    .supplier-data-perfomance-alignment {
+        text-align: center;
+
+        h6 {
+            color: #FFF;
+           font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            padding: 0 0 10px 0;
+
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+           font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+
+            @include breakpoint("max-sm") {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+
+        .supplier-input-alignment {
+            padding: 40px 0 0 0;
+
+            @include breakpoint("max-sm") {
+                padding: 20px 0 0 0;
+            }
+
+            input {
+                width: 520px;
+                height: 42px;
+                border-radius: 8px;
+                border: 1px solid #00AEEF;
+                background: #FFF;
+                padding: 0 12px;
+               font-family: 'Poppins', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+
+                @include breakpoint("max-sm") {
+                    width: 100%;
+                }
+                &::placeholder {
+                    color: #BABABA;
+                }
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+        }
+
+        .supplier-button-alignment {
+            padding: 40px 0 0 0;
+
+            button {
+                padding: 14px 62px;
+                border-radius: 8px;
+                background: #FFF;
+                color: #00AEEF;
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                border: none;
+                cursor: pointer;
+
+                @include breakpoint("max-sm") {
+                    padding: 12px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

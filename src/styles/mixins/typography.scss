@@ -1,0 +1,127 @@
+@mixin heading-1 {
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+
+}
+
+@mixin heading-2 {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+
+@mixin heading-lg {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+
+@mixin heading-3 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+
+@mixin heading-4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: var(--primary-font);
+}
+@mixin heading-4-bold {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+@mixin normal14 {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+
+@mixin normal15 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: var(--primary-font);
+}
+
+@mixin medium15 {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+
+
+@mixin normal16 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: var(--primary-font);
+}
+
+@mixin normal17 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: var(--primary-font);
+}
+
+@mixin normal18 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+
+@mixin medium18 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+}
+
+@mixin medium12 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+
+@mixin medium16 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+}
+
+@mixin bold20 {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+
+@mixin text-sm {
+  font-size: 0.875rem;
+  font-family: var(--primary-font);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+
+@mixin text-md-bold {
+  font-size: 1.125rem;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}

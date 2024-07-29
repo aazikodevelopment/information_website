@@ -1,0 +1,75 @@
+@import "../../../styles/mixins/global.scss";
+
+.why-lsq-aaziko-section {
+    padding: 124px 0 0 0;
+
+    .why-lsq-aaziko-alignment {
+        a {
+            color: #000AFF !important;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        .why-lsq-aaziko-all-details {
+            padding: 25px 0 0 0;
+
+            .why-lsq-aaziko-all-grid-alignment {
+                display: grid;
+                grid-template-columns: 1fr 534px;
+                gap: 98px;
+                align-items: center;
+
+                .why-lsq-left-side-alignment {
+                    h6 {
+                        color: #000;
+                        font-size: 36px;
+                        font-weight: 700;
+                        line-height: 40px;
+                        max-width: 370px;
+                    }
+
+                    p {
+                        padding: 12px 0 0 0;
+                        color: #000;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    .why-lsq-notes-details-alignment {
+                        padding: 28px 0;
+
+
+                        .why-lsq-other-details-grid {
+                            display: grid;
+                            grid-template-columns: 42px 1fr;
+                            align-self: center;
+                            gap: 15px;
+                            padding: 0 0 30px 0;
+
+                            .why-lsq-other-notes-alignment {
+                                h4 {
+                                    color: #000;
+                                    font-size: 20px;
+                                    font-weight: 600;
+                                    line-height: 24px;
+                                    padding-top: 0 !important ;
+                                    text-align: left !important;
+                                }
+
+                                p {
+                                    color: #000;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    line-height: 21px;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

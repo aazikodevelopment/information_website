@@ -1,0 +1,162 @@
+@import "../../../../styles/mixins/global.scss";
+
+.less-container-load-all-content-alignment {
+  padding: 24px 0 100px 0;
+
+
+  @include breakpoint("max-sm") {
+    padding: 24px 0 40px 0;
+  }
+
+  .box {
+    padding: 46px 80px;
+    background-color: #fff;
+    border-radius: 8px;
+
+    @include breakpoint("max-sm") {
+      padding: 40px 30px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 34px;
+
+      @include breakpoint("max-md") {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 20px;
+      }
+
+      .card-grid-items {
+        padding: 24px;
+        background: #ffffff;
+        box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+
+        .icon {
+          height: calc(35px + 24px);
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 20px;
+          margin: 0 0 6px 0;
+          line-height: 24px;
+          color: #343434;
+        }
+
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          color: #606060;
+        }
+      }
+    }
+
+    .sec-grid {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 143px;
+      padding: 0 0 70px 0;
+
+      @include breakpoint("max-md") {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 40px;
+      }
+
+      .sec-grid-items {
+        .iamge-style {
+          img {
+            width: 100%;
+            height: 380px;
+            border-radius: 15px;
+            object-fit: cover;
+          }
+        }
+        p {
+          font-weight: 600;
+          margin: 0 0 10px 0;
+          font-size: 20px;
+          line-height: 24px;
+          color: #343434;
+        }
+
+        span {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          color: #606060;
+          padding: 0 0 20px 0;
+          display: block;
+        }
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 273px;
+      gap: 20px;
+      align-items: center;
+      padding: 0 0 70px 0;
+
+      @include breakpoint("max-md") {
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 40px;
+      }
+
+      .grid-items {
+        p {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          color: #343434;
+          margin: 0 0 14px 0;
+        }
+
+        span {
+          display: block;
+          padding: 0 0 18px 0;
+          max-width: 602px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          color: #606060;
+        }
+
+        .button-text-alignment {
+          display: flex;
+          align-items: center;
+          gap: 11px;
+
+          a {
+            display: block;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130.5%;
+            color: #00aeef;
+          }
+
+          button {
+            background: #00aeef;
+            border-radius: 7px;
+            padding: 6px 18px;
+            border: none;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #fff;
+            cursor: pointer;
+          }
+        }
+
+        .image-style {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

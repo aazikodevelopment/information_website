@@ -1,0 +1,167 @@
+@import "../../../styles/mixins/global.scss";
+
+.last-day-order-sidebar-section {
+
+    .last-day-order-sidebar-alignment {
+        .person-name-section {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+
+            .profile-details-alignment {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .person-profile-img {
+                    img {
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .person-profile-name {
+                    h3 {
+                        color: #343434;
+                       font-family: 'Poppins', sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+
+        .sidebar-details-alignment {
+            background: #fff;
+            border-radius: 8px;
+            margin: 24px 0 0 0;
+
+            .my-order-section-alignment {
+                padding: 24px 24px 20px 24px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 0.5px solid #BABABA;
+
+                .my-order-details {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        width: 27px;
+                        height: 27px;
+                        display: block;
+                    }
+
+                    .heading-alignment {
+                        h4 {
+                            color: #606060;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            margin: 0;
+                            padding: 0;
+                            cursor: pointer;
+
+                            &.active {
+                                color: #00AEEF;
+                            }
+                        }
+                    }
+                }
+
+                .rightArrow-alignment {
+
+                    img {
+                        width: 8px;
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .accountSetting-alignment {
+                padding: 20px 26px;
+                display: flex;
+                gap: 12px;
+                border-bottom: 0.5px solid #BABABA;
+
+                .img-alignment {
+                    img {
+                        width: 23px;
+                        height: 23px;
+                        display: block;
+                    }
+                }
+
+                .accountSetting-details-alignment {
+                    .heading-alignment {
+                        padding: 0 0 19px 0;
+
+                        h4 {
+                            color: #606060;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            margin: 0;
+                            padding: 0;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .setting-option-alignment {
+                        p {
+                            color: #343434;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: normal;
+                            padding: 0 0 14px 0;
+                            margin: 0;
+                            @include pointer;
+
+                            &:last-child {
+                                padding: 0;
+                            }
+
+                            &.active {
+                                color: #00AEEF;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .logout-details-section {
+                padding: 23px 28px 28px 28px;
+
+                .logout-details-flex {
+                    display: flex;
+                    gap: 13px;
+
+                    .icon-alignment {
+                        img {
+                            width: 20px;
+                            height: 15px;
+                            display: block;
+                            @include pointer;
+                        }
+                    }
+
+                    .logout-details-alignment {
+                        span {
+                            // @include text-2;
+                            color: var(--red-color);
+                            @include pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

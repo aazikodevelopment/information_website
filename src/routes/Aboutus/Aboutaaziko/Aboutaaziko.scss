@@ -1,0 +1,49 @@
+@import "../../../styles/mixins/global.scss";
+
+.about-aaziko-all-content-alignment {
+  padding: 80px 0;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 510px;
+    gap: 43px;
+    align-items: center;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      padding: 0 20px;
+    }
+    .grid-items {
+      img {
+        width: 100%;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        text-transform: capitalize;
+        margin: 0 0 23px 0;
+        color: #343434;
+
+        @include breakpoint("max-sm") {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+
+      span {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #606060;
+        @include breakpoint("max-sm") {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

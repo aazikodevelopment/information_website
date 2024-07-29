@@ -1,0 +1,480 @@
+@import "../../styles/mixins/index.scss";
+
+.document-review {
+    background: #FFF;
+    // padding: 16px 0;
+    padding-top: 50px;
+
+    .TowGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center !important;
+        gap: 16px;
+        padding-bottom: 50px;
+
+
+        .MessageGrid {
+            width: 539px;
+            height: 156px;
+            top: 278px;
+            margin: 0 auto !important;
+
+            h2 {
+                // font-family: Inter;
+                font-size: 70px;
+                font-weight: 600;
+                // line-height: 84.72px;
+                text-align: left;
+                color: #042953;
+            }
+
+            .InfoMessageText {
+                font-family: Montserrat;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21.94px;
+                text-align: left;
+                color: #000000;
+            }
+        }
+
+        .ImageGrids {
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 7px;
+
+            .ImageGridRemote1 {
+                max-width: 270px;
+                height: 376px;
+                position: relative;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    width: calc(100% + 10px);
+                    height: calc(100% + 10px);
+                    border: 2px solid #F5821F;
+                    border-radius: 0 135px 0 135px;
+                    transform: rotate(45deg);
+                    z-index: -1;
+                }
+            }
+
+            .ImageGridRemote2 {
+                max-width: 270px;
+                height: 376px;
+                position: relative;
+                z-index: 1;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    width: calc(100% + 10px);
+                    height: calc(100% + 10px);
+                    border: 2px solid #00AEEF;
+                    border-radius: 0 135px 0 135px;
+                    transform: rotate(45deg);
+                    z-index: -1;
+                }
+            }
+
+
+        }
+    }
+
+    .paddingTopBottom {
+        padding: 50px 0;
+
+        .topPadding {
+            display: grid;
+            grid-template-columns: 418px minmax(300px, 1fr);
+            padding: 70px 0;
+            grid-gap: 55px;
+
+            .imgBox {
+                padding: 10px;
+                max-width: 418px;
+                height: 307px;
+                position: relative;
+                z-index: 1;
+
+                img {
+                    padding: 20px;
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0px 4px 4px 0px #00000040;
+                    transform: skew(-15deg);
+                    transform-origin: bottom right;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    width: calc(100% + 10px);
+                    height: calc(100% + 10px);
+                    border: 1px solid #F5821F;
+                    transform: skew(-15deg);
+                    transform-origin: bottom right;
+                    z-index: -1;
+                }
+            }
+
+            .contentBox {
+                padding: 10px 10px 10px 150px;
+                width: fit-content;
+                position: relative;
+                z-index: 1;
+                text-align: left;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    width: calc(100% + 10px);
+                    height: calc(100% + 10px);
+                    border: 1px solid #F5821F;
+                    transform: skew(-15deg);
+                    transform-origin: bottom right;
+                    z-index: -1;
+                }
+
+                h4 {
+                    padding-top: 0 !important;
+                    font-family: Montserrat;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 34.13px;
+                    text-align: left;
+                    color: #000000;
+                }
+
+                .contents {
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.94px;
+                    text-align: left;
+                    color: #000000;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+
+        .topPaddings {
+            display: grid;
+            grid-template-columns: 418px minmax(300px, 1fr);
+            grid-gap: 45px;
+
+            .imgBox {
+                padding: 10px;
+                max-width: 418px;
+                height: 307px;
+                position: relative;
+                z-index: 1;
+
+                img {
+                    padding: 20px;
+                    width: 100%;
+                    height: 100%;
+                    box-shadow: 0px 4px 4px 0px #00000040;
+                    transform: skew(-15deg);
+                    transform-origin: bottom right;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    width: calc(100% + 10px);
+                    height: calc(100% + 10px);
+                    border: 1px solid #00AEEF;
+                    transform: skew(-15deg);
+                    transform-origin: bottom right;
+                    z-index: -1;
+                }
+            }
+
+            .contentBox {
+                padding: 10px 10px 10px 150px;
+                width: fit-content;
+                position: relative;
+                z-index: 1;
+                text-align: left;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    left: -10px;
+                    width: calc(100% + 10px);
+                    height: calc(100% + 10px);
+                    border: 1px solid #00AEEF;
+                    transform: skew(-15deg);
+                    transform-origin: bottom right;
+                    z-index: -1;
+                }
+
+                h4 {
+                    padding-top: 0 !important;
+                    font-family: Montserrat;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 34.13px;
+                    text-align: left;
+                    color: #000000;
+                }
+
+                .contents {
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 21.94px;
+                    text-align: left;
+                    color: #000000;
+                    padding-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1274px;
+@media (max-width: $breakpoint-xs) {
+    .document-review {
+        .TowGrid {
+            display: block !important;
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            .MessageGrid {
+                width: 539px;
+                // height: 100% !important;
+            }
+
+            .ImageGrids {
+
+                .ImageGridRemote1::before,
+                .ImageGridRemote2::before {
+                    display: none;
+                }
+            }
+        }
+
+        .paddingTopBottom {
+
+            .topPadding,
+            .topPaddings {
+                grid-template-columns: 1fr;
+
+                .imgBox {
+                    width: 150px;
+                    height: auto;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+
+                .contentBox {
+                    padding: 10px !important;
+                    max-width: fit-content;
+                    &::before {
+                        display: none;
+                    }
+
+                    h4 {
+                        font-size: 24px !important;
+                    }
+
+                    .contents {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+    .document-review {
+        .TowGrid {
+            display: block !important;
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            .MessageGrid {
+                width: 500px !important;
+                height: 100% !important;
+            }
+
+            .ImageGrids {
+
+                .ImageGridRemote1::before,
+                .ImageGridRemote2::before {
+                    display: none;
+                }
+            }
+        }
+
+        .paddingTopBottom {
+
+            .topPadding,
+            .topPaddings {
+                grid-template-columns: 1fr;
+                .imgBox {
+                    width: 150px;
+                    height: auto;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+
+                .contentBox {
+                    padding: 10px !important;
+                    max-width: fit-content;
+                    &::before {
+                        display: none;
+                    }
+
+                    h4 {
+                        font-size: 24px !important;
+                    }
+
+                    .contents {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    .document-review {
+        .TowGrid {
+            display: block !important;
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            .MessageGrid {
+                width: 500px !important;
+                height: 100% !important;
+            }
+
+            .ImageGrids {
+
+                .ImageGridRemote1::before,
+                .ImageGridRemote2::before {
+                    display: none;
+                }
+            }
+        }
+
+        .paddingTopBottom {
+
+            .topPadding,
+            .topPaddings {
+                grid-template-columns: 1fr;
+                .imgBox {
+                    width: 250px;
+                    height: auto;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+
+                .contentBox {
+                    // padding: 10px !important;
+                    max-width: 650px;
+                    // &::before {
+                    //     display: none;
+                    // }
+
+                    h4 {
+                        font-size: 24px !important;
+                    }
+
+                    .contents {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .document-review {
+        .TowGrid {
+            display: grid !important;
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            .MessageGrid {
+                width: 450px !important;
+                height: 100% !important;
+            }
+
+            .ImageGrids {
+
+                .ImageGridRemote1::before,
+                .ImageGridRemote2::before {
+                    display: none;
+                }
+            }
+        }
+        .paddingTopBottom {
+
+            .topPadding,
+            .topPaddings {
+                grid-template-columns: 1fr;
+                .imgBox {
+                    width: 250px;
+                    height: auto;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+
+                .contentBox {
+                    // padding: 10px !important;
+                    max-width: 750px;
+                    // &::before {
+                    //     display: none;
+                    // }
+
+                    h4 {
+                        font-size: 24px !important;
+                    }
+
+                    .contents {
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}

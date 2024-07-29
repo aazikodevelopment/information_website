@@ -1,0 +1,141 @@
+@import "../../styles/mixins/global.scss";
+
+.trade-services-section {
+    .trade-services-main-banner {
+        width: 100%;
+        height: 502px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(52, 52, 52, 0.6);
+            top: 0;
+            right: 0;
+            z-index: 9;
+        }
+
+        .trade-banner-details-alignment {
+
+            position: absolute;
+            top: 0;
+            left: 120px;
+            z-index: 99;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            @include breakpoint("max-sm") {
+                padding: 0 20px;
+                left: 0;
+            }
+            .trade-main-details {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                .trade-icon-alignment {
+                    width: 37px;
+                    height: 37px;
+
+                    @include breakpoint("max-sm") {
+                        width: 24px;
+                        height: auto;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+
+                        @include breakpoint("max-sm") {
+                            width: 24px;
+                            height: auto;
+                        }
+                    }
+                }
+
+                span {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 35px;
+                    color: #FFFFFF;
+                    @include breakpoint("max-sm") {
+                        font-size: 20px;
+                        line-height: 30px;
+                      }
+                }
+            }
+
+            h4 {
+                padding: 15px 0 0 0;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 47px;
+                color: #FFFFFF;
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                  }
+            }
+
+            p {
+                padding: 13px 0 0 0;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 21px;
+                color: #FFFFFF;
+
+                @include breakpoint("max-sm") {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+
+            .howWorkAlignment {
+                padding: 30px 0 0 0;
+
+                button {
+                    background: #00AEEF;
+                    border-radius: 8px;
+                    padding: 14px 18px;
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                    border: none;
+
+                    .video-icon {
+                        width: 35px;
+                        height: 20px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

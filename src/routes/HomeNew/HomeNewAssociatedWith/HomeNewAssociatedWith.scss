@@ -1,0 +1,132 @@
+@import "../../../styles/mixins/global.scss";
+
+.home-new-associatedWith-section {
+    padding: 102px 0 0 0;
+
+    @include breakpoint("max-sm") {
+        padding: 60px 0 0 0;
+    }
+
+    .home-new-associatedWith-heading {
+        h2 {
+            color: #00AEEF;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+    }
+
+    .home-new-associatedWith-body-alignment {
+        padding: 58px 0 0 0;
+
+        @include breakpoint("max-sm") {
+            padding: 40px 0 0 0;
+        }
+
+        .home-new-associatedWith-grid {
+            // display: grid;
+            // grid-template-columns: repeat(4, 1fr);
+            // gap: 40px;
+
+
+            // @include breakpoint("max-sm") {
+            //     grid-template-columns: repeat(1, 1fr);
+            //     gap: 20px;
+            // }
+
+
+
+            .home-new-associatedWith-padding {
+                padding: 0 10px;
+
+                @include breakpoint("max-sm") {
+                    padding: 0 8px;
+                }
+
+                .home-new-associatedWith-grid-item {
+                    border-radius: 25px;
+                    border: 1px solid #00AEEF;
+                    background: #FFF;
+                    box-shadow: 0px 0px 12px 0px rgba(0, 174, 239, 0.50);
+                    height: 102px;
+                    padding: 0 30px;
+                    overflow: hidden;
+
+                    @include breakpoint("max-sm") {
+                        text-align: center;
+                        padding: 0 8px;
+                        height: 80px;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        transition: 0.4s all;
+                        cursor: pointer;
+                    }
+
+                    img {
+                        &:hover {
+                            transform: scale(1.1);
+                            transition: 0.4s all;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .associated-bottom-img-alignment {
+            margin: 158px 0 0 0;
+            width: 100%;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            @include breakpoint("max-sm") {
+                margin: 80px 0 0 0;
+            }
+
+        }
+    }
+}
+
+.slick-slider {
+    .slick-prev {
+        @include breakpoint("max-sm") {
+
+            left: -14px !important;
+        }
+    }
+
+    .slick-next {
+        @include breakpoint("max-sm") {
+            right: -14px !important;
+        }
+    }
+
+    .slick-prev:before {
+        content: '' !important;
+    }
+
+    .slick-next:before {
+        content: '' !important;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}

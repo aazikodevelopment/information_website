@@ -1,0 +1,51 @@
+<svg width="98" height="32" viewBox="0 0 98 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="download 1" clip-path="url(#clip0_4365_40977)">
+<path id="Vector" d="M3 1H95C96.1046 1 97 1.89543 97 3V29C97 30.1046 96.1046 31 95 31H3C1.89543 31 1 30.1046 1 29V3C1 1.89543 1.89543 1 3 1Z" fill="#E0E4EC"/>
+<path id="Vector_2" d="M94.5 0H97.5C97.7761 0 98 0.223858 98 0.5V3.5C98 3.77614 97.7761 4 97.5 4H94.5C94.2239 4 94 3.77614 94 3.5V0.5C94 0.223858 94.2239 0 94.5 0Z" fill="#E0E4EC"/>
+<path id="Vector_3" d="M0.5 0H3.5C3.77614 0 4 0.223858 4 0.5V3.5C4 3.77614 3.77614 4 3.5 4H0.5C0.223858 4 0 3.77614 0 3.5V0.5C0 0.223858 0.223858 0 0.5 0Z" fill="#E0E4EC"/>
+<path id="Vector_4" d="M94.5 28H97.5C97.7761 28 98 28.2239 98 28.5V31.5C98 31.7761 97.7761 32 97.5 32H94.5C94.2239 32 94 31.7761 94 31.5V28.5C94 28.2239 94.2239 28 94.5 28Z" fill="#E0E4EC"/>
+<path id="Vector_5" d="M0.5 28H3.5C3.77614 28 4 28.2239 4 28.5V31.5C4 31.7761 3.77614 32 3.5 32H0.5C0.223858 32 0 31.7761 0 31.5V28.5C0 28.2239 0.223858 28 0.5 28Z" fill="#E0E4EC"/>
+<g id="Mask group">
+<mask id="mask0_4365_40977" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="88" height="22">
+<g id="Group">
+<path id="Vector_6" d="M92 5H6C5.44772 5 5 5.44772 5 6V26C5 26.5523 5.44772 27 6 27H92C92.5523 27 93 26.5523 93 26V6C93 5.44772 92.5523 5 92 5Z" fill="#C4C4C4"/>
+</g>
+</mask>
+<g mask="url(#mask0_4365_40977)">
+<g id="Group_2">
+<path id="Vector_7" d="M-17 4L8.5 29.5" stroke="#000C37"/>
+<path id="Vector_8" d="M-12.5 4L13 29.5" stroke="#000C37"/>
+<path id="Vector_9" d="M-8 4L17.5 29.5" stroke="#000C37"/>
+<path id="Vector_10" d="M-3.5 4L22 29.5" stroke="#000C37"/>
+<path id="Vector_11" d="M1 4L26.5 29.5" stroke="#000C37"/>
+<path id="Vector_12" d="M5.5 4L31 29.5" stroke="#000C37"/>
+<path id="Vector_13" d="M10 4L35.5 29.5" stroke="#000C37"/>
+<path id="Vector_14" d="M14.5 4L40 29.5" stroke="#000C37"/>
+<path id="Vector_15" d="M19 4L44.5 29.5" stroke="#000C37"/>
+<path id="Vector_16" d="M23.5 4L49 29.5" stroke="#000C37"/>
+<path id="Vector_17" d="M28 4L53.5 29.5" stroke="#000C37"/>
+<path id="Vector_18" d="M32.5 4L58 29.5" stroke="#000C37"/>
+<path id="Vector_19" d="M37 4L62.5 29.5" stroke="#000C37"/>
+<path id="Vector_20" d="M41.5 4L67 29.5" stroke="#000C37"/>
+<path id="Vector_21" d="M46 4L71.5 29.5" stroke="#000C37"/>
+<path id="Vector_22" d="M50.5 4L76 29.5" stroke="#000C37"/>
+<path id="Vector_23" d="M55 4L80.5 29.5" stroke="#000C37"/>
+<path id="Vector_24" d="M59.5 4L85 29.5" stroke="#000C37"/>
+<path id="Vector_25" d="M64 4L89.5 29.5" stroke="#000C37"/>
+<path id="Vector_26" d="M68.5 4L94 29.5" stroke="#000C37"/>
+<path id="Vector_27" d="M73 4L98.5 29.5" stroke="#000C37"/>
+<path id="Vector_28" d="M77.5 4L103 29.5" stroke="#000C37"/>
+<path id="Vector_29" d="M82 4L107.5 29.5" stroke="#000C37"/>
+<path id="Vector_30" d="M86.5 4L112 29.5" stroke="#000C37"/>
+<path id="Vector_31" d="M91 4L116.5 29.5" stroke="#000C37"/>
+<path id="Vector_32" d="M92 5.5H6C5.72386 5.5 5.5 5.72386 5.5 6V26C5.5 26.2761 5.72386 26.5 6 26.5H92C92.2761 26.5 92.5 26.2761 92.5 26V6C92.5 5.72386 92.2761 5.5 92 5.5Z" stroke="#000C37"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_4365_40977">
+<rect width="98" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,61 @@
+@import '../../../../styles/mixins/global.scss';
+
+
+.featured-partners-card-all-content-alignment-for-page {
+  padding: 30px 0 100px 0;
+
+
+  @include breakpoint("max-sm") {
+    padding: 30px 0 40px 0;
+  }
+
+  .result-found {
+    padding: 0 0 30px 0;
+    span {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140.5%;
+      color: #606060;
+      display: block;
+      @include breakpoint("max-sm") {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+    }
+
+    .grid-items {
+      background: #ffffff;
+      padding: 20px;
+      box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.09);
+      border-radius: 8px;
+
+      .image-center-alignment {
+        display: flex;
+        justify-content: center;
+
+        img {
+            cursor: pointer;
+        }
+      }
+
+      span {
+        display: block;
+        padding: 20px 0 0 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140.5%;
+        color: #606060;
+      }
+    }
+  }
+}

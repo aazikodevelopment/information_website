@@ -1,0 +1,145 @@
+@import "../../../styles/mixins/global.scss";
+
+.tS-protection-section {
+    padding: 48px 0;
+    background: #fff;
+
+    .tS-protection-alignment {
+        text-align: center;
+        border-bottom: 1px solid #BABABA;
+        padding: 0 0 61px 0;
+
+        h4 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            color: #343434;
+
+            @include breakpoint("max-sm") {
+                font-size: 24px;
+                line-height: 32px;
+              }
+        }
+
+
+        .tS-protection-details-alignment {
+            display: flex;
+            align-items: center;
+            gap: 46px;
+
+            @include breakpoint("max-sm") {
+                display: grid;
+                grid-template-columns: repeat(1 , 1fr);
+                gap: 40px;
+            }
+
+            .ts-protection-step-content {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                padding: 48px 0 0 0;
+                position: relative;
+
+                &:last-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    height: 127px;
+                    width: 1px;
+                    background: #BABABA;
+                    top: 102px;
+                    left: 25px;
+
+                }
+
+                .ts-protection-step-box-alignment {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    background: #00AEEF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &.disable-step {
+                        background: #BABABA;
+
+                        span {
+                            font-family: 'Lato', sans-serif;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 29px;
+                            color: #FFFFFF;
+
+                        }
+                    }
+
+                }
+
+                .ts-protection-steps-all-details-alignment {
+                    h5 {
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #343434;
+                        text-align: left;
+                    }
+
+                    p {
+                        padding: 12px 0 0 0;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #606060;
+                        max-width: 546px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .tS-protection-tips-contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        padding: 30px 0 46px 0  ;
+
+        .tS-protection-tips-icon {
+            width: 47px;
+            height: 45px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+
+        .tS-protection-tips-notes {
+            max-width: 918px;
+
+            p {
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #606060;
+
+                span {
+
+                    color: #F5821F;
+                }
+            }
+        }
+    }
+}

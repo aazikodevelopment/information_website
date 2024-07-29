@@ -1,0 +1,179 @@
+@import "../../styles/mixins/global.scss";
+
+.vessel-parameter-sea-containers-section {
+    .vessel-parameter-sea-containers-alignment {
+        padding: 60px 0;
+
+        .vessel-paramenter-sea-container-heading {
+            h4 {
+                color: var(--theme-heading-text-color);
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+                opacity: 0.8;
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .vessel-parameter-sea-container-body {
+            padding: 42px 0 0 0;
+
+
+            @include breakpoint("max-sm") {
+                padding: 30px 0 0 0;
+            }
+
+            .vessel-parameter-sea-container-box {
+                border-radius: 10px;
+                border: 1px solid #d0d0d0;
+                background: #FFF;
+                box-shadow: 0px 0px 12px 0px rgba(202, 202, 202, 0.30);
+                width: 100%;
+                height: 100%;
+                padding: 35px 42px;
+
+                @include breakpoint("max-sm") {
+                    padding: 24px;
+                }
+
+                .vessel-parameter-sea-top-details-alignment {
+                    display: grid;
+                    grid-template-columns: 420px 1fr;
+                    gap: 60px;
+
+                    @include breakpoint("max-sm") {
+                        grid-template-columns: repeat(1 , 1fr);
+                        gap: 40px;
+                    }
+
+                    .vessel-parameter-sea-left-side-alignment {
+                        h6 {
+                            color: #000;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+
+
+                        .vessel-parameter-sea-img-alignment {
+                            padding: 70px 0 0 0;
+                        }
+                    }
+
+                    .vessel-paramenter-right-side-alignment {
+                        h5 {
+                            color: #000;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+
+                        p {
+                            padding: 24px 0 0 0;
+                            color: #000;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        
+                            @include breakpoint("max-sm") {
+                                font-size: 14px;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+
+
+                }
+
+                .vessel-paramenter-sea-bottom-details-alignment {
+                    padding: 94px 172px 0 0;
+
+                    @include breakpoint("max-sm") {
+                        padding: 40px 0 0 0;
+                    }
+
+                    .vessel-paramenter-sea-bottom-grid {
+                        display: grid;
+                        grid-template-columns: 1fr 384px;
+                        align-items: center;
+                        gap: 194px;
+                        
+
+                        @include breakpoint("max-sm") {
+                            grid-template-columns: repeat(1 , 1fr);
+                            gap: 40px;
+                        }
+
+                        .vessel-paramenter-sea-bottom-grid-item {
+                            .vessel-paramenter-sea-bottom-left-side {
+                                h5 {
+                                    color: #000;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    line-height: normal;
+                                }
+
+                                .vessel-paramenter-sea-all-child-details {
+
+                                    padding: 46px 0 0 0;
+
+                                    .vessel-paramenter-sea-other-details {
+                                        display: grid;
+                                        grid-template-columns: 192px 1fr;
+                                        gap: 24px;
+                                        padding: 0 0 16px 0;
+
+                                        h6 {
+                                            color: #000;
+                                            font-family: 'Poppins', sans-serif;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: normal;
+                                        
+                                            @include breakpoint("max-sm") {
+                                                font-size: 14px;
+                                                line-height: 22px;
+                                            }
+                                        }
+
+
+                                        p {
+                                            color: #000;
+                                            font-family: 'Poppins', sans-serif;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 500;
+                                            line-height: normal;
+
+                                            @include breakpoint("max-sm") {
+                                                font-size: 14px;
+                                                line-height: 22px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

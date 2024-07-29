@@ -1,0 +1,126 @@
+@import "../../../styles/mixins/global.scss";
+
+.get-section-all-content-alignment {
+  padding: 80px 0;
+
+  @include breakpoint("max-sm") {
+    padding: 60px 20px;
+  }
+
+  .sec-grid {
+    display: grid;
+    grid-template-columns: 411px 1fr;
+    align-items: center;
+    gap: 148px;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+
+    .sec-grid-items {
+      .image {
+        img {
+          width: 100%;
+        }
+      }
+
+      .icon-text {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 18px 0 0 0;
+        cursor: pointer;
+        a {
+          display: block;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          text-transform: capitalize;
+  
+          color: #00aeef;
+        }
+      }
+      span {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: #606060;
+        @include breakpoint("max-sm") {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #343434;
+        margin: 0 0 20px 0;
+        @include breakpoint("max-sm") {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .first-grid {
+    display: grid;
+    grid-template-columns: 1fr 507px;
+    gap: 133px;
+    padding: 0 0 100px 0;
+    align-items: center;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+    .image {
+      img {
+        width: 100%;
+      }
+    }
+
+    h6 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: capitalize;
+      color: #343434;
+      margin: 0 0 20px 0;
+      @include breakpoint("max-sm") {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    .icon-text {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 18px 0 0 0;
+      cursor: pointer;
+      a {
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: capitalize;
+
+        color: #00aeef;
+      }
+    }
+    span {
+      display: block;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: capitalize;
+      color: #606060;
+    }
+  }
+}

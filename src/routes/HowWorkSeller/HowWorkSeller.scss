@@ -1,0 +1,86 @@
+@import "../../styles/mixins/global.scss";
+
+.how-we-work-for-seller-section {
+    background-color: #f8f8f8;
+    padding: 122px 0;
+
+    @include breakpoint("max-sm") {
+        padding: 40px 0;
+    }
+
+    .how-we-work-seller-heading {
+        h4 {
+            color: rgba(0, 0, 0, 0.8);
+            font-family: 'Poppins', sans-serif;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: 42px;
+            text-align: center;
+
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            span {
+                color: #00aeef;
+            }
+        }
+    }
+
+    .how-we-work-seller-details-alignment {
+        padding: 112px 0 0 0;
+
+        @include breakpoint("max-sm") {
+            padding: 40px 0 0 0;
+        }
+
+        .how-we-work-seller-img {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .how-to-work-description {
+            padding: 26px 0 0 0;
+
+            @include breakpoint("max-sm") {
+                padding: 40px 0 0 0;
+            }
+
+            h6 {
+                max-width: 314px;
+                color: var(--theme-heading-text-color);
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 32px;
+                margin: 0 auto;
+            
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            p {
+                max-width: 490px;
+                color: var(--theme-heading-text-color);
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21px;
+                margin: 0 auto;
+                padding: 23px 0 0 0;
+            
+                @include breakpoint("max-sm") {
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+    }
+
+}

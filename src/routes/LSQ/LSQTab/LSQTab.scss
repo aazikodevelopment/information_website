@@ -1,0 +1,43 @@
+@import "../../../styles/mixins/global.scss";
+
+.lsq-tab-section {
+    width: 100%;
+    background: #B3E7FA;
+
+    .lsq-tab-alignment {
+        // height: 60px;
+        padding: 0 10px 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .lsq-tab-box-alignment {
+            min-width: 145px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            padding: 0 15px;
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+            background-color: white !important;
+            // border: 1px solid #CCCCCC;
+
+            &:first-child {
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            &:last-child {
+                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            p {
+                color: #37475A;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+}

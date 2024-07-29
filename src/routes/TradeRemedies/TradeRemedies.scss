@@ -1,0 +1,147 @@
+@import "../../styles/mixins/global.scss";
+
+.trade-tariffs-bg-alignments {
+    background: url("../../assets/Image/custom-tariffs-img.png");
+    width: 100%;
+    height: 764px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 72px 0;
+
+    .trade-tariffs-all-details {
+        h4 {
+            color: #FFF;
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 52px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        p {
+            padding: 34px 0 0 0;
+            color: #FFF;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 28px;
+            text-transform: capitalize;
+            max-width: 1124px;
+            margin: 0 auto;
+        }
+
+    }
+
+    .trade-tariffs-body-alignment {
+        padding: 60px 0 0 0;
+
+
+        .trade-tariffs-box-alignment {
+            border-radius: 10px;
+            background: #FFF;
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+            width: 100%;
+            height: 250px;
+            padding: 54px 40px 54px 24px;
+            display: flex;
+            align-items: flex-end;
+            gap: 24px;
+            max-width: 1504px;
+            margin: 0 auto;
+
+            .trade-tariffs-input {
+                label {
+                    color: #1F1C1C;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                }
+            }
+
+            .input-box-alignment {
+                width: 228px;
+                height: 48px;
+                border-radius: 5px;
+                background: #FFF;
+                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+                margin: 18px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 18px;
+                cursor: pointer;
+                position: relative;
+
+                &.serach-input {
+                    width: 430px;
+                }
+
+                &.year-input {
+                    width: 178px;
+                }
+
+                &.type-input {
+                    width: 114px;
+                }
+
+                p {
+                    color: rgba(31, 28, 28, 0.80);
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                    padding: 0;
+                    max-width: 100%;
+                    margin: 0;
+                }
+
+                .input-dropdown-box-alignment {
+                    position: absolute;
+                    top: 48px;
+                    left: 0;
+                    z-index: 99;
+                    width: 100%;
+                    height: 142px;
+                    border: 1px solid #BABABA;
+                    background: #FFF;
+                    overflow-y: auto;
+
+                    p {
+                        color: #343434;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: normal;
+                        padding: 6px 16px;
+                        text-align: left;
+
+                        &:hover {
+                            background: #AEE9FF;
+                        }
+                    }
+                }
+
+            }
+
+            .search-button-alignment {
+                button {
+                    padding: 13px 36px;
+                    border-radius: 5px;
+                    background: #00AEEF;
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    cursor: pointer;
+                    text-transform: capitalize;
+                    border: none;
+                }
+            }
+        }
+    }
+
+}

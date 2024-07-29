@@ -1,1 +1,1 @@
-# information_website
+# aaziko-website

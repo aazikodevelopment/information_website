@@ -1,0 +1,125 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.generation-section-all-contnet-alignment {
+  padding: 100px  0;
+  background-color: #fff;
+
+  .all-icon-contnet-alignment {
+    .icon-grid:last-child {
+        padding: 0;
+    }
+    .icon-grid {
+      display: grid;
+      grid-template-columns: 57px 1fr;
+      gap: 14px;
+      padding: 0 0 33px 0;
+
+
+     
+
+      .icon-grid-items {
+        .icon {
+          width: 57px;
+          height: 57px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0, 174, 239, 0.1);
+          cursor: pointer;
+          border-radius: 50%;
+        }
+
+        span {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: #343434;
+          display: block;
+          padding: 0 0 5px 0;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          text-transform: capitalize;
+          color: #606060;
+        }
+      }
+    }
+  }
+
+  .first-text {
+    padding: 0 0 72px 0;
+    span {
+      display: block;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 0 0 12px 0;
+      line-height: 19px;
+      color: #00aeef;
+    }
+
+    h4 {
+      font-weight: 600;
+      max-width: 413px;
+      margin: 0 0 22px 0;
+      font-size: 24px;
+      line-height: 38px;
+      color: #343434;
+      @include breakpoint("max-sm") {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 23px;
+      text-transform: capitalize;
+      color: #606060;
+      max-width: 455px;
+    }
+  }
+
+  .sub-grid {
+    display: grid;
+    grid-template-columns: 1fr 563px;
+    gap: 94px;
+    align-items: center;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+    .sub-grid-items {
+
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 563px 1fr;
+    gap: 97px;
+    padding: 0 0 100px 0;
+    align-items: center;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+
+    .grid-items {
+      .image-style {
+        img {
+          width: 100%;
+        }
+      }
+
+    
+    }
+  }
+}

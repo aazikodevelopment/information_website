@@ -1,0 +1,106 @@
+@import '../../styles/mixins/global.scss';
+
+.buyer-collaborate-section {
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    .buyer-collaborate-main-details {
+        padding: 100px 0 0 0;
+
+        @include breakpoint("max-sm") {
+            padding: 40px 0;
+        }
+
+        .buyer-collaborate-main-alignment {
+            height: 640px;
+            width: 100%;
+            background: url('../../assets/Image/bi1.png');
+            display: flex;
+            align-items: center;
+
+            @include breakpoint("max-sm") {
+                padding: 40px 0;
+                height: auto;
+            }
+
+            .buyer-collaborate-banner-details {
+                max-width: 590px;
+                position: relative;
+                bottom: 30px;
+
+                @include breakpoint("max-sm") {
+                    max-width: 100%;
+                    bottom: 0;
+                }
+
+                h4 {
+                    color: var(--theme-heading-text-color);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 58px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    @include breakpoint("max-sm") {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        gap: 20px;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+
+                    p {
+                        color: var(--theme-heading-text-color);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 48px;
+                        font-weight: 700;
+                        line-height: 58px;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+
+                        span {
+                            &.a-text {
+                                color: #00A551;
+                            }
+
+                            &.a-2-text {
+                                color: #F48120;
+                            }
+
+                            &.z-text {
+                                color: #EC1C24;
+                            }
+
+                            &.i-text {
+                                color: #0082C9;
+                            }
+
+                            &.ko-text {
+                                color: #00ADEE;
+                            }
+
+                        }
+                    }
+                }
+
+                p {
+                    color: var(--theme-heading-text-color);
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+
+                    @include breakpoint("max-sm") {
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

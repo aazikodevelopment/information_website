@@ -1,0 +1,31 @@
+@import '../../../styles/mixins/global.scss';
+
+.insurance-banner-main {
+
+    width: 100%;
+    background: #ECFAFF;
+
+    .insurance-banner-details-alignment {
+        height: 476px;
+        display: flex;
+        align-items: center;
+
+        .insurance-left-side-alignment {
+            max-width: 694px;
+
+            h1 {
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 45px;
+                font-weight: 600;
+                line-height: 54px;
+            }
+
+            p {
+                padding: 28px 0 0 0;
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+}

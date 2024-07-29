@@ -1,0 +1,56 @@
+@import "../../../styles/mixins/global.scss";
+
+.instant-quotes-all-contnet-alignment {
+  background: linear-gradient(100.84deg, #018dc1 9.55%, #76d4f7 89.68%);
+  padding: 50px 0;
+
+  .text {
+    padding: 0 0 30px 0;
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: #ffffff;
+      text-align: center;
+      @include breakpoint("max-sm") {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 20px;
+    }
+
+    .grid-items {
+      background: #ffffff;
+      box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.09);
+      border-radius: 8px;
+      padding: 20px;
+
+      p {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #00aeef;
+        margin: 0 0 10px 0;
+      }
+
+      span {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 132.5%;
+        color: #606060;
+      }
+    }
+  }
+}

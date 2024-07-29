@@ -1,0 +1,31 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.sub-menu {
+  background: #00aeef;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+
+  @include breakpoint("max-sm") {
+    width: 100%;
+    overflow: auto;
+  }
+
+  span {
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+
+    @include breakpoint("max-sm") {
+      font-size: 14px;
+      line-height: 18px;  
+      white-space: nowrap;
+    }
+  }
+}

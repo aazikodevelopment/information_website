@@ -1,0 +1,100 @@
+@import "../../../styles/mixins/global.scss";
+
+.lsq-about-us-section {
+    padding: 142px 0 0 0;
+
+    .lsq-about-us-alignment {
+        a {
+            color: #000080 !important;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        .lsq-about-us-all-details {
+            padding: 6px 0 0 0;
+
+            h4 {
+                padding-top: 5px !important;
+                color: #000;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 40px;
+                text-align: left !important;
+            }
+
+            p {
+                color: #000;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                padding: 21px 0 0 0;
+                max-width: 1130px;
+            }
+
+            .lsq-about-all-child-details-alignment {
+                max-width: 934px;
+                padding: 20px 0 0 0;
+
+                .lsq-about-all-child-main-details-alignment {
+
+                    padding: 26px 0 12px 0;
+                    border-bottom: 1px solid #000;
+
+                    &:first-child {
+                        padding: 0 0 12px 0;
+                    }
+
+                    .lsq-about-all-personal-details {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h6 {
+                            color: #000;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 22px;
+                        }
+
+                        .lsq-plus-icon {
+                            cursor: pointer;
+                            transform: rotate(0deg);
+                            transition: 0.4s ease-in-out;
+
+                            &.open-arrow-alignment {
+                                transform: rotate(-45deg);
+                                transition: 0.4s ease-in-out;
+                            }
+                        }
+
+                    }
+
+                    .lsq-show-other-all-details-alignment {
+
+                        p {
+                            color: #000;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 21px;
+                            padding: 8px 0 0 0;
+                            max-width: 100%;
+                        }
+
+                        &.open-show-details {
+                            max-height: 100px;
+                            overflow-y: auto;
+                            transition: 0.4s ease-in-out;
+                        }
+
+                        &.close-show-details {
+                            max-height: 0px;
+                            overflow-y: hidden;
+                            transition: 0.4s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

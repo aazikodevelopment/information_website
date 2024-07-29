@@ -1,0 +1,73 @@
+@import "../../styles/mixins/global.scss";
+
+.coming-soon-section {
+  padding: 80px 0;
+  height: calc(100vh - 114px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background: url("../../assets/Image/star-bg.png"), #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+  position: relative;
+  &::before {
+    content: "";
+    background: url("../../assets/Image/earth-bg-img.png");
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 420px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include breakpoint("max-sm") {
+      height: 100%;
+      top: 200px;
+    }
+  }
+  .comming-soon-box-alignment {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+    // max-width: 1000px;
+    width: calc(100vw - 400px);
+    padding: 120px;
+    border-radius: 40px;
+    @include breakpoint("max-sm") {
+      width: calc(100vw - 20px);
+      padding: 40px;
+    }
+    .coming-soon-logo {
+      width: 300px;
+      margin: 0 auto;
+      @include breakpoint("max-sm") {
+       width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+    }
+    h4 {
+      padding: 65px 0 0 0;
+      font-weight: 600;
+      font-size: 100px;
+      line-height: 108px;
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      @include breakpoint("max-sm") {
+        font-size: 32px;
+        line-height: 48px;
+      }
+      span {
+        color: #00aeef;
+      }
+    }
+  }
+}

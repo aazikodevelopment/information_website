@@ -1,0 +1,91 @@
+@import "../../../styles/mixins/global.scss";
+
+
+.sourcing-section-all-content-alignment-for-page {
+  padding: 70px 0;
+  background: rgba(186, 186, 186, 0.1);
+
+  .grid {
+    display: grid;
+    grid-template-columns: 510px 1fr;
+    gap: 260px;
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+
+    .grid-items {
+        .icon-grid:last-child {
+            padding: 0;
+        }
+        .icon-grid {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        gap: 24px;
+        padding: 0 0 20px 0;
+
+        .icon-grid-items {
+          p {
+            font-weight: 500;
+            margin: 0 0 8px 0;
+            font-size: 20px;
+            line-height: 24px;
+            color: #00aeef;
+          }
+
+          span {
+            display: block;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #606060;
+          }
+
+          .icon {
+            width: 60px;
+            height: 60px;
+            background: #00aeef;
+            cursor: pointer;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .text {
+        button {
+          border: none;
+          cursor: pointer;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          padding: 6px 25px;
+          background: rgba(0, 174, 239, 0.1);
+          border-radius: 4px;
+          color: #00aeef;
+        }
+        span {
+          display: block;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 31px;
+          padding: 0 0 12px 0;
+          color: var(--theme-heading-text-color);
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0.05em;
+          margin: 0 0 24px 0;
+          color: #606060;
+        }
+      }
+    }
+  }
+}

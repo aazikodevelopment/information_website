@@ -1,0 +1,71 @@
+@import "../../../styles/mixins/global.scss";
+
+.advantage-section-all-contnet-alignment-for-page {
+  background-color: #fff;
+  padding: 0 0 70px 0;
+  .section-title {
+    padding: 0 0 96px 0;
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      color: #343434;
+      margin: 0 0 10px 0;
+      @include breakpoint("max-sm") {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #606060;
+      margin: 0 auto;
+      max-width: 918px;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 542px;
+    gap: 117px;
+
+
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+
+    .grid-items {
+      .icon-grid {
+        display: grid;
+        grid-template-columns: 42px 1fr;
+        gap: 15px;
+        padding: 0 0 20px 0;    
+        .icon-grid-items {
+          p {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140.5%;
+            margin: 0 0 10px 0;
+            color: #606060;
+          }
+
+          span {
+            display: block;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140.5%;
+            color: #bababa;
+          }
+        }
+      }
+
+      .image-style {
+        width: 100%;
+      }
+    }
+  }
+}

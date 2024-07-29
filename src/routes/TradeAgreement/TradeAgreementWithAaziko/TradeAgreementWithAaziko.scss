@@ -1,0 +1,157 @@
+@import "../../../styles/mixins/global.scss";
+
+.trade-agreement-with-aaziko-section {
+    .trade-agreement-with-aaziko-details {
+        .trade-agreement-with-aaziko-heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            h4 {
+                color: #000;
+                font-size: 42px;
+                font-weight: 600;
+                line-height: 46px;
+            }
+
+            .trade-aaziko-logo {
+                width: 153px;
+                height: 43px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+        }
+
+        .trade-agreement-with-aaziko-body-alignment {
+            margin: 44px 0 0 0;
+
+            .trade-agreement-with-aaziko-box {
+                border-radius: 10px;
+                border: 2px solid #00AEEF;
+                width: 100%;
+                height: 261px;
+                padding: 0 50px;
+                max-width: 754px;
+                margin: 0 auto;
+                @include breakpoint("max-lg") {
+                    min-height: 320px;
+                }
+                .trade-send-post-box {
+                    padding: 9px 12px 8px 18px;
+                    border-radius: 0px 0px 10px 10px;
+                    background: #00AEEF;
+                    display: flex;
+                    justify-content: center;
+                    width: fit-content;
+                    margin: 0 auto;
+
+                    p {
+                        color: #FFF;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        opacity: 0.8;
+                    }
+                }
+
+                .trade-send-inout-box-alignment {
+                    display: grid;
+                    grid-template-columns: 1fr 162px;
+                    gap: 32px;
+                    align-items: flex-start;
+                    padding: 44px 0 0 0;
+                    @include breakpoint("max-lg") {
+                        gap: 0;
+                        grid-template-columns: 1fr;
+                    }
+                    .trade-send-input-details-alignment {
+
+                        .trade-send-input-hs-code-box {
+                            border-radius: 10px;
+                            border: 2px solid #00AEEF;
+                            width: 100%;
+                            height: 48px;
+                            justify-content: space-between;
+                            display: flex;
+                            align-items: center;
+                            padding: 0 10px 0 16px;
+
+                            .trade-child-flex {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+
+                                .counrty-fleg-alignment {
+                                    width: 32px;
+                                    height: 32px;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 8px;
+                                        display: block;
+                                    }
+                                }
+
+                                span {
+                                    color: #000;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 21px;
+                                    opacity: 0.5;
+                                }
+
+                            }
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                border: none;
+                                background: transparent;
+                                color: rgba(0, 0, 0, 0.5);
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 21px;
+                                padding: 0;
+                            }
+                        }
+
+                        p {
+                            color: #000;
+                            font-size: 10px;
+                            font-weight: 500;
+                            line-height: 12px;
+                            opacity: 0.5;
+                            padding: 3px 0 0 16px;
+                        }
+                    }
+                }
+
+
+                .trade-button-alignment {
+                    // padding: 38px 0 0 0;
+                    padding: 20px 0 0 0;
+
+                    button {
+                        border-radius: 10px;
+                        border: 1px solid #00AEEF;
+                        background: rgba(0, 174, 239, 0.50);
+                        height: 42px;
+                        padding: 0 28px;
+                        color: #FFF;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 21px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../styles/mixins/global.scss";
+
+.trade-agreement-section {
+    .trade-agreement-baaner-alignment {
+        .trade-agreement-flex-alignment {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 0 152px 0;
+
+            .trade-country-name {
+                h4 {
+                    span {
+                        color: #F48120;
+                        font-size: 50px;
+                    }
+
+                    opacity: 0.8;
+                    color: #000;
+                    font-size: 40px;
+                    font-weight: 600;
+                    line-height: 45px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

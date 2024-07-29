@@ -1,0 +1,196 @@
+@import "../../styles/mixins/global.scss";
+
+.unit-converter-section {
+    padding: 46px 0 123px 0;
+
+
+    @include breakpoint("max-sm") {
+        padding: 30px 0 0 0;
+    }
+
+    .unit-converter-alignment {
+        .unit-converter-heading {
+            h4 {
+                color: #000;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+            
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            p {
+                padding: 28px 0 0 0;
+                color: #000;
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                max-width: 720px;
+                margin: 0 auto;
+
+                @include breakpoint("max-sm") {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .unit-converter-body {
+            padding: 48px 0 0 0;
+
+            .unit-converter-box {
+                border-radius: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.20);
+                background: #FFF;
+                box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.25);
+                width: 100%;
+                padding: 51px 76px;
+
+                @include breakpoint("max-sm") {
+                    padding: 16px;
+                }
+
+                .unit-converter-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 20px 1fr;
+                    gap: 77px;
+                    align-items: flex-end;
+
+
+                    @include breakpoint("max-sm") {
+                        grid-template-columns: repeat(1 , 1fr);
+                        gap: 16px;
+                    }
+
+                    .unit-converter-grid-item {
+                        .unit-converter-input-alignment {
+                            width: 100%;
+                            height: 55px;
+                            border-radius: 5px;
+                            background: #D8F5FF;
+                            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin: 0 0 32px 0;
+                            position: relative;
+
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                border: none;
+                                background: transparent;
+                                padding: 0 22px;
+                                color: #000;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                opacity: 0.8;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+
+                            .dropdown-box-alignment {
+                                width: 100%;
+                                position: absolute;
+                                left: 0;
+                                top: 55px;
+
+                                border-radius: 5px;
+                                background: #FFF;
+                                z-index: 999;
+
+
+                                &.hidden-dropdown-box {
+                                    max-height: 0px;
+                                    overflow: hidden;
+                                    padding: 0;
+                                    transition: 0.4s ease-in-out;
+                                }
+
+                                &.show-dropdown-box {
+                                    height: auto;
+                                    max-height: 250px;
+                                    overflow-y: auto;
+                                    padding: 8px 0;
+                                    transition: 0.4s ease-in-out;
+
+                                }
+
+                                p {
+                                    padding: 4px 21px;
+                                    color: #000;
+                                    font-family: 'Poppins', sans-serif;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    transition: 0.3s ease-in-out;
+                                    cursor: pointer;
+
+                                    &:hover {
+                                        background: #00AEEF;
+                                        color: #FFF;
+                                        transition: 0.3s ease-in-out;
+                                    }
+                                }
+                            }
+
+                            .unit-converter-side-dropdown-icon {
+                                width: 54px;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 0px 5px 5px 0px;
+                                background: #E8E9E9;
+                                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                                cursor: pointer;
+                            }
+                        }
+
+                        .unit-converter-total-input {
+                            width: 100%;
+                            height: 55px;
+
+                            input {
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 5px;
+                                border: 1px solid rgba(96, 96, 96, 0.80);
+                                opacity: 0.8;
+                                box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+                                text-align: center;
+                                color: #000;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                opacity: 0.8;
+                            }
+                        }
+
+                        .unit-converter-equal-icon {
+                            margin: 0 0 55px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

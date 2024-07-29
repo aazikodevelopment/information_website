@@ -1,0 +1,15 @@
+@import "../../styles/mixins/global.scss";
+
+.home-new-section {
+  background: #fff;
+  overflow-x: hidden;
+
+  .home-new-bottom-section-alignment {
+    background: linear-gradient(180deg, #042239 0%, #000 100%);
+    overflow-x: hidden;
+
+    @include breakpoint("max-sm") {
+      padding: 60px 0 0 0;
+    }
+  }
+}

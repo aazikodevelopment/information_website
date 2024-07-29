@@ -1,0 +1,530 @@
+@import "../../../styles/mixins/global.scss";
+
+.supplier-collaboration-details-section {
+    padding: 135px 0 0 0;
+
+    @include breakpoint("max-sm") {
+        padding: 40px 0 0 0;
+    }
+
+    .supplier-collaboration-approach-details-alignment {
+        text-align: center;
+
+        h4 {
+            color: var(--theme-heading-text-color);
+            font-family: 'Poppins', sans-serif;
+            font-size: 45px;
+            font-weight: 600;
+            line-height: 54px;
+
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        .supplier-collaboration-approach-grid-alignment {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 98px;
+            padding: 64px 0 0 0;
+
+            @include breakpoint("max-md") {
+                grid-template-columns:1fr;
+                gap: 30px;
+                padding: 40px 0 0 0;
+            }
+            @include breakpoint("max-sm") {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 30px;
+                padding: 40px 0 0 0;
+            }
+
+            .supplier-collaboration-approach-grid-item {
+                border-radius: 10px;
+                border: 1px solid #00AEEF;
+                padding: 14px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .approach-img {
+                    width: 100%;
+                    height: 267px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                    }
+                }
+
+                .approach-details {
+                    padding: 36px 0 0 0;
+
+                    h6 {
+                        color: var(--theme-heading-text-color);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 28px;
+                        font-weight: 600;
+                        line-height: 32px;
+
+
+                        @include breakpoint("max-sm") {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                    }
+
+                    p {
+                        padding: 32px 0 0 0;
+                        color: var(--theme-heading-text-color);
+                        text-align: center;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 18px;
+                        font-weight: 400;
+                        line-height: 24px;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 14px;
+                            line-height: 22px;
+                        }
+                    }
+
+                    .collareate-button {
+                        padding: 26px 0 0 0;
+
+                        button {
+                            padding: 15px 16px;
+                            border-radius: 10px;
+                            border: 2px solid #00AEEF;
+                            color: #00AEEF;
+                            text-align: center;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 21px;
+                            background: transparent;
+                            cursor: pointer;
+                            transition: 0.4s ease-in-out;
+
+                            @include breakpoint("max-sm") {
+                                padding: 10px 22px;
+                                font-size: 14px;
+                            }
+
+
+                            &:hover {
+                                border-radius: 10px;
+                                border: 2px solid #00AEEF;
+                                background: #00AEEF;
+                                color: #FFF;
+                                transition: 0.4s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .supplier-collaboration-associate-with-alignment {
+        text-align: center;
+        padding: 116px 0 0 0;
+
+
+        @include breakpoint("max-sm") {
+            padding: 40px 0 0 0;
+        }
+
+        h6 {
+            color: var(--theme-heading-text-color);
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 54px;
+
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        .supplier-collaboration-associate-with-details {
+            margin: 56px 0 0 0;
+            background: #CCF1FF;
+            padding: 56px 0;
+
+            .supplier-collaboration-associate-with-all-details {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 102px;
+                height: 86px;
+
+
+                @include breakpoint("max-sm") {
+                    height: auto;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 40px 20px;
+                }
+
+                .supplier-collaboration-associate-with-grid-item {
+
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+
+                    }
+
+                    .top-angle {
+                        position: absolute;
+                        top: -10px;
+                        left: -10px;
+                    }
+
+                    .bottom-angle {
+                        position: absolute;
+                        bottom: -16px;
+                        right: -10px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .supplier-collaboration-get-started-section {
+        padding: 116px 0 0 0;
+
+
+        @include breakpoint("max-sm") {
+            padding: 40px 0 0 0;
+        }
+
+        .supplier-collaboration-get-started-details {
+            text-align: center;
+
+            h6 {
+                color: var(--theme-heading-text-color);
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-weight: 600;
+                line-height: normal;
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            .supplier-collaborate-get-details {
+                padding: 82px 0 0 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+
+                @include breakpoint("max-sm") {
+                    padding: 40px 0 0 0;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 20px;
+                }
+
+                .supplier-collaborate-child-details {
+                    max-width: 314px;
+                    // margin: 0 auto;
+                    margin: 0 60px;
+
+                    p {
+                        color: var(--theme-heading-text-color);
+                        text-align: center;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 30px;
+                        padding: 22px 0 0 0;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    background: url("../../../assets/Image/angle-4.png");
+                    width: 468px;
+                    height: 89px;
+                    right: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    @include breakpoint("max-sm") {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .supplier-bottom-details-alignment {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 506px;
+            width: 1063px;
+            opacity: 0.5;
+            background: linear-gradient(101deg, #FFDDDF -13.32%, rgba(253, 193, 197, 0) 83.13%);
+            top: 320px;
+            left: -450px;
+            z-index: 99;
+            transform: rotate(60deg);
+        }
+
+        .supplier-aaziko-provide-section {
+            padding: 158px 0 0 0;
+
+
+            .supplier-aaziko-heading-alignment {
+                text-align: center;
+
+                h6 {
+                    color: #000;
+                    font-size: 45px;
+                    font-weight: 600;
+                    line-height: 54px;
+                    opacity: 0.8;
+                }
+            }
+
+            .supplier-aaziko-body-alignment {
+                padding: 68px 0 0 0;
+
+                .supplier-grid-alignment {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 32px;
+                    @include breakpoint("max-lg") {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    @include breakpoint("max-sm") {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .supplier-grid-item-alignment {
+                        .supplier-details-box-alignment {
+                            border-radius: 100px 10px;
+                            border: 1px solid #00AEEF;
+                            background: #FFF;
+                            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                            width: 100%;
+                            height: 216px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        h6 {
+                            color: #000;
+                            font-size: 24px;
+                            font-weight: 600;
+                            line-height: 30px;
+                            padding: 24px 0 0 0;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .supplier-aaziko-apply-details-alignment {
+            padding: 80px 0 0 0;
+
+            .supplier-aaziko-apply-heading {
+                text-align: center;
+
+                h4 {
+                    color: #000;
+                    font-size: 45px;
+                    font-weight: 600;
+                    line-height: 54px;
+                    opacity: 0.8;
+                }
+            }
+
+            .supplier-aaziko-job-form-alignment {
+                border-radius: 10px;
+                border: 2px solid #00AEEF;
+                background: #FFF;
+                // height: 468px;
+                max-width: 970px;
+                margin: 32px auto 0 auto;
+
+                @include breakpoint("max-sm") {
+                    max-width: 100%;
+                    margin: 30px 0 0 0;
+                }
+
+                .supplier-aaziko-form-top-banner {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        object-fit: contain;
+                    }
+                }
+
+                .supplier-aaziko-form-input-alignment {
+                    padding: 28px 58px 0 58px;
+
+                    @include breakpoint("max-sm") {
+                        padding: 16px;
+                    }
+
+                    .supplier-aaziko-form-input-first-grid-alignment {
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        gap: 18px 50px;
+                        margin: 0 0 18px 0;
+
+                        @include breakpoint("max-sm") {
+                            grid-template-columns: 1fr;
+                            margin: 0 0 8px 0;
+                            gap: 8px;
+                        }
+                    }
+
+                    .supplier-aaziko-form-input-second-grid-alignment {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 21px;
+
+                        @include breakpoint("max-sm") {
+                            grid-template-columns: 1fr;
+                            gap: 8px;
+                        }
+                    }
+
+                    .supplier-aaziko-form-input {
+                        border-radius: 10px;
+                        border: 1px solid #00AEEF;
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        gap: 14px;
+                        padding: 0 20px;
+
+                        @include breakpoint("max-sm") {
+                            height: 40px;
+                            padding: 0 10px;
+                            gap: 6px;
+                        }
+
+                        input {
+                            width: 100%;
+                            height: 100%;
+                            color: var(--theme-heading-text-color);
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            background: transparent;
+                            border: none;
+
+                            @include breakpoint("max-sm") {
+                                font-size: 14px;
+                            }
+
+                            &::placeholder {
+                                color: rgba(0, 0, 0, 0.6);
+                            }
+                        }
+
+                        .supplier-aaziko-form-icon-alignment {
+                            width: 24px;
+                            height: 24px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .supplier-product-textarea-section {
+                        textarea {
+
+                            width: 100%;
+                            height: 155px;
+                            color: var(--theme-heading-text-color);
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            border-radius: 10px;
+                            border: 1px solid #00AEEF;
+                            padding: 12px 24px;
+
+                            @include breakpoint("max-sm") {
+                                font-size: 14px;
+                            }
+
+                            &::placeholder {
+                                color: rgba(0, 0, 0, 0.6);
+                            }
+
+                        }
+                    }
+
+                    .supplier-aaziko-form-button-alignment {
+                        padding: 42px 0 40px 0;
+                        text-align: center;
+
+                        @include breakpoint("max-sm") {
+                            padding: 20px 0;
+                        }
+
+                        button {
+                            padding: 14px 38px;
+                            border-radius: 10px;
+                            background: #00AEEF;
+                            color: #FFF;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            cursor: pointer;
+                            border: none;
+
+                            @include breakpoint("max-sm") {
+                                padding: 8px 18px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+
+
+
+                }
+            }
+        }
+    }
+
+}

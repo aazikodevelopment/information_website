@@ -1,0 +1,80 @@
+@import '../../../styles/mixins/global.scss';
+
+.initiating-collaboration-section {
+    @include breakpoint("max-sm") {
+        padding: 0 0 40px 0;
+    }
+    .initiating-collaboration-header {
+        text-align: center;
+        padding: 0 0 42px 0;
+
+        @include breakpoint("max-sm") {
+            padding: 40px 0;
+        }
+
+        h4 {
+            color: var(--theme-heading-text-color);
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 43px;
+            padding: 0 0 25px 0;
+        
+            @include breakpoint("max-sm") {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        p {
+            color: var(--theme-heading-text-color);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            max-width: 996px;
+            margin: 0 auto;
+
+            @include breakpoint("max-sm") {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .initiating-collaboration-img {
+        width: 794px;
+        height: 794px;
+        margin: 0 auto;
+
+        @include breakpoint("max-sm"){
+            width: 100%;
+            height: auto;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    .initiating-collaboration-description {
+        max-width: 992px;
+        margin: 0 auto;
+
+        p {
+            color: var(--theme-heading-text-color);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+
+
+            @include breakpoint("max-sm") {
+                font-size: 14px;
+            }
+        }
+    }
+}

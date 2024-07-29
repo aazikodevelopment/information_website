@@ -1,0 +1,47 @@
+
+@import '../../../../styles/mixins/index.scss';
+.trade-services-tab-section {
+    .trade-services-tab-alignment {
+        padding: 24px 0;
+        border-bottom: 1px solid #BABABA;
+
+
+         @include breakpoint("max-sm") {
+            overflow: auto;
+            white-space: nowrap;
+            padding: 14px 0;
+         }
+
+
+        
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            background: #FFF;
+
+            li {
+                padding: 10px 20px;
+                cursor: pointer;
+                border: 1px solid #CCC;
+                border-right: none;
+                color: #606060;
+                font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+
+
+                @include breakpoint("max-sm") {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+
+                &:last-child {
+                    border-right: 1px solid #CCC;
+                }
+            }
+        }
+    }
+}

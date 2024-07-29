@@ -1,0 +1,433 @@
+@import '../../styles/mixins/global.scss';
+
+.container-traking-section {
+    padding: 50px 0;
+    background-color: #fff;
+
+    @include breakpoint("max-sm") {
+        padding: 25px 0;
+    }
+
+    .container-traking-details-alignment {
+        .container-traking-details-grid {
+            display: grid;
+            grid-template-columns: 1fr 522px;
+            gap: 24px;
+
+            @media only screen and (max-width:"1099px") {
+                grid-template-columns: 1fr 396px;
+            }
+
+
+            @include breakpoint("max-md") {
+                grid-template-columns: 1fr;
+            }
+
+            .container-traking-details-gridItem {
+                .container-traking-details-right-side-alignment {
+                    border-radius: 4px;
+                    background: rgba(186, 186, 186, 0.11);
+                    padding: 12px;
+
+
+                    .container-traking-details-top-box-content {
+                        padding: 14px 12px 12px 12px;
+                        border-radius: 8px;
+                        background: rgba(0, 174, 239, .079);
+                        display: flex;
+                        align-items: flex-end;
+                        gap: 10px;
+                        flex-wrap: wrap;
+
+                        .transportation-by-details-alignment {
+                            label {
+                                color: #606060;
+                               font-family: 'Poppins', sans-serif;
+                                font-size: 12px;
+                                font-weight: 500;
+                                line-height: 14px;
+                                text-transform: uppercase;
+                                padding: 0 0 6px 0;
+                                display: block;
+                            }
+
+                            .transportation-area-details-alignment {
+                                border-radius: 8px;
+                                background: #FFF;
+                                height: 50px;
+                                display: flex;
+                                align-items: center;
+
+                                .transportation-area-box-alignment {
+                                    height: 100%;
+                                    padding: 0 12px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    gap: 8px;
+                                    cursor: pointer;
+
+                                    .line-alignment {
+                                        width: 24px;
+                                        height: 2px;
+                                        background: #00A651;
+                                    }
+
+                                    p {
+                                        color: #606060;
+                                       font-family: 'Poppins', sans-serif;
+                                        font-size: 12px;
+                                        font-weight: 500;
+                                        line-height: 14px;
+                                        text-transform: uppercase;
+                                    }
+
+                                    &.active-box {
+                                        border-radius: 8px;
+                                        background: #00AEEF;
+
+                                        p {
+
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+
+
+                            .organic-shipment-details-box-alignment {
+                                width: 340px;
+                                height: 50px;
+                                border-radius: 8px;
+                                background: #FFF;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0 12px;
+
+                                @include breakpoint("max-sm") {
+                                    width: 300px;
+                                }
+
+                                .organic-shipment-details {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 8px;
+
+                                    @include breakpoint("max-sm") {
+                                        gap: 6px;
+                                    }
+
+                                    p {
+                                        color: #00AEEF;
+                                       font-family: 'Poppins', sans-serif;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        line-height: 24px;
+                                        text-transform: uppercase;
+
+                                        @include breakpoint("max-sm") {
+                                            font-size: 14px;
+                                        }
+
+                                    }
+
+                                    span {
+                                        color: #606060;
+                                       font-family: 'Poppins', sans-serif;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                        text-transform: capitalize;
+
+                                        @include breakpoint("max-sm") {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+
+                                .organic-arrow-box-alignment {
+                                    width: 32px;
+                                    height: 100%;
+                                    position: relative;
+
+
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        height: 38px;
+                                        width: 1px;
+                                        background: #BABABA;
+                                        left: 15px;
+                                        right: 0;
+                                        top: 6px;
+                                    }
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        position: relative;
+                                        z-index: 9;
+                                    }
+
+                                }
+                            }
+                        }
+
+
+                        .transportation-search-icon {
+                            img {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .container-average-speed-alignment {
+                        padding: 12px 0 0 0;
+
+                        .container-average-speed-flex-alignment {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            .container-average-speed-input-alignment {
+                                width: 204px;
+                                height: 40px;
+                                border-radius: 8px;
+                                border: 0.5px solid #606060;
+                                background: #FFF;
+                                padding: 0 12px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                input {
+                                    border: none;
+                                    height: 100%;
+                                    width: 100%;
+                                    color: #606060;
+                                   font-family: 'Poppins', sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    line-height: 18px;
+                                    text-transform: capitalize;
+
+                                    &:focus-visible {
+                                        outline: none;
+                                    }
+                                }
+
+                                .container-top-bottom-arrow {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 8px;
+
+                                    img {
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                            .container-average-second-box {
+                                width: 68px;
+                                height: 40px;
+                                border-radius: 8px;
+                                border: 0.5px solid #606060;
+                                background: #FFF;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                span {
+                                    color: #606060;
+                                   font-family: 'Poppins', sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    line-height: 18px;
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+
+                    .container-average-search-alignment {
+                        padding: 100px 0 120px 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+
+                        @include breakpoint("max-sm") {
+                            padding: 50px 0 70px 0;
+                        }
+
+                        p {
+                            color: #606060;
+                            text-align: center;
+                           font-family: 'Poppins', sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            text-transform: capitalize;
+                            max-width: 430px;
+
+                            @include breakpoint("max-sm") {
+                                font-size: 14px;
+                                line-height: 22px;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+
+                    @include breakpoint("max-md") {
+                        height: 400px;
+                    }
+
+                    @include breakpoint("max-sm") {
+                        height: 340px;
+                    }
+                }
+            }
+        }
+
+        .container-other-traking-video-section {
+            padding: 35px 0 0 0;
+            text-align: center;
+
+            h5 {
+                color: #343434;
+               font-family: 'Poppins', sans-serif;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 32px;
+
+                &.second-heading {
+                    padding: 50px 0 0 0;
+
+                    @include breakpoint("max-sm") {
+                        padding: 30px 0 0 0;
+                    }
+                }
+
+                @include breakpoint("max-sm") {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+
+            .by-it-now-section-desing {
+                padding: 22px 0 0 0;
+
+                p {
+                    color: #606060;
+                    text-align: center;
+                   font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-transform: capitalize;
+
+                    @include breakpoint("max-sm") {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+
+                .buy-it-now-button {
+                    padding: 6px 0 0 0;
+
+                    button {
+                        border-radius: 8px;
+                        background: #00AEEF;
+                        color: #FFF;
+                       font-family: 'Poppins', sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        width: 180px;
+                        height: 40px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .container-video-details-alignment {
+                padding: 22px 0 0 0;
+            }
+        }
+
+        .container-traking-other-details-alignment {
+            padding: 118px 0 0 0;
+
+            @include breakpoint("max-md") {
+                padding: 80px 0 0 0;
+            }
+
+            @include breakpoint("max-sm") {
+                padding: 50px 0 0 0;
+            }
+
+            .container-traking-grid-alignment {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 70px;
+
+                @media only screen and (max-width:"1099px") {
+                    gap: 40px;
+                }
+
+                @include breakpoint("max-md") {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .container-traking-child-details-alignment {
+                    text-align: center;
+
+                    @include breakpoint("max-md") {
+                        max-width: 400px;
+                        margin: 0 auto;
+                    }
+
+                    h5 {
+                        color: #343434;
+                       font-family: 'Poppins', sans-serif;
+                        font-size: 24px;
+                        font-weight: 600;
+                        line-height: 28px;
+                        padding: 24px 0 0 0;
+
+                        @include breakpoint("max-sm") {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    p {
+                        padding: 14px 0 0 0;
+                        color: #606060;
+                        text-align: center;
+                       font-family: 'Poppins', sans-serif;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+
+                        
+                        @include breakpoint("max-sm") {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

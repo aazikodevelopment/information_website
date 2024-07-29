@@ -1,0 +1,371 @@
+@import "../../../styles/mixins/global.scss";
+
+.personainformation-form-alignment {
+    border-radius: 8px;
+    background: #FFF;
+    padding: 24px;
+
+    .personainformation-details-heading {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+
+        .informationheading-alignment {
+            p {
+               font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+                color: #343434;
+            }
+        }
+
+        .cancle-alignment {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            span {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #00AEEF;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .personal-details-input-alignmant {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding: 20px 0 0 0;
+        flex-wrap: wrap;
+
+        .input-alignment {
+            input {
+                background: rgba(0, 174, 239, 0.1);
+                border: 1px solid #BABABA;
+                border-radius: 8px;
+                width: 268px;
+                padding: 9px 15px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #343434;
+
+                @include breakpoint("max-sm") {
+                    width: 100%;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .button-alignment {
+            button {
+                background: #00AEEF;
+                border-radius: 8px;
+                padding: 8px 40px;
+                // @include text-md;
+                color: #FFFFFF;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+
+    .gender-details-alignment {
+        padding: 30px 0 0 0;
+
+        .gender-heading-alignment {
+            h6 {
+               font-family: 'Poppins', sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+                color: #343434;
+            }
+        }
+
+        .gender-option-alignment {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+
+            .gender-option-details {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 21px 0 0 0;
+
+                input[type="radio"] {
+                    width: 18px;
+                    height: 18px;
+                    cursor: pointer;
+                }
+
+                label {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    color: #606060;
+                }
+            }
+        }
+    }
+
+    .emailAddress-alignment {
+        margin: 44px 0 0 0;
+
+        .emailAddress-details-alignment {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            .emailAddressdetails-name {
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    margin: 0;
+                    padding: 0;
+                    color: #343434;
+                }
+            }
+
+            .cancle-alignment {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    color: #00AEEF;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .emailAddress-details-input-alignmant {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding: 20px 0 0 0;
+
+            .input-alignment {
+                input {
+                    background: rgba(0, 174, 239, 0.1);
+                    border: 1px solid #BABABA;
+                    border-radius: 8px;
+                    width: 268px;
+                    padding: 9px 15px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    color: #343434;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .button-alignment {
+                button {
+                    background: #00AEEF;
+                    border-radius: 8px;
+                    padding: 8px 40px;
+                    // @include text-md;
+                    color: #FFFFFF;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .faqS-alignment {
+        margin: 44px 0 0 0;
+
+        .faqs-heading {
+            padding: 0 0 21px 0;
+
+            h4 {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #343434;
+            }
+        }
+
+        .faqs-details-alignment {
+            .faqs-question-alignment {
+                padding: 0 0 30px 0;
+
+                &:last-child {
+                    padding: 0;
+                }
+
+                h6 {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 18px;
+                    color: #343434;
+                }
+
+                span {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    color: #606060;
+                }
+            }
+        }
+    }
+
+    .changePassword-modal {
+        .changePassword-modal-box {
+            background: var(--white-color);
+            border-radius: 8px;
+            width: 718px;
+            max-width: 718px;
+            padding: 24px;
+
+            .changePassword-grid-alignment {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 70px;
+
+                .notes-alignment-details {
+                    .notes-heading-alignment {
+                        h4 {
+                            // @include text-xl;
+                            color: var(--theme-heading-text-color);
+                            margin: 0;
+                            padding: 0 0 25px 0;
+                        }
+
+                        p {
+                            // @include text-xl-normal;
+                            color: #343434;
+                            margin: 0;
+                            padding: 0 0 15px 0;
+                        }
+                    }
+                }
+
+                .changePassword-input-alignment {
+                    .changePassword-input-heading-alignment {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        h4 {
+                            margin: 0;
+                            padding: 0;
+                            @include heading-2;
+                            color: #606060;
+                        }
+
+                        .resendOtp-alignment {
+                            span {
+                                @include text-sm;
+                                color: #00AEEF;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .changePassword-form-alignment {
+                        margin: 30px 0 0 0;
+
+                        .changePassword-form-input-alignment {
+                            padding: 0 0 24px 0;
+
+                            input {
+                                width: 100%;
+                                background: rgba(186, 186, 186, 0.1);
+                                border: 1px solid #BABABA;
+                                border-radius: 8px;
+                                height: 35px;
+                                padding: 0 15px;
+                                @include text-sm;
+                                color: #606060;
+
+                                &::placeholder {
+                                    color: #BABABA;
+                                }
+                            }
+
+                            &:last-child {
+                                padding: 0;
+                            }
+                        }
+
+
+
+                    }
+
+                    .button-alignment {
+                        padding: 50px 0 0 0;
+
+                        button {
+                            background: #00AEEF;
+                            border-radius: 8px;
+                            width: 100%;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            color: var(--white-color);
+                            cursor: pointer;
+                            height: 35px;
+                        }
+                    }
+
+                    .button-alignment-border {
+                        padding: 10px 0 0 0;
+
+                        button {
+                            border: 1px solid#00AEEF;
+                            border-radius: 8px;
+                            width: 100%;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 18px;
+                            color: #00AEEF;
+                            cursor: pointer;
+                            height: 35px;
+
+                            &:hover {
+                                background: #00AEEF;
+                                color: var(--white-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.validationError {
+    color: red;
+    font-size: 13px
+}

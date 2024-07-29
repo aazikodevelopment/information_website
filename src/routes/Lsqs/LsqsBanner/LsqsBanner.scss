@@ -1,0 +1,53 @@
+@import "../../../styles/mixins/global.scss";
+
+.lsqs-banner-all-contnet-alignment {
+  padding: 50px 0 100px 0;
+  background-color: #fff;
+
+  @include breakpoint("max-sm") {
+    padding: 40px 0 60px 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 581px;
+    gap: 50px;
+    align-items: center;
+
+    @include breakpoint("max-lg") {
+      grid-template-columns: repeat(2 , 1fr);
+      gap: 40px;
+    }
+    @include breakpoint("max-sm") {
+      grid-template-columns: repeat(1 , 1fr);
+      gap: 40px;
+    }
+
+    .grid-items {
+      .banner-style {
+        img {
+          max-width: 100%;
+        }
+      }
+
+      h2 {
+        max-width: 425px;
+        font-weight: 600;
+        font-size: 30px;
+        margin: 0 0 10px 0;
+        line-height: 140.5%;
+        color: #00aeef;
+        @include breakpoint("max-sm") {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #606060;
+        max-width: 569px;
+      }
+    }
+  }
+}

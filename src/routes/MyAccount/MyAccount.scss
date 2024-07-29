@@ -1,0 +1,17 @@
+@import '../../styles/mixins/global.scss';
+
+.my-account-section-details {
+    .my-account-order-section {
+        padding: 24px 0;
+
+        .my-account-order-alignment {
+            display: grid;
+            grid-template-columns: 282px 1fr;
+            gap: 24px;
+
+            @include breakpoint("max-md") {
+                display: block;
+            }
+        }
+    }
+}
