@@ -12,7 +12,7 @@
 // const host = "api.aaziko.com/sayaexim/v1";
 // Dev
 const protocol = "https";
-const host = "api.dev.aaziko.com/sayaexim/v1";
+const host = "api.aaziko.com/sayaexim/v1";
 
 const protocolForAI = "https";
 const hostForAI = "ai-api.aaziko.com/v1";

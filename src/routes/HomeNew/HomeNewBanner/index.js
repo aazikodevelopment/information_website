@@ -54,7 +54,7 @@ export default function HomeNewBanner() {
         headers: { 'x-auth-token': `${token}` }
       };
 
-      fetch('https://api.dev.aaziko.com/sayaexim/v1/type/authenticate-admin', options)
+      fetch('https://api.aaziko.com/sayaexim/v1/type/authenticate-admin', options)
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
